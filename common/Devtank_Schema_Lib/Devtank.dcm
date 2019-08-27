@@ -264,6 +264,11 @@ D 12-bit analog to digital converter, 4 inputs, I2C interface
 K adc spi quad double
 $ENDCMP
 #
+$CMP ADS1247
+D ADS1247 24bit 2ksps ADC with PGA
+K 24bit ADC PGA Sensor Measurement 2ksps
+$ENDCMP
+#
 $CMP ADS1248
 D ADS1248 24bit 2ksps ADC with PGA
 K 24bit ADC PGA Sensor Measurement 2ksps
