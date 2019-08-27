@@ -1,0 +1,16 @@
+The following mods are required to 304-006 ReV A
+
+1) The leg of J3B, Pin 7 (7b) requires cutting due to an error on the KiCAD footprint.
+
+2) Remove R8, R9 as these were optional on the BOM and fitted by mistake.
+
+3) R79 and R80 should be 0R
+
+4) Remove R117 (10K)
+
+5) R78 should be swapped with 24K 0603, Add 47K 0603 on CP2102 side (VBUS) to ground.
+
+6) Add Red jumper to JP1
+
+7) Swap U4, U5, U6, U7 & U8 for AD8646.
+
