@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:Sensi_Board-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 6 8
+Sheet 6 9
 Title ""
 Date ""
 Rev ""
@@ -27,7 +27,7 @@ F 4 "146-001" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Q_NMOS_GSD Q?
+L Sensi_Board-rescue:Q_NMOS_GSD-device Q?
 U 1 1 5CB48752
 P 3425 3400
 AR Path="/5CB48752" Ref="Q?"  Part="1" 
@@ -43,7 +43,7 @@ F 4 "170-002" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R?
+L Sensi_Board-rescue:R-device R?
 U 1 1 5CB48759
 P 2775 3400
 AR Path="/5CB48759" Ref="R?"  Part="1" 
@@ -59,7 +59,7 @@ F 4 "101-012" H 0   0   50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L Sensi_Board-rescue:R-device R?
 U 1 1 5CB48760
 P 3125 3675
 AR Path="/5CB48760" Ref="R?"  Part="1" 
@@ -110,7 +110,7 @@ HSCTRL_CH1
 Wire Wire Line
 	3525 3100 3525 3200
 $Comp
-L device:R R85
+L Sensi_Board-rescue:R-device R85
 U 1 1 5CB48C61
 P 2675 1750
 F 0 "R85" H 2745 1796 50  0000 L CNN
@@ -122,7 +122,7 @@ F 4 "101-006" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R91
+L Sensi_Board-rescue:R-device R91
 U 1 1 5CB48D37
 P 2950 1750
 F 0 "R91" H 3020 1796 50  0000 L CNN
@@ -170,7 +170,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 1425 2950 1600
 $Comp
-L device:Ferrite_Bead L3
+L Sensi_Board-rescue:Ferrite_Bead-device L3
 U 1 1 5CB4B291
 P 4350 2600
 F 0 "L3" V 4076 2600 50  0000 C CNN
@@ -184,7 +184,7 @@ $EndComp
 Wire Wire Line
 	3925 2600 4200 2600
 $Comp
-L device:C C60
+L Sensi_Board-rescue:C-device C60
 U 1 1 5CB4B566
 P 4775 2850
 F 0 "C60" H 4890 2896 50  0000 L CNN
@@ -215,7 +215,7 @@ Wire Wire Line
 Text HLabel 5050 2600 2    60   Output ~ 0
 HS_CH1
 $Comp
-L device:C C57
+L Sensi_Board-rescue:C-device C57
 U 1 1 5CB4BB36
 P 2675 2450
 F 0 "C57" H 2790 2496 50  0000 L CNN
@@ -271,7 +271,7 @@ F 4 "146-001" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Q_NMOS_GSD Q?
+L Sensi_Board-rescue:Q_NMOS_GSD-device Q?
 U 1 1 5CB527EB
 P 3425 6550
 AR Path="/5CB527EB" Ref="Q?"  Part="1" 
@@ -287,7 +287,7 @@ F 4 "170-002" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R?
+L Sensi_Board-rescue:R-device R?
 U 1 1 5CB527F1
 P 2775 6550
 AR Path="/5CB527F1" Ref="R?"  Part="1" 
@@ -303,7 +303,7 @@ F 4 "101-012" H 0   0   50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L Sensi_Board-rescue:R-device R?
 U 1 1 5CB527F7
 P 3125 6825
 AR Path="/5CB527F7" Ref="R?"  Part="1" 
@@ -354,7 +354,7 @@ HSCTRL_CH2
 Wire Wire Line
 	3525 6250 3525 6350
 $Comp
-L device:R R86
+L Sensi_Board-rescue:R-device R86
 U 1 1 5CB52818
 P 2675 4900
 F 0 "R86" H 2745 4946 50  0000 L CNN
@@ -366,7 +366,7 @@ F 4 "101-006" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R92
+L Sensi_Board-rescue:R-device R92
 U 1 1 5CB5281E
 P 2950 4900
 F 0 "R92" H 3020 4946 50  0000 L CNN
@@ -414,7 +414,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 4575 2950 4750
 $Comp
-L device:Ferrite_Bead L4
+L Sensi_Board-rescue:Ferrite_Bead-device L4
 U 1 1 5CB52838
 P 4350 5750
 F 0 "L4" V 4076 5750 50  0000 C CNN
@@ -428,7 +428,7 @@ $EndComp
 Wire Wire Line
 	3925 5750 4200 5750
 $Comp
-L device:C C61
+L Sensi_Board-rescue:C-device C61
 U 1 1 5CB5283F
 P 4775 6000
 F 0 "C61" H 4890 6046 50  0000 L CNN
@@ -459,7 +459,7 @@ Wire Wire Line
 Text HLabel 5050 5750 2    60   Output ~ 0
 HS_CH2
 $Comp
-L device:C C58
+L Sensi_Board-rescue:C-device C58
 U 1 1 5CB5284E
 P 2675 5600
 F 0 "C58" H 2790 5646 50  0000 L CNN
@@ -515,7 +515,7 @@ F 4 "146-001" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Q_NMOS_GSD Q?
+L Sensi_Board-rescue:Q_NMOS_GSD-device Q?
 U 1 1 5CB58C92
 P 8475 3400
 AR Path="/5CB58C92" Ref="Q?"  Part="1" 
@@ -531,7 +531,7 @@ F 4 "170-002" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R?
+L Sensi_Board-rescue:R-device R?
 U 1 1 5CB58C98
 P 7825 3400
 AR Path="/5CB58C98" Ref="R?"  Part="1" 
@@ -547,7 +547,7 @@ F 4 "101-012" H 0   0   50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L Sensi_Board-rescue:R-device R?
 U 1 1 5CB58C9E
 P 8175 3675
 AR Path="/5CB58C9E" Ref="R?"  Part="1" 
@@ -598,7 +598,7 @@ HSCTRL_CH3
 Wire Wire Line
 	8575 3100 8575 3200
 $Comp
-L device:R R97
+L Sensi_Board-rescue:R-device R97
 U 1 1 5CB58CBF
 P 7725 1750
 F 0 "R97" H 7795 1796 50  0000 L CNN
@@ -610,7 +610,7 @@ F 4 "101-006" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R103
+L Sensi_Board-rescue:R-device R103
 U 1 1 5CB58CC5
 P 8000 1750
 F 0 "R103" H 8070 1796 50  0000 L CNN
@@ -658,7 +658,7 @@ Wire Wire Line
 Wire Wire Line
 	8000 1425 8000 1600
 $Comp
-L device:Ferrite_Bead L6
+L Sensi_Board-rescue:Ferrite_Bead-device L6
 U 1 1 5CB58CDF
 P 9400 2600
 F 0 "L6" V 9126 2600 50  0000 C CNN
@@ -672,7 +672,7 @@ $EndComp
 Wire Wire Line
 	8975 2600 9250 2600
 $Comp
-L device:C C66
+L Sensi_Board-rescue:C-device C66
 U 1 1 5CB58CE6
 P 9825 2850
 F 0 "C66" H 9940 2896 50  0000 L CNN
@@ -703,7 +703,7 @@ Wire Wire Line
 Text HLabel 10100 2600 2    60   Output ~ 0
 HS_CH3
 $Comp
-L device:C C63
+L Sensi_Board-rescue:C-device C63
 U 1 1 5CB58CF5
 P 7725 2450
 F 0 "C63" H 7840 2496 50  0000 L CNN
@@ -759,7 +759,7 @@ F 4 "146-001" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Q_NMOS_GSD Q?
+L Sensi_Board-rescue:Q_NMOS_GSD-device Q?
 U 1 1 5CB58D11
 P 8475 6550
 AR Path="/5CB58D11" Ref="Q?"  Part="1" 
@@ -775,7 +775,7 @@ F 4 "170-002" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R?
+L Sensi_Board-rescue:R-device R?
 U 1 1 5CB58D17
 P 7825 6550
 AR Path="/5CB58D17" Ref="R?"  Part="1" 
@@ -791,7 +791,7 @@ F 4 "101-012" H 0   0   50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L Sensi_Board-rescue:R-device R?
 U 1 1 5CB58D1D
 P 8175 6825
 AR Path="/5CB58D1D" Ref="R?"  Part="1" 
@@ -842,7 +842,7 @@ HSCTRL_CH4
 Wire Wire Line
 	8575 6250 8575 6350
 $Comp
-L device:R R98
+L Sensi_Board-rescue:R-device R98
 U 1 1 5CB58D3E
 P 7725 4900
 F 0 "R98" H 7795 4946 50  0000 L CNN
@@ -854,7 +854,7 @@ F 4 "101-006" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R104
+L Sensi_Board-rescue:R-device R104
 U 1 1 5CB58D44
 P 8000 4900
 F 0 "R104" H 8070 4946 50  0000 L CNN
@@ -902,7 +902,7 @@ Wire Wire Line
 Wire Wire Line
 	8000 4575 8000 4750
 $Comp
-L device:Ferrite_Bead L7
+L Sensi_Board-rescue:Ferrite_Bead-device L7
 U 1 1 5CB58D5E
 P 9400 5750
 F 0 "L7" V 9126 5750 50  0000 C CNN
@@ -916,7 +916,7 @@ $EndComp
 Wire Wire Line
 	8975 5750 9250 5750
 $Comp
-L device:C C67
+L Sensi_Board-rescue:C-device C67
 U 1 1 5CB58D65
 P 9825 6000
 F 0 "C67" H 9940 6046 50  0000 L CNN
@@ -947,7 +947,7 @@ Wire Wire Line
 Text HLabel 10100 5750 2    60   Output ~ 0
 HS_CH4
 $Comp
-L device:C C64
+L Sensi_Board-rescue:C-device C64
 U 1 1 5CB58D74
 P 7725 5600
 F 0 "C64" H 7840 5646 50  0000 L CNN

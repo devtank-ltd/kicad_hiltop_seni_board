@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:Sensi_Board-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 8
+Sheet 3 9
 Title "Iota Board"
 Date "2018-11-07"
 Rev "Rev A"
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Relay:G5Q-1 K?
+L Sensi_Board-rescue:G5Q-1-Relay K?
 U 1 1 5BE5E5DE
 P 4200 2950
 AR Path="/5BE5E5DE" Ref="K?"  Part="1" 
@@ -31,7 +31,7 @@ F 4 "141-002" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:D_Schottky D?
+L Sensi_Board-rescue:D_Schottky-device D?
 U 1 1 5BE5E5E5
 P 3500 2800
 AR Path="/5BE5E5E5" Ref="D?"  Part="1" 
@@ -47,7 +47,7 @@ F 4 "133-007" H 0   0   50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:Q_NMOS_GSD Q?
+L Sensi_Board-rescue:Q_NMOS_GSD-device Q?
 U 1 1 5BE5E5EC
 P 4100 3525
 AR Path="/5BE5E5EC" Ref="Q?"  Part="1" 
@@ -63,7 +63,7 @@ F 4 "170-002" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R?
+L Sensi_Board-rescue:R-device R?
 U 1 1 5BE5E5F3
 P 3450 3525
 AR Path="/5BE5E5F3" Ref="R?"  Part="1" 
@@ -79,7 +79,7 @@ F 4 "101-001" H 0   0   50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L Sensi_Board-rescue:R-device R?
 U 1 1 5BE5E5FA
 P 3800 3800
 AR Path="/5BE5E5FA" Ref="R?"  Part="1" 
@@ -171,7 +171,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 3225 5400 3225
 $Comp
-L device:LED D?
+L Sensi_Board-rescue:LED-device D?
 U 1 1 5BE5E626
 P 3025 2575
 AR Path="/5BE5E626" Ref="D?"  Part="1" 
@@ -187,7 +187,7 @@ F 4 "110-002" H 0   0   50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L Sensi_Board-rescue:R-device R?
 U 1 1 5BE5E62D
 P 3025 2975
 AR Path="/5BE5E62D" Ref="R?"  Part="1" 

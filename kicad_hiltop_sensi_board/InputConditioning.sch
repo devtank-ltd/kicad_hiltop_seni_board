@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:Sensi_Board-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 11693 16535 portrait
 encoding utf-8
-Sheet 2 8
+Sheet 2 9
 Title ""
 Date ""
 Rev ""
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L device:R R23
+L Sensi_Board-rescue:R-device R23
 U 1 1 5BB25688
 P 1725 1525
 AR Path="/5BC9D0F6/5BB25688" Ref="R23"  Part="1" 
@@ -29,7 +29,7 @@ F 4 "101-024" H 0   0   50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R20
+L Sensi_Board-rescue:R-device R20
 U 1 1 5BB25A8B
 P 1700 2700
 AR Path="/5BC9D0F6/5BB25A8B" Ref="R20"  Part="1" 
@@ -45,7 +45,7 @@ $EndComp
 Wire Wire Line
 	1550 2700 1400 2700
 $Comp
-L device:C C20
+L Sensi_Board-rescue:C-device C20
 U 1 1 5BB35C7B
 P 4350 1950
 AR Path="/5BC9D0F6/5BB35C7B" Ref="C20"  Part="1" 
@@ -103,7 +103,7 @@ Text HLabel 6225 3200 0    60   Input ~ 0
 Wire Wire Line
 	1425 1525 1575 1525
 $Comp
-L linear:OPA2340 U4
+L Sensi_Board-rescue:OPA2340-linear U4
 U 1 1 5C4E9C83
 P 2800 1625
 AR Path="/5BC9D0F6/5C4E9C83" Ref="U4"  Part="1" 
@@ -117,7 +117,7 @@ F 4 "120-004" H 2800 1625 50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L linear:OPA2340 U4
+L Sensi_Board-rescue:OPA2340-linear U4
 U 2 1 5C4E9E6C
 P 2800 2800
 AR Path="/5BC9D0F6/5C4E9E6C" Ref="U4"  Part="2" 
@@ -171,7 +171,7 @@ Wire Wire Line
 Wire Wire Line
 	3475 3375 3475 2800
 $Comp
-L device:R R30
+L Sensi_Board-rescue:R-device R30
 U 1 1 5C4EF0F1
 P 4050 1625
 AR Path="/5BC9D0F6/5C4EF0F1" Ref="R30"  Part="1" 
@@ -206,7 +206,7 @@ $EndComp
 Wire Wire Line
 	4350 2200 4350 2100
 $Comp
-L device:C C21
+L Sensi_Board-rescue:C-device C21
 U 1 1 5C4F00D3
 P 4350 3125
 AR Path="/5BC9D0F6/5C4F00D3" Ref="C21"  Part="1" 
@@ -220,7 +220,7 @@ F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R31
+L Sensi_Board-rescue:R-device R31
 U 1 1 5C4F00DA
 P 4050 2800
 AR Path="/5BC9D0F6/5C4F00DA" Ref="R31"  Part="1" 
@@ -262,7 +262,7 @@ Wire Wire Line
 	4650 2800 4350 2800
 Connection ~ 4350 2800
 $Comp
-L device:R R24
+L Sensi_Board-rescue:R-device R24
 U 1 1 5C4F2356
 P 1725 3900
 AR Path="/5BC9D0F6/5C4F2356" Ref="R24"  Part="1" 
@@ -276,7 +276,7 @@ F 4 "101-024" H 0   0   50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R21
+L Sensi_Board-rescue:R-device R21
 U 1 1 5C4F235C
 P 1700 5075
 AR Path="/5BC9D0F6/5C4F235C" Ref="R21"  Part="1" 
@@ -292,7 +292,7 @@ $EndComp
 Wire Wire Line
 	1550 5075 1400 5075
 $Comp
-L device:C C22
+L Sensi_Board-rescue:C-device C22
 U 1 1 5C4F2363
 P 4350 4325
 AR Path="/5BC9D0F6/5C4F2363" Ref="C22"  Part="1" 
@@ -312,7 +312,7 @@ Wire Wire Line
 Wire Wire Line
 	1425 3900 1575 3900
 $Comp
-L linear:OPA2340 U5
+L Sensi_Board-rescue:OPA2340-linear U5
 U 1 1 5C4F236C
 P 2800 4000
 AR Path="/5BC9D0F6/5C4F236C" Ref="U5"  Part="1" 
@@ -326,7 +326,7 @@ F 4 "120-004" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L linear:OPA2340 U5
+L Sensi_Board-rescue:OPA2340-linear U5
 U 2 1 5C4F2372
 P 2800 5175
 AR Path="/5BC9D0F6/5C4F2372" Ref="U5"  Part="2" 
@@ -378,7 +378,7 @@ Wire Wire Line
 Wire Wire Line
 	3475 5750 3475 5175
 $Comp
-L device:R R32
+L Sensi_Board-rescue:R-device R32
 U 1 1 5C4F2391
 P 4050 4000
 AR Path="/5BC9D0F6/5C4F2391" Ref="R32"  Part="1" 
@@ -413,7 +413,7 @@ $EndComp
 Wire Wire Line
 	4350 4575 4350 4475
 $Comp
-L device:C C23
+L Sensi_Board-rescue:C-device C23
 U 1 1 5C4F23A1
 P 4350 5500
 AR Path="/5BC9D0F6/5C4F23A1" Ref="C23"  Part="1" 
@@ -427,7 +427,7 @@ F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R33
+L Sensi_Board-rescue:R-device R33
 U 1 1 5C4F23A7
 P 4050 5175
 AR Path="/5BC9D0F6/5C4F23A7" Ref="R33"  Part="1" 
@@ -469,7 +469,7 @@ Wire Wire Line
 	4650 5175 4350 5175
 Connection ~ 4350 5175
 $Comp
-L device:R R22
+L Sensi_Board-rescue:R-device R22
 U 1 1 5C4F7D07
 P 1700 6350
 AR Path="/5BC9D0F6/5C4F7D07" Ref="R22"  Part="1" 
@@ -483,7 +483,7 @@ F 4 "101-024" H 0   0   50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C24
+L Sensi_Board-rescue:C-device C24
 U 1 1 5C4F7D14
 P 4350 6775
 AR Path="/5BC9D0F6/5C4F7D14" Ref="C24"  Part="1" 
@@ -501,7 +501,7 @@ Wire Wire Line
 Wire Wire Line
 	1425 6350 1550 6350
 $Comp
-L linear:OPA2340 U6
+L Sensi_Board-rescue:OPA2340-linear U6
 U 1 1 5C4F7D1D
 P 2800 6450
 AR Path="/5BC9D0F6/5C4F7D1D" Ref="U6"  Part="1" 
@@ -515,7 +515,7 @@ F 4 "120-004" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L linear:OPA2340 U6
+L Sensi_Board-rescue:OPA2340-linear U6
 U 2 1 5C4F7D23
 P 2975 8575
 AR Path="/5BC9D0F6/5C4F7D23" Ref="U6"  Part="2" 
@@ -567,7 +567,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 9150 3650 8575
 $Comp
-L device:R R34
+L Sensi_Board-rescue:R-device R34
 U 1 1 5C4F7D42
 P 4050 6450
 AR Path="/5BC9D0F6/5C4F7D42" Ref="R34"  Part="1" 
@@ -602,7 +602,7 @@ $EndComp
 Wire Wire Line
 	4350 7025 4350 6925
 $Comp
-L device:C C25
+L Sensi_Board-rescue:C-device C25
 U 1 1 5C4F7D52
 P 4525 8900
 AR Path="/5BC9D0F6/5C4F7D52" Ref="C25"  Part="1" 
@@ -616,7 +616,7 @@ F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R35
+L Sensi_Board-rescue:R-device R35
 U 1 1 5C4F7D58
 P 4225 8575
 AR Path="/5BC9D0F6/5C4F7D58" Ref="R35"  Part="1" 
@@ -658,7 +658,7 @@ Wire Wire Line
 	4825 8575 4525 8575
 Connection ~ 4525 8575
 $Comp
-L device:C C14
+L Sensi_Board-rescue:C-device C14
 U 1 1 5C4FA8D8
 P 1925 13225
 AR Path="/5BC9D0F6/5C4FA8D8" Ref="C14"  Part="1" 
@@ -672,7 +672,7 @@ F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:C C15
+L Sensi_Board-rescue:C-device C15
 U 1 1 5C4FABED
 P 2375 13225
 AR Path="/5BC9D0F6/5C4FABED" Ref="C15"  Part="1" 
@@ -686,7 +686,7 @@ F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:C C16
+L Sensi_Board-rescue:C-device C16
 U 1 1 5C4FAC61
 P 2825 13225
 AR Path="/5BC9D0F6/5C4FAC61" Ref="C16"  Part="1" 
@@ -765,7 +765,7 @@ F 3 "" H 1925 13575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R18
+L Sensi_Board-rescue:R-device R18
 U 1 1 5C7680D6
 P 1425 8200
 AR Path="/5BC9D0F6/5C7680D6" Ref="R18"  Part="1" 
@@ -781,7 +781,7 @@ $EndComp
 Wire Wire Line
 	1425 8475 1425 8350
 $Comp
-L device:R R19
+L Sensi_Board-rescue:R-device R19
 U 1 1 5C76B393
 P 1425 8775
 AR Path="/5BC9D0F6/5C76B393" Ref="R19"  Part="1" 
@@ -819,7 +819,7 @@ Wire Wire Line
 Wire Wire Line
 	1325 7925 1425 7925
 $Comp
-L device:C C26
+L Sensi_Board-rescue:C-device C26
 U 1 1 5C7A1E5F
 P 9950 4175
 AR Path="/5BC9D0F6/5C7A1E5F" Ref="C26"  Part="1" 
@@ -833,7 +833,7 @@ F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L linear:OPA2340 U7
+L Sensi_Board-rescue:OPA2340-linear U7
 U 1 1 5C7A1E65
 P 8400 3850
 AR Path="/5BC9D0F6/5C7A1E65" Ref="U7"  Part="1" 
@@ -847,7 +847,7 @@ F 4 "120-004" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L linear:OPA2340 U7
+L Sensi_Board-rescue:OPA2340-linear U7
 U 2 1 5C7A1E6B
 P 8400 5600
 AR Path="/5BC9D0F6/5C7A1E6B" Ref="U7"  Part="2" 
@@ -899,7 +899,7 @@ Wire Wire Line
 Wire Wire Line
 	9075 6175 9075 5600
 $Comp
-L device:R R44
+L Sensi_Board-rescue:R-device R44
 U 1 1 5C7A1E84
 P 9650 3850
 AR Path="/5BC9D0F6/5C7A1E84" Ref="R44"  Part="1" 
@@ -934,7 +934,7 @@ $EndComp
 Wire Wire Line
 	9950 4425 9950 4325
 $Comp
-L device:C C27
+L Sensi_Board-rescue:C-device C27
 U 1 1 5C7A1E94
 P 9950 5925
 AR Path="/5BC9D0F6/5C7A1E94" Ref="C27"  Part="1" 
@@ -948,7 +948,7 @@ F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R45
+L Sensi_Board-rescue:R-device R45
 U 1 1 5C7A1E9A
 P 9650 5600
 AR Path="/5BC9D0F6/5C7A1E9A" Ref="R45"  Part="1" 
@@ -1003,7 +1003,7 @@ F 3 "" H 8300 3475 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R36
+L Sensi_Board-rescue:R-device R36
 U 1 1 5C7A1EB5
 P 6850 3475
 AR Path="/5BC9D0F6/5C7A1EB5" Ref="R36"  Part="1" 
@@ -1019,7 +1019,7 @@ $EndComp
 Wire Wire Line
 	6850 3750 6850 3625
 $Comp
-L device:R R37
+L Sensi_Board-rescue:R-device R37
 U 1 1 5C7A1EBC
 P 6850 4050
 AR Path="/5BC9D0F6/5C7A1EBC" Ref="R37"  Part="1" 
@@ -1057,7 +1057,7 @@ Wire Wire Line
 Wire Wire Line
 	6225 3200 6850 3200
 $Comp
-L device:R R38
+L Sensi_Board-rescue:R-device R38
 U 1 1 5C7A1ECE
 P 6850 5225
 AR Path="/5BC9D0F6/5C7A1ECE" Ref="R38"  Part="1" 
@@ -1097,7 +1097,7 @@ Wire Wire Line
 Wire Wire Line
 	6225 4950 6850 4950
 $Comp
-L device:C C28
+L Sensi_Board-rescue:C-device C28
 U 1 1 5C7B0D6B
 P 9975 7800
 AR Path="/5BC9D0F6/5C7B0D6B" Ref="C28"  Part="1" 
@@ -1111,7 +1111,7 @@ F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L linear:OPA2340 U8
+L Sensi_Board-rescue:OPA2340-linear U8
 U 1 1 5C7B0D71
 P 8425 7475
 AR Path="/5BC9D0F6/5C7B0D71" Ref="U8"  Part="1" 
@@ -1153,7 +1153,7 @@ Connection ~ 9100 7475
 Wire Wire Line
 	8325 7100 8325 7175
 $Comp
-L device:R R46
+L Sensi_Board-rescue:R-device R46
 U 1 1 5C7B0D90
 P 9675 7475
 AR Path="/5BC9D0F6/5C7B0D90" Ref="R46"  Part="1" 
@@ -1204,7 +1204,7 @@ F 3 "" H 8325 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R40
+L Sensi_Board-rescue:R-device R40
 U 1 1 5C7B0DC1
 P 6875 7100
 AR Path="/5BC9D0F6/5C7B0DC1" Ref="R40"  Part="1" 
@@ -1244,7 +1244,7 @@ Wire Wire Line
 Wire Wire Line
 	6250 6825 6875 6825
 $Comp
-L device:C C17
+L Sensi_Board-rescue:C-device C17
 U 1 1 5C809382
 P 3275 13225
 AR Path="/5BC9D0F6/5C809382" Ref="C17"  Part="1" 
@@ -1258,7 +1258,7 @@ F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:C C18
+L Sensi_Board-rescue:C-device C18
 U 1 1 5C80943A
 P 3725 13225
 AR Path="/5BC9D0F6/5C80943A" Ref="C18"  Part="1" 
@@ -1320,7 +1320,7 @@ Wire Wire Line
 	3725 13475 3275 13475
 Connection ~ 3275 13475
 $Comp
-L device:R R39
+L Sensi_Board-rescue:R-device R39
 U 1 1 5D36C9C8
 P 6850 5800
 AR Path="/5BC9D0F6/5D36C9C8" Ref="R39"  Part="1" 
@@ -1334,7 +1334,7 @@ F 4 "101-013" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R41
+L Sensi_Board-rescue:R-device R41
 U 1 1 5D36CEB4
 P 6875 7675
 AR Path="/5BC9D0F6/5D36CEB4" Ref="R41"  Part="1" 
@@ -1348,7 +1348,7 @@ F 4 "101-013" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R43
+L Sensi_Board-rescue:R-device R43
 U 1 1 5D36D0BD
 P 6875 9425
 AR Path="/5BC9D0F6/5D36D0BD" Ref="R43"  Part="1" 
@@ -1388,7 +1388,7 @@ Connection ~ 6875 9125
 Wire Wire Line
 	6875 9125 6875 9000
 $Comp
-L device:R R42
+L Sensi_Board-rescue:R-device R42
 U 1 1 5C7B0DDA
 P 6875 8850
 AR Path="/5BC9D0F6/5C7B0DDA" Ref="R42"  Part="1" 
@@ -1423,7 +1423,7 @@ Wire Wire Line
 Wire Wire Line
 	9975 9400 9975 9225
 $Comp
-L device:R R47
+L Sensi_Board-rescue:R-device R47
 U 1 1 5C7B0DA6
 P 9675 9225
 AR Path="/5BC9D0F6/5C7B0DA6" Ref="R47"  Part="1" 
@@ -1437,7 +1437,7 @@ F 4 "101-018" H 0   0   50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C29
+L Sensi_Board-rescue:C-device C29
 U 1 1 5C7B0DA0
 P 9975 9550
 AR Path="/5BC9D0F6/5C7B0DA0" Ref="C29"  Part="1" 
@@ -1462,7 +1462,7 @@ Connection ~ 9100 9225
 Wire Wire Line
 	8725 9225 9100 9225
 $Comp
-L linear:OPA2340 U8
+L Sensi_Board-rescue:OPA2340-linear U8
 U 2 1 5C7B0D77
 P 8425 9225
 AR Path="/5BC9D0F6/5C7B0D77" Ref="U8"  Part="2" 
@@ -1479,7 +1479,7 @@ Wire Wire Line
 	10225 9225 9975 9225
 Connection ~ 9975 9225
 $Comp
-L device:R R25
+L Sensi_Board-rescue:R-device R25
 U 1 1 5F25C0A4
 P 2000 1775
 AR Path="/5BC9D0F6/5F25C0A4" Ref="R25"  Part="1" 
@@ -1512,7 +1512,7 @@ Connection ~ 2000 1525
 Wire Wire Line
 	2000 1525 2500 1525
 $Comp
-L device:R R26
+L Sensi_Board-rescue:R-device R26
 U 1 1 5F27EA71
 P 2000 2950
 AR Path="/5BC9D0F6/5F27EA71" Ref="R26"  Part="1" 
@@ -1540,7 +1540,7 @@ $EndComp
 Wire Wire Line
 	2000 3100 2000 3150
 $Comp
-L device:R R27
+L Sensi_Board-rescue:R-device R27
 U 1 1 5F285D99
 P 2000 4200
 AR Path="/5BC9D0F6/5F285D99" Ref="R27"  Part="1" 
@@ -1568,7 +1568,7 @@ $EndComp
 Wire Wire Line
 	2000 4350 2000 4400
 $Comp
-L device:R R29
+L Sensi_Board-rescue:R-device R29
 U 1 1 5F28D397
 P 2000 6650
 AR Path="/5BC9D0F6/5F28D397" Ref="R29"  Part="1" 
@@ -1596,7 +1596,7 @@ $EndComp
 Wire Wire Line
 	2000 6800 2000 6850
 $Comp
-L device:R R28
+L Sensi_Board-rescue:R-device R28
 U 1 1 5F294A60
 P 2000 5375
 AR Path="/5BC9D0F6/5F294A60" Ref="R28"  Part="1" 

@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:Sensi_Board-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 7 8
+Sheet 7 9
 Title "Roving Sensor Design"
 Date "17/10/2017"
 Rev "Issue 1.0 Rev3"
@@ -48,7 +48,7 @@ F 3 "" H 10750 2850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C24
+L Sensi_Board-rescue:C-device C24
 U 1 1 59C07C31
 P 9450 2750
 F 0 "C24" H 9475 2850 50  0000 L CNN
@@ -132,7 +132,7 @@ Wire Wire Line
 Wire Wire Line
 	11950 5100 10800 5100
 $Comp
-L device:C C37
+L Sensi_Board-rescue:C-device C37
 U 1 1 59CBCCB2
 P 8450 2875
 F 0 "C37" H 8475 2975 50  0000 L CNN
@@ -144,7 +144,7 @@ F 4 "105-002" H 8450 2875 60  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C38
+L Sensi_Board-rescue:C-device C38
 U 1 1 59CBD08B
 P 9750 2750
 F 0 "C38" H 9775 2850 50  0000 L CNN
@@ -156,7 +156,7 @@ F 4 "105-002" H 9750 2750 60  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C39
+L Sensi_Board-rescue:C-device C39
 U 1 1 59CBD29F
 P 10750 2550
 F 0 "C39" H 10775 2650 50  0000 L CNN
@@ -168,7 +168,7 @@ F 4 "105-002" H 10750 2550 60  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R28
+L Sensi_Board-rescue:R-device R28
 U 1 1 59CBB35E
 P 8050 7225
 F 0 "R28" V 8150 7275 50  0000 C CNN
@@ -230,7 +230,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 4750 3850 4850
 $Comp
-L device:R R24
+L Sensi_Board-rescue:R-device R24
 U 1 1 59CBCA4A
 P 3450 4000
 F 0 "R24" V 3550 4050 50  0000 C CNN
@@ -242,7 +242,7 @@ F 4 "101-012" V 3450 4000 60  0001 C CNN "Devtank"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R25
+L Sensi_Board-rescue:R-device R25
 U 1 1 59CBCA51
 P 3450 4400
 F 0 "R25" V 3550 4450 50  0000 C CNN
@@ -254,7 +254,7 @@ F 4 "101-012" V 3450 4400 60  0001 C CNN "Devtank"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:C C31
+L Sensi_Board-rescue:C-device C31
 U 1 1 59CBCA58
 P 3850 4200
 F 0 "C31" H 3875 4300 50  0000 L CNN
@@ -265,7 +265,7 @@ F 3 "" H 3850 4200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C30
+L Sensi_Board-rescue:C-device C30
 U 1 1 59CBCA5F
 P 3850 3800
 F 0 "C30" H 3875 3900 50  0000 L CNN
@@ -276,7 +276,7 @@ F 3 "" H 3850 3800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C32
+L Sensi_Board-rescue:C-device C32
 U 1 1 59CBCA66
 P 3850 4600
 F 0 "C32" H 3875 4700 50  0000 L CNN
@@ -331,7 +331,7 @@ Wire Wire Line
 Wire Wire Line
 	10800 4100 11950 4100
 $Comp
-L Connector:Test_Point TP?
+L Sensi_Board-rescue:Test_Point-Connector TP?
 U 1 1 5D0C65E8
 P 4500 3900
 F 0 "TP?" H 4550 4050 50  0000 L CNN
@@ -342,7 +342,7 @@ F 3 "~" H 4700 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Test_Point TP?
+L Sensi_Board-rescue:Test_Point-Connector TP?
 U 1 1 5D0C7CF5
 P 4500 4500
 F 0 "TP?" H 4300 4650 50  0000 L CNN
@@ -392,7 +392,7 @@ Wire Wire Line
 Wire Wire Line
 	8300 7225 8550 7225
 $Comp
-L device:R R?
+L Sensi_Board-rescue:R-device R?
 U 1 1 5D20C69A
 P 7900 6700
 F 0 "R?" V 7975 6725 50  0000 C CNN
@@ -406,7 +406,7 @@ $EndComp
 Wire Wire Line
 	7900 6850 7900 6925
 $Comp
-L device:R R?
+L Sensi_Board-rescue:R-device R?
 U 1 1 5D20C76E
 P 8200 6700
 F 0 "R?" V 8275 6725 50  0000 C CNN
@@ -420,7 +420,7 @@ $EndComp
 Wire Wire Line
 	8200 6850 8200 6925
 $Comp
-L device:C C?
+L Sensi_Board-rescue:C-device C?
 U 1 1 5D20F734
 P 7675 6350
 F 0 "C?" V 7525 6300 50  0000 L CNN
@@ -431,7 +431,7 @@ F 3 "" H 7675 6350 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C?
+L Sensi_Board-rescue:C-device C?
 U 1 1 5D20F92C
 P 8050 6425
 F 0 "C?" V 7825 6375 50  0000 L CNN
@@ -442,7 +442,7 @@ F 3 "" H 8050 6425 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C?
+L Sensi_Board-rescue:C-device C?
 U 1 1 5D20F9E3
 P 8425 6350
 F 0 "C?" V 8275 6300 50  0000 L CNN
@@ -547,7 +547,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 6350 7900 6425
 $Comp
-L device:Ferrite_Bead L?
+L Sensi_Board-rescue:Ferrite_Bead-device L?
 U 1 1 5D238B4F
 P 10350 1950
 F 0 "L?" H 10487 1996 50  0000 L CNN
@@ -560,7 +560,7 @@ $EndComp
 Wire Wire Line
 	10350 1800 10350 1725
 $Comp
-L device:Ferrite_Bead L?
+L Sensi_Board-rescue:Ferrite_Bead-device L?
 U 1 1 5D2D4852
 P 8850 2200
 F 0 "L?" H 8987 2246 50  0000 L CNN
@@ -584,7 +584,7 @@ $EndComp
 Wire Wire Line
 	8850 2050 8850 1925
 $Comp
-L device:R R?
+L Sensi_Board-rescue:R-device R?
 U 1 1 5D2C070D
 P 11075 3725
 F 0 "R?" H 10975 3775 50  0000 C CNN

@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:Sensi_Board-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 9 8
+Sheet 8 9
 Title ""
 Date ""
 Rev ""
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32:STM32F072RBTx U22
+L Sensi_Board-rescue:STM32F072RBTx-MCU_ST_STM32 U22
 U 1 1 5F956EB6
 P 7400 4675
 F 0 "U22" H 4525 6850 50  0000 C CNN
@@ -38,7 +38,7 @@ F 3 "" H 7500 1725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Ferrite_Bead L11
+L Sensi_Board-rescue:Ferrite_Bead-device L11
 U 1 1 5F957109
 P 8225 2025
 F 0 "L11" V 7951 2025 50  0000 C CNN
@@ -88,7 +88,7 @@ Wire Wire Line
 Wire Wire Line
 	8525 2025 8375 2025
 $Comp
-L device:C C82
+L Sensi_Board-rescue:C-device C82
 U 1 1 5F957430
 P 7875 2250
 F 0 "C82" H 7990 2296 50  0000 L CNN
@@ -116,7 +116,7 @@ F 3 "" H 7875 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C73
+L Sensi_Board-rescue:C-device C73
 U 1 1 5F957A1A
 P 2125 1625
 F 0 "C73" H 2240 1671 50  0000 L CNN
@@ -128,7 +128,7 @@ F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C74
+L Sensi_Board-rescue:C-device C74
 U 1 1 5F957BC6
 P 2575 1625
 F 0 "C74" H 2690 1671 50  0000 L CNN
@@ -140,7 +140,7 @@ F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C79
+L Sensi_Board-rescue:C-device C79
 U 1 1 5F957C44
 P 3025 1625
 F 0 "C79" H 3140 1671 50  0000 L CNN
@@ -152,7 +152,7 @@ F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C80
+L Sensi_Board-rescue:C-device C80
 U 1 1 5F957C84
 P 3475 1625
 F 0 "C80" H 3590 1671 50  0000 L CNN
@@ -259,7 +259,7 @@ Connection ~ 7500 6925
 Wire Wire Line
 	4400 3075 3825 3075
 $Comp
-L device:R R120
+L Sensi_Board-rescue:R-device R120
 U 1 1 5F95CC59
 P 2725 2850
 F 0 "R120" H 2795 2896 50  0000 L CNN
@@ -271,7 +271,7 @@ F 4 "101-010" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R117
+L Sensi_Board-rescue:R-device R117
 U 1 1 5F95CDB1
 P 2550 3500
 F 0 "R117" H 2620 3546 50  0000 L CNN
@@ -321,7 +321,7 @@ NRST
 Text HLabel 2125 3275 0    60   Input ~ 0
 BOOT0
 $Comp
-L device:C C81
+L Sensi_Board-rescue:C-device C81
 U 1 1 5F9616D2
 P 3825 3550
 F 0 "C81" H 3940 3596 50  0000 L CNN
@@ -363,7 +363,7 @@ F 4 "780-001" H 0   0   50  0001 C CNN "Devtank"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:Crystal_GND23 Y3
+L Sensi_Board-rescue:Crystal_GND23-device Y3
 U 1 1 5F964614
 P 3225 6550
 F 0 "Y3" V 3075 6400 50  0000 L CNN
@@ -403,7 +403,7 @@ Wire Wire Line
 Wire Wire Line
 	3575 6525 4100 6525
 $Comp
-L device:C C77
+L Sensi_Board-rescue:C-device C77
 U 1 1 5F96D367
 P 2850 6275
 F 0 "C77" V 2598 6275 50  0000 C CNN
@@ -433,7 +433,7 @@ Wire Wire Line
 	3000 6275 3225 6275
 Connection ~ 3225 6275
 $Comp
-L device:C C78
+L Sensi_Board-rescue:C-device C78
 U 1 1 5F96FC00
 P 2850 6825
 F 0 "C78" V 2598 6825 50  0000 C CNN
@@ -463,7 +463,7 @@ Wire Wire Line
 	3000 6825 3225 6825
 Connection ~ 3225 6825
 $Comp
-L device:Crystal_GND24 Y2
+L Sensi_Board-rescue:Crystal_GND24-device Y2
 U 1 1 5F97410A
 P 3050 4325
 F 0 "Y2" V 2900 4175 50  0000 L CNN
@@ -491,7 +491,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 4075 3050 4175
 $Comp
-L device:C C75
+L Sensi_Board-rescue:C-device C75
 U 1 1 5F97DA85
 P 2825 4075
 F 0 "C75" V 2573 4075 50  0000 C CNN
@@ -518,7 +518,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 4075 2675 4075
 $Comp
-L device:C C76
+L Sensi_Board-rescue:C-device C76
 U 1 1 5F97DA93
 P 2825 4625
 F 0 "C76" V 2600 4625 50  0000 C CNN
@@ -637,7 +637,7 @@ Wire Wire Line
 Wire Wire Line
 	10400 4075 11800 4075
 $Comp
-L device:R R121
+L Sensi_Board-rescue:R-device R121
 U 1 1 5FA9D488
 P 10925 4375
 F 0 "R121" V 10900 4150 50  0000 C CNN
@@ -673,7 +673,7 @@ DEBUG_UART_TX
 Text HLabel 11800 3475 2    60   Input ~ 0
 ADC12
 $Comp
-L device:R R124
+L Sensi_Board-rescue:R-device R124
 U 1 1 5CB16726
 P 12600 3575
 F 0 "R124" V 12525 3525 50  0000 C CNN
@@ -685,7 +685,7 @@ F 4 "101-024" H 0   0   50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:LED D13
+L Sensi_Board-rescue:LED-device D13
 U 1 1 5CB1BE49
 P 13075 3575
 F 0 "D13" H 13066 3791 50  0000 C CNN
@@ -770,7 +770,7 @@ Wire Wire Line
 Wire Wire Line
 	3925 5475 4400 5475
 $Comp
-L Connector:Test_Point TP?
+L Sensi_Board-rescue:Test_Point-Connector TP?
 U 1 1 62481FA3
 P 7100 1825
 AR Path="/62481FA3" Ref="TP?"  Part="1" 

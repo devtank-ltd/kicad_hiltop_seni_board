@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:Sensi_Board-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 9 8
+Sheet 9 9
 Title "Iota Board"
 Date "2018-11-07"
 Rev "Rev A"
@@ -112,7 +112,7 @@ Connection ~ 3800 3675
 Wire Wire Line
 	3650 3675 3800 3675
 $Comp
-L device:R R125
+L Sensi_Board-rescue:R-device R125
 U 1 1 5C6F69A0
 P 3500 3675
 AR Path="/5C358B39/5C6F69A0" Ref="R125"  Part="1" 
@@ -175,7 +175,7 @@ Wire Wire Line
 Text Notes 4975 1850 0    60   ~ 0
 Max 3mA per GPIO
 $Comp
-L device:R R126
+L Sensi_Board-rescue:R-device R126
 U 1 1 5C72D67A
 P 3500 3875
 AR Path="/5C358B39/5C72D67A" Ref="R126"  Part="1" 
@@ -189,7 +189,7 @@ F 4 "101-012" V 3500 3875 50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R127
+L Sensi_Board-rescue:R-device R127
 U 1 1 5C72D782
 P 3500 4075
 AR Path="/5C358B39/5C72D782" Ref="R127"  Part="1" 
@@ -236,7 +236,7 @@ Wire Wire Line
 Wire Wire Line
 	3125 4275 3350 4275
 $Comp
-L device:R R128
+L Sensi_Board-rescue:R-device R128
 U 1 1 5C81CFA4
 P 3500 4275
 AR Path="/5C358B39/5C81CFA4" Ref="R128"  Part="1" 
@@ -258,7 +258,7 @@ Wire Wire Line
 Wire Wire Line
 	3125 4475 3350 4475
 $Comp
-L device:R R129
+L Sensi_Board-rescue:R-device R129
 U 1 1 5C875B29
 P 3500 4475
 AR Path="/5C358B39/5C875B29" Ref="R129"  Part="1" 
@@ -280,7 +280,7 @@ Wire Wire Line
 Wire Wire Line
 	3125 4675 3350 4675
 $Comp
-L device:R R130
+L Sensi_Board-rescue:R-device R130
 U 1 1 5C8CEAFE
 P 3500 4675
 AR Path="/5C358B39/5C8CEAFE" Ref="R130"  Part="1" 
@@ -546,7 +546,7 @@ Connection ~ 3850 7025
 Wire Wire Line
 	3700 7025 3850 7025
 $Comp
-L device:R R131
+L Sensi_Board-rescue:R-device R131
 U 1 1 5CCE0424
 P 3550 7025
 AR Path="/5C358B39/5CCE0424" Ref="R131"  Part="1" 
@@ -607,7 +607,7 @@ Wire Wire Line
 Wire Wire Line
 	3175 7025 3400 7025
 $Comp
-L device:R R132
+L Sensi_Board-rescue:R-device R132
 U 1 1 5CCE0442
 P 3550 7225
 AR Path="/5C358B39/5CCE0442" Ref="R132"  Part="1" 
@@ -621,7 +621,7 @@ F 4 "101-012" V 3550 7225 50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R133
+L Sensi_Board-rescue:R-device R133
 U 1 1 5CCE0449
 P 3550 7425
 AR Path="/5C358B39/5CCE0449" Ref="R133"  Part="1" 
@@ -668,7 +668,7 @@ Wire Wire Line
 Wire Wire Line
 	3175 7625 3400 7625
 $Comp
-L device:R R134
+L Sensi_Board-rescue:R-device R134
 U 1 1 5CCE0460
 P 3550 7625
 AR Path="/5C358B39/5CCE0460" Ref="R134"  Part="1" 
@@ -690,7 +690,7 @@ Wire Wire Line
 Wire Wire Line
 	3175 7825 3400 7825
 $Comp
-L device:R R135
+L Sensi_Board-rescue:R-device R135
 U 1 1 5CCE046B
 P 3550 7825
 AR Path="/5C358B39/5CCE046B" Ref="R135"  Part="1" 
@@ -712,7 +712,7 @@ Wire Wire Line
 Wire Wire Line
 	3175 8025 3400 8025
 $Comp
-L device:R R136
+L Sensi_Board-rescue:R-device R136
 U 1 1 5CCE0476
 P 3550 8025
 AR Path="/5C358B39/5CCE0476" Ref="R136"  Part="1" 
@@ -1002,7 +1002,7 @@ Connection ~ 9300 3675
 Wire Wire Line
 	9150 3675 9300 3675
 $Comp
-L device:R R137
+L Sensi_Board-rescue:R-device R137
 U 1 1 5E7ED961
 P 9000 3675
 AR Path="/5C358B39/5E7ED961" Ref="R137"  Part="1" 
@@ -1063,7 +1063,7 @@ Wire Wire Line
 Wire Wire Line
 	8625 3675 8850 3675
 $Comp
-L device:R R138
+L Sensi_Board-rescue:R-device R138
 U 1 1 5E7ED97F
 P 9000 3875
 AR Path="/5C358B39/5E7ED97F" Ref="R138"  Part="1" 
@@ -1077,7 +1077,7 @@ F 4 "101-012" V 9000 3875 50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R139
+L Sensi_Board-rescue:R-device R139
 U 1 1 5E7ED986
 P 9000 4075
 AR Path="/5C358B39/5E7ED986" Ref="R139"  Part="1" 
@@ -1124,7 +1124,7 @@ Wire Wire Line
 Wire Wire Line
 	8625 4275 8850 4275
 $Comp
-L device:R R140
+L Sensi_Board-rescue:R-device R140
 U 1 1 5E7ED99D
 P 9000 4275
 AR Path="/5C358B39/5E7ED99D" Ref="R140"  Part="1" 
@@ -1146,7 +1146,7 @@ Wire Wire Line
 Wire Wire Line
 	8625 4475 8850 4475
 $Comp
-L device:R R141
+L Sensi_Board-rescue:R-device R141
 U 1 1 5E7ED9A8
 P 9000 4475
 AR Path="/5C358B39/5E7ED9A8" Ref="R141"  Part="1" 
@@ -1168,7 +1168,7 @@ Wire Wire Line
 Wire Wire Line
 	8625 4675 8850 4675
 $Comp
-L device:R R142
+L Sensi_Board-rescue:R-device R142
 U 1 1 5E7ED9B3
 P 9000 4675
 AR Path="/5C358B39/5E7ED9B3" Ref="R142"  Part="1" 

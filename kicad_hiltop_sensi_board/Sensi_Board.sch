@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:Sensi_Board-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -41,7 +41,7 @@ F20 "12V_ADC_CH3" O R 11150 10925 60
 F21 "12V_SENSE1" I L 9225 10625 60 
 $EndSheet
 $Comp
-L Connector:Test_Point TP6
+L Sensi_Board-rescue:Test_Point-Connector TP6
 U 1 1 5BE39751
 P 8050 10025
 F 0 "TP6" V 8050 10200 50  0000 L CNN
@@ -52,7 +52,7 @@ F 3 "~" H 8250 10025 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP7
+L Sensi_Board-rescue:Test_Point-Connector TP7
 U 1 1 5BE94E93
 P 8050 10175
 F 0 "TP7" V 8050 10350 50  0000 L CNN
@@ -115,9 +115,9 @@ U 5C60B9FB
 F0 "RelayOutputs" 60
 F1 "RelayOutputs.sch" 60
 F2 "CH1_OUT" I L 18775 10000 60 
-F6 "OUT1_COM" O R 20650 10000 60 
-F7 "OUT1_NO" O R 20650 10150 60 
-F8 "OUT1_NC" O R 20650 10300 60 
+F3 "OUT1_COM" O R 20650 10000 60 
+F4 "OUT1_NO" O R 20650 10150 60 
+F5 "OUT1_NC" O R 20650 10300 60 
 $EndSheet
 Wire Wire Line
 	20650 10000 21250 10000
@@ -254,7 +254,7 @@ Wire Wire Line
 Text Label 18925 9300 0    60   ~ 0
 I_MON
 $Comp
-L device:C C9
+L Sensi_Board-rescue:C-device C9
 U 1 1 5C694900
 P 18925 9000
 F 0 "C9" V 18673 9000 50  0000 C CNN
@@ -283,7 +283,7 @@ Wire Wire Line
 Wire Wire Line
 	18600 9000 18600 9125
 $Comp
-L device:Polyfuse F1
+L Sensi_Board-rescue:Polyfuse-device F1
 U 1 1 5C6F7F05
 P 18850 8350
 F 0 "F1" V 18625 8350 50  0000 C CNN
@@ -317,7 +317,7 @@ F 4 "704-001" H 13775 7500 50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:CP C8
+L Sensi_Board-rescue:CP-device C8
 U 1 1 5C956D75
 P 16325 7075
 F 0 "C8" H 16443 7121 50  0000 L CNN
@@ -329,7 +329,7 @@ F 4 "108-003" H 16325 7075 50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:CP C7
+L Sensi_Board-rescue:CP-device C7
 U 1 1 5C957177
 P 15875 7075
 F 0 "C7" H 15993 7121 50  0000 L CNN
@@ -413,7 +413,7 @@ Wire Wire Line
 	12425 8000 12425 7800
 Connection ~ 12425 7800
 $Comp
-L device:R R4
+L Sensi_Board-rescue:R-device R4
 U 1 1 5CD7822E
 P 11500 7900
 F 0 "R4" V 11425 7700 50  0000 C CNN
@@ -425,7 +425,7 @@ F 4 "101-024" V 11500 7900 50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R5
+L Sensi_Board-rescue:R-device R5
 U 1 1 5CD7872F
 P 11500 8100
 F 0 "R5" V 11425 7900 50  0000 C CNN
@@ -470,7 +470,7 @@ Wire Wire Line
 	12050 7400 12050 7100
 Connection ~ 12050 7100
 $Comp
-L device:R R7
+L Sensi_Board-rescue:R-device R7
 U 1 1 5CF8DFE2
 P 12050 6500
 F 0 "R7" H 11950 6450 50  0000 C CNN
@@ -482,7 +482,7 @@ F 4 "101-511" V 12050 6500 50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:C C6
+L Sensi_Board-rescue:C-device C6
 U 1 1 5CF8EBCB
 P 12050 7675
 F 0 "C6" H 11900 7625 50  0000 C CNN
@@ -523,7 +523,7 @@ Wire Wire Line
 	12575 7600 12575 7700
 Connection ~ 12575 7700
 $Comp
-L device:LED D1
+L Sensi_Board-rescue:LED-device D1
 U 1 1 5D139666
 P 11000 8275
 F 0 "D1" H 11000 8375 50  0000 C CNN
@@ -535,7 +535,7 @@ F 4 "110-002" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R6
+L Sensi_Board-rescue:R-device R6
 U 1 1 5D1652E5
 P 11500 8275
 F 0 "R6" V 11425 8075 50  0000 C CNN
@@ -558,7 +558,7 @@ Wire Wire Line
 Text Label 10225 8275 0    60   ~ 0
 nFDX_LED
 $Comp
-L device:C C2
+L Sensi_Board-rescue:C-device C2
 U 1 1 5D1E9E5B
 P 8300 7675
 F 0 "C2" H 8150 7625 50  0000 C CNN
@@ -570,7 +570,7 @@ F 4 "106-013" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:C C3
+L Sensi_Board-rescue:C-device C3
 U 1 1 5D1EA9A1
 P 8700 7675
 F 0 "C3" H 8550 7625 50  0000 C CNN
@@ -582,7 +582,7 @@ F 4 "106-013" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:C C4
+L Sensi_Board-rescue:C-device C4
 U 1 1 5D2168E0
 P 9100 7675
 F 0 "C4" H 8950 7625 50  0000 C CNN
@@ -594,7 +594,7 @@ F 4 "106-013" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:C C5
+L Sensi_Board-rescue:C-device C5
 U 1 1 5D2169B4
 P 9475 7675
 F 0 "C5" H 9325 7625 50  0000 C CNN
@@ -966,7 +966,7 @@ F 3 "" H 18475 4175 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:Jumper_NC_Dual JP1
+L Sensi_Board-rescue:Jumper_NC_Dual-device JP1
 U 1 1 5DEB1E14
 P 18475 3825
 F 0 "JP1" V 18429 3926 50  0000 L CNN
@@ -1385,7 +1385,7 @@ Wire Wire Line
 	15625 6800 15050 6800
 Connection ~ 15625 6800
 $Comp
-L memory:AT25_EEPROM U3
+L Sensi_Board-rescue:AT25_EEPROM-memory U3
 U 1 1 5EDBA612
 P 21525 3775
 F 0 "U3" H 21250 4050 50  0000 C CNN
@@ -1397,7 +1397,7 @@ F 4 "129-002" H 0   0   50  0001 C CNN "Devtank"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R16
+L Sensi_Board-rescue:R-device R16
 U 1 1 5EDBA935
 P 20800 3450
 F 0 "R16" H 20675 3375 50  0000 C CNN
@@ -1409,7 +1409,7 @@ F 4 "101-009" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R15
+L Sensi_Board-rescue:R-device R15
 U 1 1 5EDBAD27
 P 20525 3450
 F 0 "R15" H 20400 3375 50  0000 C CNN
@@ -1421,7 +1421,7 @@ F 4 "101-009" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R17
+L Sensi_Board-rescue:R-device R17
 U 1 1 5EDBADBB
 P 20800 4150
 F 0 "R17" H 20675 4075 50  0000 C CNN
@@ -1476,7 +1476,7 @@ $EndComp
 Wire Wire Line
 	20800 4400 20800 4300
 $Comp
-L device:R R14
+L Sensi_Board-rescue:R-device R14
 U 1 1 5EFFD223
 P 20150 3475
 F 0 "R14" H 20025 3400 50  0000 C CNN
@@ -1533,7 +1533,7 @@ $EndComp
 Wire Wire Line
 	21525 2950 21525 3125
 $Comp
-L device:C C12
+L Sensi_Board-rescue:C-device C12
 U 1 1 5F448100
 P 21875 3125
 F 0 "C12" V 21623 3125 50  0000 C CNN
@@ -1593,7 +1593,7 @@ F 3 "" H 17925 7900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R9
+L Sensi_Board-rescue:R-device R9
 U 1 1 5FB74C13
 P 18175 8100
 F 0 "R9" H 18075 8025 50  0000 C CNN
@@ -1605,7 +1605,7 @@ F 4 "101-007" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R8
+L Sensi_Board-rescue:R-device R8
 U 1 1 5FB75732
 P 17925 8100
 F 0 "R8" H 17825 8025 50  0000 C CNN
@@ -1617,7 +1617,7 @@ F 4 "101-007" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R10
+L Sensi_Board-rescue:R-device R10
 U 1 1 5FB759A2
 P 18400 8100
 F 0 "R10" H 18275 8025 50  0000 C CNN
@@ -1788,7 +1788,7 @@ Wire Wire Line
 Wire Wire Line
 	11150 9575 12275 9575
 $Comp
-L Connector:Test_Point TP5
+L Sensi_Board-rescue:Test_Point-Connector TP5
 U 1 1 5F7FAFC8
 P 8050 9875
 F 0 "TP5" V 8050 10050 50  0000 L CNN
@@ -1799,7 +1799,7 @@ F 3 "~" H 8250 9875 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP4
+L Sensi_Board-rescue:Test_Point-Connector TP4
 U 1 1 5F7FB074
 P 8050 9725
 F 0 "TP4" V 8050 9900 50  0000 L CNN
@@ -1810,7 +1810,7 @@ F 3 "~" H 8250 9725 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP3
+L Sensi_Board-rescue:Test_Point-Connector TP3
 U 1 1 5F7FB11E
 P 8050 9575
 F 0 "TP3" V 8050 9750 50  0000 L CNN
@@ -1821,7 +1821,7 @@ F 3 "~" H 8250 9575 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP8
+L Sensi_Board-rescue:Test_Point-Connector TP8
 U 1 1 5F7FB1D6
 P 8050 10325
 F 0 "TP8" V 8050 10500 50  0000 L CNN
@@ -1832,7 +1832,7 @@ F 3 "~" H 8250 10325 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP9
+L Sensi_Board-rescue:Test_Point-Connector TP9
 U 1 1 5F7FB5D2
 P 8050 10475
 F 0 "TP9" V 8050 10650 50  0000 L CNN
@@ -1843,7 +1843,7 @@ F 3 "~" H 8250 10475 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP10
+L Sensi_Board-rescue:Test_Point-Connector TP10
 U 1 1 5F7FB686
 P 8050 10625
 F 0 "TP10" V 8050 10800 50  0000 L CNN
@@ -1854,7 +1854,7 @@ F 3 "~" H 8250 10625 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP11
+L Sensi_Board-rescue:Test_Point-Connector TP11
 U 1 1 5F7FB831
 P 8050 10775
 F 0 "TP11" V 8050 10950 50  0000 L CNN
@@ -1865,7 +1865,7 @@ F 3 "~" H 8250 10775 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP55
+L Sensi_Board-rescue:Test_Point-Connector TP55
 U 1 1 5F7FBA6B
 P 12275 9575
 F 0 "TP55" V 12275 9750 50  0000 L CNN
@@ -1876,7 +1876,7 @@ F 3 "~" H 12475 9575 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP56
+L Sensi_Board-rescue:Test_Point-Connector TP56
 U 1 1 5F7FC1AB
 P 12275 9725
 F 0 "TP56" V 12275 9900 50  0000 L CNN
@@ -1887,7 +1887,7 @@ F 3 "~" H 12475 9725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP57
+L Sensi_Board-rescue:Test_Point-Connector TP57
 U 1 1 5F7FC265
 P 12275 9875
 F 0 "TP57" V 12275 10050 50  0000 L CNN
@@ -1898,7 +1898,7 @@ F 3 "~" H 12475 9875 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP58
+L Sensi_Board-rescue:Test_Point-Connector TP58
 U 1 1 5F7FC31F
 P 12275 10025
 F 0 "TP58" V 12275 10200 50  0000 L CNN
@@ -1909,7 +1909,7 @@ F 3 "~" H 12475 10025 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP59
+L Sensi_Board-rescue:Test_Point-Connector TP59
 U 1 1 5F7FC61D
 P 12275 10175
 F 0 "TP59" V 12275 10350 50  0000 L CNN
@@ -1920,7 +1920,7 @@ F 3 "~" H 12475 10175 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP60
+L Sensi_Board-rescue:Test_Point-Connector TP60
 U 1 1 5F7FC6DF
 P 12275 10325
 F 0 "TP60" V 12275 10500 50  0000 L CNN
@@ -1931,7 +1931,7 @@ F 3 "~" H 12475 10325 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP61
+L Sensi_Board-rescue:Test_Point-Connector TP61
 U 1 1 5F7FC7AB
 P 12275 10475
 F 0 "TP61" V 12275 10650 50  0000 L CNN
@@ -1942,7 +1942,7 @@ F 3 "~" H 12475 10475 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP62
+L Sensi_Board-rescue:Test_Point-Connector TP62
 U 1 1 5F7FC871
 P 12275 10625
 F 0 "TP62" V 12275 10800 50  0000 L CNN
@@ -1953,7 +1953,7 @@ F 3 "~" H 12475 10625 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP63
+L Sensi_Board-rescue:Test_Point-Connector TP63
 U 1 1 5F7FCC95
 P 12275 10775
 F 0 "TP63" V 12275 10950 50  0000 L CNN
@@ -2034,7 +2034,7 @@ Wire Wire Line
 Wire Wire Line
 	11150 10925 12275 10925
 $Comp
-L Connector:Test_Point TP64
+L Sensi_Board-rescue:Test_Point-Connector TP64
 U 1 1 5D7CF6CB
 P 12275 10925
 F 0 "TP64" V 12275 11100 50  0000 L CNN
@@ -2065,7 +2065,7 @@ Text Label 8125 10775 0    60   ~ 0
 Wire Wire Line
 	9225 10925 8050 10925
 $Comp
-L Connector:Test_Point TP12
+L Sensi_Board-rescue:Test_Point-Connector TP12
 U 1 1 5D8667C3
 P 8050 10925
 F 0 "TP12" V 8050 11100 50  0000 L CNN
@@ -2110,7 +2110,7 @@ GPIO10
 Text Label 2175 6000 0    60   ~ 0
 GPIO11
 $Comp
-L device:R R3
+L Sensi_Board-rescue:R-device R3
 U 1 1 5E43ADE3
 P 5500 5575
 F 0 "R3" V 5293 5575 50  0000 C CNN
@@ -2122,7 +2122,7 @@ F 4 "101-018" H 0   0   50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C1
+L Sensi_Board-rescue:C-device C1
 U 1 1 5E4D13DE
 P 5825 5825
 F 0 "C1" H 5940 5871 50  0000 L CNN
@@ -2332,7 +2332,7 @@ OUT1_NO
 Text Label 4650 8975 0    60   ~ 0
 OUT1_NC
 $Comp
-L Connector:Test_Point TP13
+L Sensi_Board-rescue:Test_Point-Connector TP13
 U 1 1 60F6BD0B
 P 7825 13325
 F 0 "TP13" V 7825 13500 50  0000 L CNN
@@ -2343,7 +2343,7 @@ F 3 "~" H 8025 13325 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP14
+L Sensi_Board-rescue:Test_Point-Connector TP14
 U 1 1 60F6C341
 P 7825 13475
 F 0 "TP14" V 7825 13650 50  0000 L CNN
@@ -2354,7 +2354,7 @@ F 3 "~" H 8025 13475 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP15
+L Sensi_Board-rescue:Test_Point-Connector TP15
 U 1 1 60F6C413
 P 7825 13625
 F 0 "TP15" V 7825 13800 50  0000 L CNN
@@ -2365,7 +2365,7 @@ F 3 "~" H 8025 13625 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP16
+L Sensi_Board-rescue:Test_Point-Connector TP16
 U 1 1 60F6C839
 P 7825 13775
 F 0 "TP16" V 7825 13950 50  0000 L CNN
@@ -2376,7 +2376,7 @@ F 3 "~" H 8025 13775 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP17
+L Sensi_Board-rescue:Test_Point-Connector TP17
 U 1 1 60F6CC6E
 P 7825 13925
 F 0 "TP17" V 7825 14100 50  0000 L CNN
@@ -2387,7 +2387,7 @@ F 3 "~" H 8025 13925 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP18
+L Sensi_Board-rescue:Test_Point-Connector TP18
 U 1 1 60F6CD46
 P 7825 14075
 F 0 "TP18" V 7825 14250 50  0000 L CNN
@@ -2398,7 +2398,7 @@ F 3 "~" H 8025 14075 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP19
+L Sensi_Board-rescue:Test_Point-Connector TP19
 U 1 1 60F6CE28
 P 7825 14225
 F 0 "TP19" V 7825 14400 50  0000 L CNN
@@ -2409,7 +2409,7 @@ F 3 "~" H 8025 14225 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP20
+L Sensi_Board-rescue:Test_Point-Connector TP20
 U 1 1 60F6D0EE
 P 7825 14375
 F 0 "TP20" V 7825 14550 50  0000 L CNN
@@ -2420,7 +2420,7 @@ F 3 "~" H 8025 14375 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP21
+L Sensi_Board-rescue:Test_Point-Connector TP21
 U 1 1 60F6D744
 P 7825 14525
 F 0 "TP21" V 7825 14700 50  0000 L CNN
@@ -2431,7 +2431,7 @@ F 3 "~" H 8025 14525 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP22
+L Sensi_Board-rescue:Test_Point-Connector TP22
 U 1 1 60F6D824
 P 7825 14675
 F 0 "TP22" V 7825 14850 50  0000 L CNN
@@ -2442,7 +2442,7 @@ F 3 "~" H 8025 14675 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP23
+L Sensi_Board-rescue:Test_Point-Connector TP23
 U 1 1 60F6D906
 P 7825 14825
 F 0 "TP23" V 7825 15000 50  0000 L CNN
@@ -2453,7 +2453,7 @@ F 3 "~" H 8025 14825 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP24
+L Sensi_Board-rescue:Test_Point-Connector TP24
 U 1 1 60F6D9F6
 P 7825 14975
 F 0 "TP24" V 7825 15150 50  0000 L CNN
@@ -2464,7 +2464,7 @@ F 3 "~" H 8025 14975 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP37
+L Sensi_Board-rescue:Test_Point-Connector TP37
 U 1 1 60F6E72C
 P 11925 13325
 F 0 "TP37" V 11925 13500 50  0000 L CNN
@@ -2475,7 +2475,7 @@ F 3 "~" H 12125 13325 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP38
+L Sensi_Board-rescue:Test_Point-Connector TP38
 U 1 1 60F6EE46
 P 11925 13475
 F 0 "TP38" V 11925 13650 50  0000 L CNN
@@ -2486,7 +2486,7 @@ F 3 "~" H 12125 13475 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP39
+L Sensi_Board-rescue:Test_Point-Connector TP39
 U 1 1 60F6EF54
 P 11925 13625
 F 0 "TP39" V 11925 13800 50  0000 L CNN
@@ -2497,7 +2497,7 @@ F 3 "~" H 12125 13625 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP40
+L Sensi_Board-rescue:Test_Point-Connector TP40
 U 1 1 60F6F05C
 P 11925 13775
 F 0 "TP40" V 11925 13950 50  0000 L CNN
@@ -2508,7 +2508,7 @@ F 3 "~" H 12125 13775 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP41
+L Sensi_Board-rescue:Test_Point-Connector TP41
 U 1 1 60F6F156
 P 11925 13925
 F 0 "TP41" V 11925 14100 50  0000 L CNN
@@ -2519,7 +2519,7 @@ F 3 "~" H 12125 13925 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP42
+L Sensi_Board-rescue:Test_Point-Connector TP42
 U 1 1 60F6F252
 P 11925 14075
 F 0 "TP42" V 11925 14250 50  0000 L CNN
@@ -2530,7 +2530,7 @@ F 3 "~" H 12125 14075 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP43
+L Sensi_Board-rescue:Test_Point-Connector TP43
 U 1 1 60F6FBB4
 P 11925 14225
 F 0 "TP43" V 11925 14400 50  0000 L CNN
@@ -2541,7 +2541,7 @@ F 3 "~" H 12125 14225 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP44
+L Sensi_Board-rescue:Test_Point-Connector TP44
 U 1 1 60F6FCB4
 P 11925 14375
 F 0 "TP44" V 11925 14550 50  0000 L CNN
@@ -2552,7 +2552,7 @@ F 3 "~" H 12125 14375 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP45
+L Sensi_Board-rescue:Test_Point-Connector TP45
 U 1 1 60F6FDC6
 P 11925 14525
 F 0 "TP45" V 11925 14700 50  0000 L CNN
@@ -2563,7 +2563,7 @@ F 3 "~" H 12125 14525 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP46
+L Sensi_Board-rescue:Test_Point-Connector TP46
 U 1 1 60F6FECE
 P 11925 14675
 F 0 "TP46" V 11925 14850 50  0000 L CNN
@@ -2574,7 +2574,7 @@ F 3 "~" H 12125 14675 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP47
+L Sensi_Board-rescue:Test_Point-Connector TP47
 U 1 1 60F6FFE4
 P 11925 14825
 F 0 "TP47" V 11925 15000 50  0000 L CNN
@@ -2585,7 +2585,7 @@ F 3 "~" H 12125 14825 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP48
+L Sensi_Board-rescue:Test_Point-Connector TP48
 U 1 1 60F70438
 P 11925 14975
 F 0 "TP48" V 11925 15150 50  0000 L CNN
@@ -2596,7 +2596,7 @@ F 3 "~" H 12125 14975 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP65
+L Sensi_Board-rescue:Test_Point-Connector TP65
 U 1 1 60F74014
 P 13675 13350
 F 0 "TP65" V 13675 13525 50  0000 L CNN
@@ -2607,7 +2607,7 @@ F 3 "~" H 13875 13350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP66
+L Sensi_Board-rescue:Test_Point-Connector TP66
 U 1 1 60F747A2
 P 13675 13500
 F 0 "TP66" V 13675 13675 50  0000 L CNN
@@ -2618,7 +2618,7 @@ F 3 "~" H 13875 13500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP67
+L Sensi_Board-rescue:Test_Point-Connector TP67
 U 1 1 60F748CC
 P 13675 13650
 F 0 "TP67" V 13675 13825 50  0000 L CNN
@@ -2629,7 +2629,7 @@ F 3 "~" H 13875 13650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP68
+L Sensi_Board-rescue:Test_Point-Connector TP68
 U 1 1 60F749E8
 P 13675 13800
 F 0 "TP68" V 13675 13975 50  0000 L CNN
@@ -2640,7 +2640,7 @@ F 3 "~" H 13875 13800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP73
+L Sensi_Board-rescue:Test_Point-Connector TP73
 U 1 1 60F753CA
 P 16650 13350
 F 0 "TP73" V 16650 13525 50  0000 L CNN
@@ -2651,7 +2651,7 @@ F 3 "~" H 16850 13350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP74
+L Sensi_Board-rescue:Test_Point-Connector TP74
 U 1 1 60F75736
 P 16650 13500
 F 0 "TP74" V 16650 13675 50  0000 L CNN
@@ -2662,7 +2662,7 @@ F 3 "~" H 16850 13500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP75
+L Sensi_Board-rescue:Test_Point-Connector TP75
 U 1 1 60F75860
 P 16650 13650
 F 0 "TP75" V 16650 13825 50  0000 L CNN
@@ -2673,7 +2673,7 @@ F 3 "~" H 16850 13650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP76
+L Sensi_Board-rescue:Test_Point-Connector TP76
 U 1 1 60F7598C
 P 16650 13800
 F 0 "TP76" V 16650 13975 50  0000 L CNN
@@ -2684,7 +2684,7 @@ F 3 "~" H 16850 13800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP100
+L Sensi_Board-rescue:Test_Point-Connector TP100
 U 1 1 610380C9
 P 21475 10150
 F 0 "TP100" V 21475 10325 50  0000 L CNN
@@ -2696,7 +2696,7 @@ F 3 "~" H 21675 10150 50  0001 C CNN
 $EndComp
 Connection ~ 21475 10150
 $Comp
-L Connector:Test_Point TP87
+L Sensi_Board-rescue:Test_Point-Connector TP87
 U 1 1 61038A45
 P 21350 10300
 F 0 "TP87" V 21350 10475 50  0000 L CNN
@@ -2707,7 +2707,7 @@ F 3 "~" H 21550 10300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP81
+L Sensi_Board-rescue:Test_Point-Connector TP81
 U 1 1 6103B0B8
 P 18100 10000
 F 0 "TP81" V 18100 10175 50  0000 L CNN
@@ -2718,7 +2718,7 @@ F 3 "~" H 18300 10000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP31
+L Sensi_Board-rescue:Test_Point-Connector TP31
 U 1 1 6103CABC
 P 10800 4250
 F 0 "TP31" V 10800 4425 50  0000 L CNN
@@ -2729,7 +2729,7 @@ F 3 "~" H 11000 4250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP32
+L Sensi_Board-rescue:Test_Point-Connector TP32
 U 1 1 6103D35F
 P 10800 4400
 F 0 "TP32" V 10800 4575 50  0000 L CNN
@@ -2740,7 +2740,7 @@ F 3 "~" H 11000 4400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP33
+L Sensi_Board-rescue:Test_Point-Connector TP33
 U 1 1 6103D4C1
 P 10800 4800
 F 0 "TP33" V 10800 4975 50  0000 L CNN
@@ -2751,7 +2751,7 @@ F 3 "~" H 11000 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP34
+L Sensi_Board-rescue:Test_Point-Connector TP34
 U 1 1 6103D63D
 P 10800 4950
 F 0 "TP34" V 10800 5125 50  0000 L CNN
@@ -2762,7 +2762,7 @@ F 3 "~" H 11000 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP35
+L Sensi_Board-rescue:Test_Point-Connector TP35
 U 1 1 6103D7A1
 P 10800 5100
 F 0 "TP35" V 10800 5275 50  0000 L CNN
@@ -2773,7 +2773,7 @@ F 3 "~" H 11000 5100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP36
+L Sensi_Board-rescue:Test_Point-Connector TP36
 U 1 1 6103D90F
 P 10800 5250
 F 0 "TP36" V 10800 5425 50  0000 L CNN
@@ -2784,7 +2784,7 @@ F 3 "~" H 11000 5250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP2
+L Sensi_Board-rescue:Test_Point-Connector TP2
 U 1 1 6103DE85
 P 7050 5075
 F 0 "TP2" V 7050 5250 50  0000 L CNN
@@ -2795,7 +2795,7 @@ F 3 "~" H 7250 5075 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Test_Point TP86
+L Sensi_Board-rescue:Test_Point-Connector TP86
 U 1 1 6103ED04
 P 19225 8400
 F 0 "TP86" V 19225 8575 50  0000 L CNN
@@ -2825,7 +2825,7 @@ HS_OUT7
 Text Label 3675 9475 2    60   ~ 0
 HS_OUT8
 $Comp
-L Connector:Conn_02x10_Odd_Even J1
+L Sensi_Board-rescue:Conn_02x10_Odd_Even-Connector J1
 U 1 1 617C94CC
 P 2650 9175
 F 0 "J1" H 2700 9792 50  0000 C CNN
@@ -2919,7 +2919,7 @@ GPIO1_EXT
 Text Label 1775 9675 0    60   ~ 0
 GPIO2_EXT
 $Comp
-L Connector:Test_Point TP1
+L Sensi_Board-rescue:Test_Point-Connector TP1
 U 1 1 6268C25D
 P 5750 5425
 F 0 "TP1" V 5750 5600 50  0000 L CNN
@@ -2935,7 +2935,7 @@ Connection ~ 5750 5575
 Wire Wire Line
 	5750 5575 5825 5575
 $Comp
-L regul:LD1117S33TR_SOT223 U2
+L Sensi_Board-rescue:LD1117S33TR_SOT223-regul U2
 U 1 1 626E7F61
 P 21075 5600
 F 0 "U2" H 21075 5842 50  0000 C CNN
@@ -2990,7 +2990,7 @@ $EndComp
 Wire Wire Line
 	21075 6100 21075 5900
 $Comp
-L device:C C10
+L Sensi_Board-rescue:C-device C10
 U 1 1 6284DC97
 P 20425 5875
 F 0 "C10" H 20275 5825 50  0000 C CNN
@@ -3002,7 +3002,7 @@ F 4 "105-001" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:C C11
+L Sensi_Board-rescue:C-device C11
 U 1 1 6284E823
 P 21675 5875
 F 0 "C11" H 21525 5825 50  0000 C CNN
@@ -3046,7 +3046,7 @@ Connection ~ 20425 5600
 Wire Wire Line
 	20425 6025 20425 6100
 $Comp
-L device:CP C13
+L Sensi_Board-rescue:CP-device C13
 U 1 1 62A0ADAE
 P 22100 5875
 F 0 "C13" H 22218 5921 50  0000 L CNN
@@ -3085,7 +3085,7 @@ Wire Notes Line
 Text Notes 20100 6600 0    60   ~ 0
 Optional on-bord PSU for standalone applications
 $Comp
-L device:D D32
+L Sensi_Board-rescue:D-device D32
 U 1 1 62B97E68
 P 21050 5250
 F 0 "D32" H 21050 5466 50  0000 C CNN
@@ -3125,7 +3125,7 @@ OUT1_NO
 Text Label 2850 12275 0    60   ~ 0
 OUT1_NC
 $Comp
-L Connector:Conn_02x08_Odd_Even J6
+L Sensi_Board-rescue:Conn_02x08_Odd_Even-Connector J6
 U 1 1 5D754959
 P 5550 9175
 F 0 "J6" H 5600 9692 50  0000 C CNN
@@ -3141,7 +3141,7 @@ OUT1_COM
 Text Label 6575 8875 2    60   ~ 0
 OUT1_COM
 $Comp
-L device:R R11
+L Sensi_Board-rescue:R-device R11
 U 1 1 5D759453
 P 21250 9175
 F 0 "R11" H 21125 9100 50  0000 C CNN
@@ -3357,7 +3357,7 @@ Wire Wire Line
 	19225 8925 19225 9000
 Connection ~ 19225 9000
 $Comp
-L device:R R149
+L Sensi_Board-rescue:R-device R149
 U 1 1 5CC4B709
 P 1875 4475
 F 0 "R149" V 1825 4225 50  0000 C CNN
@@ -3377,7 +3377,7 @@ ADC5
 Text Label 12250 10325 2    60   ~ 0
 ADC5_OPT
 $Comp
-L Connector:Test_Point TP101
+L Sensi_Board-rescue:Test_Point-Connector TP101
 U 1 1 5D0F8C0F
 P 16100 1625
 F 0 "TP101" H 16175 1750 50  0000 L CNN
@@ -3391,7 +3391,7 @@ Connection ~ 16100 1625
 Wire Wire Line
 	16100 1625 16300 1625
 $Comp
-L Connector:Test_Point TP102
+L Sensi_Board-rescue:Test_Point-Connector TP102
 U 1 1 5D0FA000
 P 16100 1825
 F 0 "TP102" H 16175 1950 50  0000 L CNN
@@ -3405,7 +3405,7 @@ Connection ~ 16100 1825
 Wire Wire Line
 	16100 1825 16300 1825
 $Comp
-L Connector:Test_Point TP103
+L Sensi_Board-rescue:Test_Point-Connector TP103
 U 1 1 5D0FA7DA
 P 16100 2025
 F 0 "TP103" H 16175 2150 50  0000 L CNN
@@ -3419,7 +3419,7 @@ Connection ~ 16100 2025
 Wire Wire Line
 	16100 2025 16000 2025
 $Comp
-L Connector:Test_Point TP104
+L Sensi_Board-rescue:Test_Point-Connector TP104
 U 1 1 5D0FAC40
 P 16100 2225
 F 0 "TP104" H 16175 2350 50  0000 L CNN
@@ -3433,7 +3433,7 @@ Connection ~ 16100 2225
 Wire Wire Line
 	16100 2225 16000 2225
 $Comp
-L Connector:Test_Point TP105
+L Sensi_Board-rescue:Test_Point-Connector TP105
 U 1 1 5D0FAD9C
 P 16100 2425
 F 0 "TP105" H 16175 2550 50  0000 L CNN
@@ -3458,7 +3458,7 @@ F 3 "~" H 14950 9150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R150
+L Sensi_Board-rescue:R-device R150
 U 1 1 5CC71CA4
 P 15225 8600
 F 0 "R150" V 15125 8525 50  0000 C CNN
@@ -3470,7 +3470,7 @@ F 4 "101-008" H 600 -200 50  0001 C CNN "Devtank"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:C C19
+L Sensi_Board-rescue:C-device C19
 U 1 1 5CC7249B
 P 15225 8425
 F 0 "C19" V 14973 8425 50  0000 C CNN
@@ -3522,7 +3522,7 @@ F 3 "~" H 4575 14375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R151
+L Sensi_Board-rescue:R-device R151
 U 1 1 5CFA9145
 P 15225 9025
 F 0 "R151" V 15125 8950 50  0000 C CNN
@@ -3534,7 +3534,7 @@ F 4 "101-008" H 600 -200 50  0001 C CNN "Devtank"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:C C53
+L Sensi_Board-rescue:C-device C53
 U 1 1 5D13EE6D
 P 15225 8875
 F 0 "C53" V 15150 8725 50  0000 C CNN
@@ -3572,7 +3572,7 @@ F0 "Temperature" 60
 F1 "Temperature.sch" 60
 $EndSheet
 Text Notes 8225 2600 0    60   ~ 0
-4off High side switches (12/24V)\n4off RTD's\n4off thermocouple\n4off 4-20mA\n4off 0-5V analogue \n6off digital inputs\n6off digital outputs\nMotor control output?\n
+4off High side switches (12/24V)\n4off RTD's\n4off thermocouple\n4off 4-20mA\n4off 0-5V analogue \n6off digital inputs\n6off digital outputs\n\n
 $Sheet
 S 9000 13125 1800 2050
 U 5C358B39
@@ -3675,4 +3675,11 @@ Text Label 13850 4525 0    60   ~ 0
 USB_DATA_N
 Text Label 13850 4625 0    60   ~ 0
 USB_DATA_P
+$Sheet
+S 15350 10750 2200 1400
+U 5D71D9AB
+F0 "RTDinputs" 60
+F1 "RTDinputs.sch" 60
+F2 "ffddg" I L 15350 10950 60 
+$EndSheet
 $EndSCHEMATC
