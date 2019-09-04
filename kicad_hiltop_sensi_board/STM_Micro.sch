@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 8 9
+Sheet 7 11
 Title ""
 Date ""
 Rev ""
@@ -270,32 +270,6 @@ F 4 "101-010" H 0   0   50  0001 C CNN "Devtank"
 	1    2725 2850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Sensi_Board-rescue:R-device R117
-U 1 1 5F95CDB1
-P 2550 3500
-F 0 "R117" H 2620 3546 50  0000 L CNN
-F 1 "10K" H 2620 3455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2480 3500 50  0001 C CNN
-F 3 "" H 2550 3500 50  0001 C CNN
-F 4 "101-010" H 0   0   50  0001 C CNN "Devtank"
-	1    2550 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 3350 2550 3275
-Connection ~ 2550 3275
-$Comp
-L power:GND #PWR0181
-U 1 1 5F95E215
-P 2550 3700
-F 0 "#PWR0181" H 2550 3450 50  0001 C CNN
-F 1 "GND" H 2555 3527 50  0000 C CNN
-F 2 "" H 2550 3700 50  0001 C CNN
-F 3 "" H 2550 3700 50  0001 C CNN
-	1    2550 3700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2725 3000 2725 3075
 Connection ~ 2725 3075
@@ -314,8 +288,6 @@ Wire Wire Line
 	2725 2625 2725 2700
 Wire Wire Line
 	2300 3075 2725 3075
-Wire Wire Line
-	2125 3275 2550 3275
 Text HLabel 2300 3075 0    60   Input ~ 0
 NRST
 Text HLabel 2125 3275 0    60   Input ~ 0
@@ -544,10 +516,6 @@ Wire Wire Line
 	2550 4700 2550 4625
 Wire Wire Line
 	2550 4625 2675 4625
-Wire Wire Line
-	2550 3650 2550 3700
-Wire Wire Line
-	2550 3275 4400 3275
 Wire Wire Line
 	2975 4075 3050 4075
 Connection ~ 3050 4075
@@ -803,4 +771,6 @@ Text HLabel 11800 4975 2    60   BiDi ~ 0
 GPIO8
 Text HLabel 3925 4975 0    60   Input ~ 0
 ADC13
+Wire Wire Line
+	2125 3275 4400 3275
 $EndSCHEMATC

@@ -241,6 +241,11 @@ D Precision Rail to Rail Opamp
 K dual opamp rail to rail 20mHz
 $ENDCMP
 #
+$CMP AD8646
+D Precision Rail to Rail Opamp
+K dual opamp rail to rail 20mHz
+$ENDCMP
+#
 $CMP ADC128S052
 D 12-bit ADC, 8 Channels, SPI compatible, TSSOP-16
 K 12bit ADC 8 Channels TSSOP SPI
@@ -574,6 +579,11 @@ $CMP TXS0108E
 D 8-bit bidirectional voltage level translator with auto-direction sensing
 K bidirectional voltage level translator
 F http://www.ti.com/lit/ds/symlink/txs0108e.pdf
+$ENDCMP
+#
+$CMP USB2502
+D USB2517
+F DOCUMENTATION
 $ENDCMP
 #
 $CMP USB2517_0

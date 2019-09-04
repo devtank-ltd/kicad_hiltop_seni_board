@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 11693 16535 portrait
 encoding utf-8
-Sheet 2 9
+Sheet 2 11
 Title ""
 Date ""
 Rev ""
@@ -14,649 +14,73 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Sensi_Board-rescue:R-device R23
-U 1 1 5BB25688
-P 1725 1525
-AR Path="/5BC9D0F6/5BB25688" Ref="R23"  Part="1" 
-AR Path="/5F14ACC5/5BB25688" Ref="R?"  Part="1" 
-F 0 "R23" V 1518 1525 50  0000 C CNN
-F 1 "330R" V 1609 1525 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1655 1525 50  0001 C CNN
-F 3 "" H 1725 1525 50  0001 C CNN
-F 4 "101-024" H 0   0   50  0001 C CNN "Devtank"
-	1    1725 1525
-	0    1    1    0   
-$EndComp
-$Comp
-L Sensi_Board-rescue:R-device R20
-U 1 1 5BB25A8B
-P 1700 2700
-AR Path="/5BC9D0F6/5BB25A8B" Ref="R20"  Part="1" 
-AR Path="/5F14ACC5/5BB25A8B" Ref="R?"  Part="1" 
-F 0 "R20" V 1493 2700 50  0000 C CNN
-F 1 "330R" V 1584 2700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 2700 50  0001 C CNN
-F 3 "" H 1700 2700 50  0001 C CNN
-F 4 "101-024" H 0   0   50  0001 C CNN "Devtank"
-	1    1700 2700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1550 2700 1400 2700
-$Comp
-L Sensi_Board-rescue:C-device C20
-U 1 1 5BB35C7B
-P 4350 1950
-AR Path="/5BC9D0F6/5BB35C7B" Ref="C20"  Part="1" 
-AR Path="/5F14ACC5/5BB35C7B" Ref="C?"  Part="1" 
-F 0 "C20" H 4465 1996 50  0000 L CNN
-F 1 "100nF" H 4465 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4388 1800 50  0001 C CNN
-F 3 "" H 4350 1950 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    4350 1950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2500 2700 2000 2700
-Wire Wire Line
-	1875 1525 2000 1525
-Text HLabel 1425 1525 0    60   Input ~ 0
-3V3_SENSE1
-Text HLabel 1325 7925 0    60   Input ~ 0
+Text HLabel 1525 2500 0    60   Input ~ 0
 5V_SENSE1
-Text HLabel 6250 8575 0    60   Input ~ 0
-5V_SENSE2
-Text HLabel 4650 1625 2    60   Output ~ 0
-3V3_ADC_CH1
-Text HLabel 1425 3900 0    60   Input ~ 0
-3V3_SENSE3
-Text HLabel 1400 5075 0    60   Input ~ 0
-3V3_SENSE4
-Text HLabel 1425 6350 0    60   Input ~ 0
-3V3_SENSE5
-Text HLabel 6225 4950 0    60   Input ~ 0
-12V_SENSE2
-Text HLabel 6250 6825 0    60   Input ~ 0
-12V_SENSE3
-Text HLabel 4650 2800 2    60   Output ~ 0
-3V3_ADC_CH2
-Text HLabel 4650 4000 2    60   Output ~ 0
-3V3_ADC_CH3
-Text HLabel 4650 5175 2    60   Output ~ 0
-3V3_ADC_CH4
-Text HLabel 4650 6450 2    60   Output ~ 0
-3V3_ADC_CH5
-Text HLabel 4825 8575 2    60   Output ~ 0
+Text HLabel 5025 3150 2    60   Output ~ 0
 5V_ADC_CH1
-Text HLabel 10225 9225 2    60   Output ~ 0
-5V_ADC_CH2
-Text HLabel 10250 3850 2    60   Output ~ 0
-12V_ADC_CH1
-Text HLabel 10250 5600 2    60   Output ~ 0
-12V_ADC_CH2
-Text HLabel 10275 7475 2    60   Output ~ 0
-12V_ADC_CH3
-Text HLabel 6225 3200 0    60   Input ~ 0
-12V_SENSE1
 Wire Wire Line
-	1425 1525 1575 1525
-$Comp
-L Sensi_Board-rescue:OPA2340-linear U4
-U 1 1 5C4E9C83
-P 2800 1625
-AR Path="/5BC9D0F6/5C4E9C83" Ref="U4"  Part="1" 
-AR Path="/5F14ACC5/5C4E9C83" Ref="U?"  Part="1" 
-F 0 "U4" H 2950 1500 50  0000 L CNN
-F 1 "OPA197IDR" H 2950 1425 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 1625 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa4340.pdf" H 2800 1625 50  0001 C CNN
-F 4 "120-004" H 2800 1625 50  0001 C CNN "Devtank"
-	1    2800 1625
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensi_Board-rescue:OPA2340-linear U4
-U 2 1 5C4E9E6C
-P 2800 2800
-AR Path="/5BC9D0F6/5C4E9E6C" Ref="U4"  Part="2" 
-AR Path="/5F14ACC5/5C4E9E6C" Ref="U?"  Part="2" 
-F 0 "U4" H 3025 2675 50  0000 L CNN
-F 1 "OPA197IDR" H 3000 2600 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 2800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa4340.pdf" H 2800 2800 50  0001 C CNN
-F 4 "120-004" H 0   0   50  0001 C CNN "Devtank"
-	2    2800 2800
-	1    0    0    -1  
-$EndComp
+	3475 3150 3850 3150
 Wire Wire Line
-	2500 1725 2300 1725
+	2875 3250 2675 3250
 Wire Wire Line
-	2300 1725 2300 2225
+	2675 3250 2675 3725
 Wire Wire Line
-	2300 2225 3475 2225
+	2675 3725 3850 3725
 Wire Wire Line
-	3475 2225 3475 1625
-Wire Wire Line
-	3475 1625 3100 1625
-$Comp
-L power:GND #PWR057
-U 1 1 5C4EA72D
-P 2700 2000
-AR Path="/5BC9D0F6/5C4EA72D" Ref="#PWR057"  Part="1" 
-AR Path="/5F14ACC5/5C4EA72D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR057" H 2700 1750 50  0001 C CNN
-F 1 "GND" H 2705 1827 50  0000 C CNN
-F 2 "" H 2700 2000 50  0001 C CNN
-F 3 "" H 2700 2000 50  0001 C CNN
-	1    2700 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 2000 2700 1925
-Connection ~ 3475 1625
-Wire Wire Line
-	2700 1250 2700 1325
-Text HLabel 1400 2700 0    60   Input ~ 0
-3V3_SENSE2
-Wire Wire Line
-	3100 2800 3475 2800
-Wire Wire Line
-	2500 2900 2300 2900
-Wire Wire Line
-	2300 2900 2300 3375
-Wire Wire Line
-	2300 3375 3475 3375
-Wire Wire Line
-	3475 3375 3475 2800
-$Comp
-L Sensi_Board-rescue:R-device R30
-U 1 1 5C4EF0F1
-P 4050 1625
-AR Path="/5BC9D0F6/5C4EF0F1" Ref="R30"  Part="1" 
-AR Path="/5F14ACC5/5C4EF0F1" Ref="R?"  Part="1" 
-F 0 "R30" V 3843 1625 50  0000 C CNN
-F 1 "100R" V 3934 1625 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3980 1625 50  0001 C CNN
-F 3 "" H 4050 1625 50  0001 C CNN
-F 4 "101-018" H 0   0   50  0001 C CNN "Devtank"
-	1    4050 1625
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4350 1800 4350 1625
-Wire Wire Line
-	4350 1625 4200 1625
-Wire Wire Line
-	3475 1625 3900 1625
-$Comp
-L power:GND #PWR062
-U 1 1 5C4EFB11
-P 4350 2200
-AR Path="/5BC9D0F6/5C4EFB11" Ref="#PWR062"  Part="1" 
-AR Path="/5F14ACC5/5C4EFB11" Ref="#PWR?"  Part="1" 
-F 0 "#PWR062" H 4350 1950 50  0001 C CNN
-F 1 "GND" H 4355 2027 50  0000 C CNN
-F 2 "" H 4350 2200 50  0001 C CNN
-F 3 "" H 4350 2200 50  0001 C CNN
-	1    4350 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 2200 4350 2100
-$Comp
-L Sensi_Board-rescue:C-device C21
-U 1 1 5C4F00D3
-P 4350 3125
-AR Path="/5BC9D0F6/5C4F00D3" Ref="C21"  Part="1" 
-AR Path="/5F14ACC5/5C4F00D3" Ref="C?"  Part="1" 
-F 0 "C21" H 4465 3171 50  0000 L CNN
-F 1 "100nF" H 4465 3080 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4388 2975 50  0001 C CNN
-F 3 "" H 4350 3125 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    4350 3125
-	-1   0    0    1   
-$EndComp
-$Comp
-L Sensi_Board-rescue:R-device R31
-U 1 1 5C4F00DA
-P 4050 2800
-AR Path="/5BC9D0F6/5C4F00DA" Ref="R31"  Part="1" 
-AR Path="/5F14ACC5/5C4F00DA" Ref="R?"  Part="1" 
-F 0 "R31" V 3843 2800 50  0000 C CNN
-F 1 "100R" V 3934 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3980 2800 50  0001 C CNN
-F 3 "" H 4050 2800 50  0001 C CNN
-F 4 "101-018" H 0   0   50  0001 C CNN "Devtank"
-	1    4050 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4350 2975 4350 2800
-Wire Wire Line
-	4350 2800 4200 2800
-$Comp
-L power:GND #PWR063
-U 1 1 5C4F00E3
-P 4350 3375
-AR Path="/5BC9D0F6/5C4F00E3" Ref="#PWR063"  Part="1" 
-AR Path="/5F14ACC5/5C4F00E3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR063" H 4350 3125 50  0001 C CNN
-F 1 "GND" H 4355 3202 50  0000 C CNN
-F 2 "" H 4350 3375 50  0001 C CNN
-F 3 "" H 4350 3375 50  0001 C CNN
-	1    4350 3375
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 3375 4350 3275
-Wire Wire Line
-	3900 2800 3475 2800
-Connection ~ 3475 2800
-Wire Wire Line
-	4650 1625 4350 1625
-Connection ~ 4350 1625
-Wire Wire Line
-	4650 2800 4350 2800
-Connection ~ 4350 2800
-$Comp
-L Sensi_Board-rescue:R-device R24
-U 1 1 5C4F2356
-P 1725 3900
-AR Path="/5BC9D0F6/5C4F2356" Ref="R24"  Part="1" 
-AR Path="/5F14ACC5/5C4F2356" Ref="R?"  Part="1" 
-F 0 "R24" V 1518 3900 50  0000 C CNN
-F 1 "330R" V 1609 3900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1655 3900 50  0001 C CNN
-F 3 "" H 1725 3900 50  0001 C CNN
-F 4 "101-024" H 0   0   50  0001 C CNN "Devtank"
-	1    1725 3900
-	0    1    1    0   
-$EndComp
-$Comp
-L Sensi_Board-rescue:R-device R21
-U 1 1 5C4F235C
-P 1700 5075
-AR Path="/5BC9D0F6/5C4F235C" Ref="R21"  Part="1" 
-AR Path="/5F14ACC5/5C4F235C" Ref="R?"  Part="1" 
-F 0 "R21" V 1493 5075 50  0000 C CNN
-F 1 "330R" V 1584 5075 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 5075 50  0001 C CNN
-F 3 "" H 1700 5075 50  0001 C CNN
-F 4 "101-024" H 0   0   50  0001 C CNN "Devtank"
-	1    1700 5075
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1550 5075 1400 5075
-$Comp
-L Sensi_Board-rescue:C-device C22
-U 1 1 5C4F2363
-P 4350 4325
-AR Path="/5BC9D0F6/5C4F2363" Ref="C22"  Part="1" 
-AR Path="/5F14ACC5/5C4F2363" Ref="C?"  Part="1" 
-F 0 "C22" H 4465 4371 50  0000 L CNN
-F 1 "100nF" H 4465 4280 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4388 4175 50  0001 C CNN
-F 3 "" H 4350 4325 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    4350 4325
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2500 5075 2000 5075
-Wire Wire Line
-	1875 3900 2000 3900
-Wire Wire Line
-	1425 3900 1575 3900
-$Comp
-L Sensi_Board-rescue:OPA2340-linear U5
-U 1 1 5C4F236C
-P 2800 4000
-AR Path="/5BC9D0F6/5C4F236C" Ref="U5"  Part="1" 
-AR Path="/5F14ACC5/5C4F236C" Ref="U?"  Part="1" 
-F 0 "U5" H 2950 3875 50  0000 L CNN
-F 1 "OPA197IDR" H 2950 3800 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 4000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa4340.pdf" H 2800 4000 50  0001 C CNN
-F 4 "120-004" H 0   0   50  0001 C CNN "Devtank"
-	1    2800 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensi_Board-rescue:OPA2340-linear U5
-U 2 1 5C4F2372
-P 2800 5175
-AR Path="/5BC9D0F6/5C4F2372" Ref="U5"  Part="2" 
-AR Path="/5F14ACC5/5C4F2372" Ref="U?"  Part="2" 
-F 0 "U5" H 3025 5050 50  0000 L CNN
-F 1 "OPA197IDR" H 3000 4975 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 5175 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa4340.pdf" H 2800 5175 50  0001 C CNN
-F 4 "120-004" H 0   0   50  0001 C CNN "Devtank"
-	2    2800 5175
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 4100 2300 4100
-Wire Wire Line
-	2300 4100 2300 4600
-Wire Wire Line
-	2300 4600 3475 4600
-Wire Wire Line
-	3475 4600 3475 4000
-Wire Wire Line
-	3475 4000 3100 4000
-$Comp
-L power:GND #PWR059
-U 1 1 5C4F237D
-P 2700 4375
-AR Path="/5BC9D0F6/5C4F237D" Ref="#PWR059"  Part="1" 
-AR Path="/5F14ACC5/5C4F237D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR059" H 2700 4125 50  0001 C CNN
-F 1 "GND" H 2705 4202 50  0000 C CNN
-F 2 "" H 2700 4375 50  0001 C CNN
-F 3 "" H 2700 4375 50  0001 C CNN
-	1    2700 4375
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 4375 2700 4300
-Connection ~ 3475 4000
-Wire Wire Line
-	2700 3625 2700 3700
-Wire Wire Line
-	3100 5175 3475 5175
-Wire Wire Line
-	2500 5275 2300 5275
-Wire Wire Line
-	2300 5275 2300 5750
-Wire Wire Line
-	2300 5750 3475 5750
-Wire Wire Line
-	3475 5750 3475 5175
-$Comp
-L Sensi_Board-rescue:R-device R32
-U 1 1 5C4F2391
-P 4050 4000
-AR Path="/5BC9D0F6/5C4F2391" Ref="R32"  Part="1" 
-AR Path="/5F14ACC5/5C4F2391" Ref="R?"  Part="1" 
-F 0 "R32" V 3843 4000 50  0000 C CNN
-F 1 "100R" V 3934 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3980 4000 50  0001 C CNN
-F 3 "" H 4050 4000 50  0001 C CNN
-F 4 "101-018" H 0   0   50  0001 C CNN "Devtank"
-	1    4050 4000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4350 4175 4350 4000
-Wire Wire Line
-	4350 4000 4200 4000
-Wire Wire Line
-	3475 4000 3900 4000
-$Comp
-L power:GND #PWR064
-U 1 1 5C4F239A
-P 4350 4575
-AR Path="/5BC9D0F6/5C4F239A" Ref="#PWR064"  Part="1" 
-AR Path="/5F14ACC5/5C4F239A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR064" H 4350 4325 50  0001 C CNN
-F 1 "GND" H 4355 4402 50  0000 C CNN
-F 2 "" H 4350 4575 50  0001 C CNN
-F 3 "" H 4350 4575 50  0001 C CNN
-	1    4350 4575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 4575 4350 4475
-$Comp
-L Sensi_Board-rescue:C-device C23
-U 1 1 5C4F23A1
-P 4350 5500
-AR Path="/5BC9D0F6/5C4F23A1" Ref="C23"  Part="1" 
-AR Path="/5F14ACC5/5C4F23A1" Ref="C?"  Part="1" 
-F 0 "C23" H 4465 5546 50  0000 L CNN
-F 1 "100nF" H 4465 5455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4388 5350 50  0001 C CNN
-F 3 "" H 4350 5500 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    4350 5500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Sensi_Board-rescue:R-device R33
-U 1 1 5C4F23A7
-P 4050 5175
-AR Path="/5BC9D0F6/5C4F23A7" Ref="R33"  Part="1" 
-AR Path="/5F14ACC5/5C4F23A7" Ref="R?"  Part="1" 
-F 0 "R33" V 3843 5175 50  0000 C CNN
-F 1 "100R" V 3934 5175 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3980 5175 50  0001 C CNN
-F 3 "" H 4050 5175 50  0001 C CNN
-F 4 "101-018" H 0   0   50  0001 C CNN "Devtank"
-	1    4050 5175
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4350 5350 4350 5175
-Wire Wire Line
-	4350 5175 4200 5175
-$Comp
-L power:GND #PWR065
-U 1 1 5C4F23AF
-P 4350 5750
-AR Path="/5BC9D0F6/5C4F23AF" Ref="#PWR065"  Part="1" 
-AR Path="/5F14ACC5/5C4F23AF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR065" H 4350 5500 50  0001 C CNN
-F 1 "GND" H 4355 5577 50  0000 C CNN
-F 2 "" H 4350 5750 50  0001 C CNN
-F 3 "" H 4350 5750 50  0001 C CNN
-	1    4350 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 5750 4350 5650
-Wire Wire Line
-	3900 5175 3475 5175
-Connection ~ 3475 5175
-Wire Wire Line
-	4650 4000 4350 4000
-Connection ~ 4350 4000
-Wire Wire Line
-	4650 5175 4350 5175
-Connection ~ 4350 5175
-$Comp
-L Sensi_Board-rescue:R-device R22
-U 1 1 5C4F7D07
-P 1700 6350
-AR Path="/5BC9D0F6/5C4F7D07" Ref="R22"  Part="1" 
-AR Path="/5F14ACC5/5C4F7D07" Ref="R?"  Part="1" 
-F 0 "R22" V 1493 6350 50  0000 C CNN
-F 1 "330R" V 1584 6350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 6350 50  0001 C CNN
-F 3 "" H 1700 6350 50  0001 C CNN
-F 4 "101-024" H 0   0   50  0001 C CNN "Devtank"
-	1    1700 6350
-	0    1    1    0   
-$EndComp
-$Comp
-L Sensi_Board-rescue:C-device C24
-U 1 1 5C4F7D14
-P 4350 6775
-AR Path="/5BC9D0F6/5C4F7D14" Ref="C24"  Part="1" 
-AR Path="/5F14ACC5/5C4F7D14" Ref="C?"  Part="1" 
-F 0 "C24" H 4465 6821 50  0000 L CNN
-F 1 "100nF" H 4465 6730 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4388 6625 50  0001 C CNN
-F 3 "" H 4350 6775 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    4350 6775
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1850 6350 2000 6350
-Wire Wire Line
-	1425 6350 1550 6350
-$Comp
-L Sensi_Board-rescue:OPA2340-linear U6
-U 1 1 5C4F7D1D
-P 2800 6450
-AR Path="/5BC9D0F6/5C4F7D1D" Ref="U6"  Part="1" 
-AR Path="/5F14ACC5/5C4F7D1D" Ref="U?"  Part="1" 
-F 0 "U6" H 2950 6325 50  0000 L CNN
-F 1 "OPA197IDR" H 2950 6250 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 6450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa4340.pdf" H 2800 6450 50  0001 C CNN
-F 4 "120-004" H 0   0   50  0001 C CNN "Devtank"
-	1    2800 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensi_Board-rescue:OPA2340-linear U6
-U 2 1 5C4F7D23
-P 2975 8575
-AR Path="/5BC9D0F6/5C4F7D23" Ref="U6"  Part="2" 
-AR Path="/5F14ACC5/5C4F7D23" Ref="U?"  Part="2" 
-F 0 "U6" H 3200 8450 50  0000 L CNN
-F 1 "OPA197IDR" H 3175 8375 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2975 8575 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa4340.pdf" H 2975 8575 50  0001 C CNN
-F 4 "120-004" H 0   0   50  0001 C CNN "Devtank"
-	2    2975 8575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 6550 2300 6550
-Wire Wire Line
-	2300 6550 2300 7050
-Wire Wire Line
-	2300 7050 3475 7050
-Wire Wire Line
-	3475 7050 3475 6450
-Wire Wire Line
-	3475 6450 3100 6450
-$Comp
-L power:GND #PWR061
-U 1 1 5C4F7D2E
-P 2700 6825
-AR Path="/5BC9D0F6/5C4F7D2E" Ref="#PWR061"  Part="1" 
-AR Path="/5F14ACC5/5C4F7D2E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR061" H 2700 6575 50  0001 C CNN
-F 1 "GND" H 2705 6652 50  0000 C CNN
-F 2 "" H 2700 6825 50  0001 C CNN
-F 3 "" H 2700 6825 50  0001 C CNN
-	1    2700 6825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 6825 2700 6750
-Connection ~ 3475 6450
-Wire Wire Line
-	2700 6075 2700 6150
-Wire Wire Line
-	3275 8575 3650 8575
-Wire Wire Line
-	2675 8675 2475 8675
-Wire Wire Line
-	2475 8675 2475 9150
-Wire Wire Line
-	2475 9150 3650 9150
-Wire Wire Line
-	3650 9150 3650 8575
-$Comp
-L Sensi_Board-rescue:R-device R34
-U 1 1 5C4F7D42
-P 4050 6450
-AR Path="/5BC9D0F6/5C4F7D42" Ref="R34"  Part="1" 
-AR Path="/5F14ACC5/5C4F7D42" Ref="R?"  Part="1" 
-F 0 "R34" V 3843 6450 50  0000 C CNN
-F 1 "100R" V 3934 6450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3980 6450 50  0001 C CNN
-F 3 "" H 4050 6450 50  0001 C CNN
-F 4 "101-018" H 0   0   50  0001 C CNN "Devtank"
-	1    4050 6450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4350 6625 4350 6450
-Wire Wire Line
-	4350 6450 4200 6450
-Wire Wire Line
-	3475 6450 3900 6450
-$Comp
-L power:GND #PWR066
-U 1 1 5C4F7D4B
-P 4350 7025
-AR Path="/5BC9D0F6/5C4F7D4B" Ref="#PWR066"  Part="1" 
-AR Path="/5F14ACC5/5C4F7D4B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR066" H 4350 6775 50  0001 C CNN
-F 1 "GND" H 4355 6852 50  0000 C CNN
-F 2 "" H 4350 7025 50  0001 C CNN
-F 3 "" H 4350 7025 50  0001 C CNN
-	1    4350 7025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 7025 4350 6925
+	3850 3725 3850 3150
 $Comp
 L Sensi_Board-rescue:C-device C25
 U 1 1 5C4F7D52
-P 4525 8900
+P 4725 3475
 AR Path="/5BC9D0F6/5C4F7D52" Ref="C25"  Part="1" 
 AR Path="/5F14ACC5/5C4F7D52" Ref="C?"  Part="1" 
-F 0 "C25" H 4640 8946 50  0000 L CNN
-F 1 "100nF" H 4640 8855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4563 8750 50  0001 C CNN
-F 3 "" H 4525 8900 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    4525 8900
+F 0 "C25" H 4840 3521 50  0000 L CNN
+F 1 "100nF" H 4840 3430 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4763 3325 50  0001 C CNN
+F 3 "" H 4725 3475 50  0001 C CNN
+F 4 "105-002" H 200 -5425 50  0001 C CNN "Devtank"
+	1    4725 3475
 	-1   0    0    1   
 $EndComp
 $Comp
 L Sensi_Board-rescue:R-device R35
 U 1 1 5C4F7D58
-P 4225 8575
+P 4425 3150
 AR Path="/5BC9D0F6/5C4F7D58" Ref="R35"  Part="1" 
 AR Path="/5F14ACC5/5C4F7D58" Ref="R?"  Part="1" 
-F 0 "R35" V 4018 8575 50  0000 C CNN
-F 1 "100R" V 4109 8575 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4155 8575 50  0001 C CNN
-F 3 "" H 4225 8575 50  0001 C CNN
-F 4 "101-018" H 0   0   50  0001 C CNN "Devtank"
-	1    4225 8575
+F 0 "R35" V 4218 3150 50  0000 C CNN
+F 1 "100R" V 4309 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4355 3150 50  0001 C CNN
+F 3 "" H 4425 3150 50  0001 C CNN
+F 4 "101-018" H 200 -5425 50  0001 C CNN "Devtank"
+	1    4425 3150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4525 8750 4525 8575
+	4725 3325 4725 3150
 Wire Wire Line
-	4525 8575 4375 8575
+	4725 3150 4575 3150
 $Comp
 L power:GND #PWR067
 U 1 1 5C4F7D60
-P 4525 9150
+P 4725 3725
 AR Path="/5BC9D0F6/5C4F7D60" Ref="#PWR067"  Part="1" 
 AR Path="/5F14ACC5/5C4F7D60" Ref="#PWR?"  Part="1" 
-F 0 "#PWR067" H 4525 8900 50  0001 C CNN
-F 1 "GND" H 4530 8977 50  0000 C CNN
-F 2 "" H 4525 9150 50  0001 C CNN
-F 3 "" H 4525 9150 50  0001 C CNN
-	1    4525 9150
+F 0 "#PWR067" H 4725 3475 50  0001 C CNN
+F 1 "GND" H 4730 3552 50  0000 C CNN
+F 2 "" H 4725 3725 50  0001 C CNN
+F 3 "" H 4725 3725 50  0001 C CNN
+	1    4725 3725
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4525 9150 4525 9050
+	4725 3725 4725 3625
 Wire Wire Line
-	4075 8575 3650 8575
-Connection ~ 3650 8575
+	4275 3150 3850 3150
+Connection ~ 3850 3150
 Wire Wire Line
-	4650 6450 4350 6450
-Connection ~ 4350 6450
-Wire Wire Line
-	4825 8575 4525 8575
-Connection ~ 4525 8575
+	5025 3150 4725 3150
+Connection ~ 4725 3150
 $Comp
 L Sensi_Board-rescue:C-device C14
 U 1 1 5C4FA8D8
@@ -700,45 +124,6 @@ F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3V3 #PWR056
-U 1 1 5C4FC088
-P 2700 1250
-AR Path="/5BC9D0F6/5C4FC088" Ref="#PWR056"  Part="1" 
-AR Path="/5F14ACC5/5C4FC088" Ref="#PWR?"  Part="1" 
-F 0 "#PWR056" H 2700 1100 50  0001 C CNN
-F 1 "+3V3" H 2715 1423 50  0000 C CNN
-F 2 "" H 2700 1250 50  0001 C CNN
-F 3 "" H 2700 1250 50  0001 C CNN
-	1    2700 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR058
-U 1 1 5C4FC1A9
-P 2700 3625
-AR Path="/5BC9D0F6/5C4FC1A9" Ref="#PWR058"  Part="1" 
-AR Path="/5F14ACC5/5C4FC1A9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR058" H 2700 3475 50  0001 C CNN
-F 1 "+3V3" H 2675 3775 50  0000 C CNN
-F 2 "" H 2700 3625 50  0001 C CNN
-F 3 "" H 2700 3625 50  0001 C CNN
-	1    2700 3625
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR060
-U 1 1 5C4FC5E8
-P 2700 6075
-AR Path="/5BC9D0F6/5C4FC5E8" Ref="#PWR060"  Part="1" 
-AR Path="/5F14ACC5/5C4FC5E8" Ref="#PWR?"  Part="1" 
-F 0 "#PWR060" H 2700 5925 50  0001 C CNN
-F 1 "+3V3" H 2675 6225 50  0000 C CNN
-F 2 "" H 2700 6075 50  0001 C CNN
-F 3 "" H 2700 6075 50  0001 C CNN
-	1    2700 6075
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR049
 U 1 1 5C4FD83E
 P 1925 12900
@@ -767,482 +152,57 @@ $EndComp
 $Comp
 L Sensi_Board-rescue:R-device R18
 U 1 1 5C7680D6
-P 1425 8200
+P 1625 2775
 AR Path="/5BC9D0F6/5C7680D6" Ref="R18"  Part="1" 
 AR Path="/5F14ACC5/5C7680D6" Ref="R?"  Part="1" 
-F 0 "R18" H 1300 8150 50  0000 C CNN
-F 1 "10K" H 1250 8250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1355 8200 50  0001 C CNN
-F 3 "" H 1425 8200 50  0001 C CNN
-F 4 "101-010" H 0   0   50  0001 C CNN "Devtank"
-	1    1425 8200
+F 0 "R18" H 1500 2725 50  0000 C CNN
+F 1 "10K" H 1450 2825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1555 2775 50  0001 C CNN
+F 3 "" H 1625 2775 50  0001 C CNN
+F 4 "101-010" H 200 -5425 50  0001 C CNN "Devtank"
+	1    1625 2775
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1425 8475 1425 8350
+	1625 3050 1625 2925
 $Comp
 L Sensi_Board-rescue:R-device R19
 U 1 1 5C76B393
-P 1425 8775
+P 1625 3350
 AR Path="/5BC9D0F6/5C76B393" Ref="R19"  Part="1" 
 AR Path="/5F14ACC5/5C76B393" Ref="R?"  Part="1" 
-F 0 "R19" H 1300 8725 50  0000 C CNN
-F 1 "16K" H 1250 8825 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1355 8775 50  0001 C CNN
-F 3 "" H 1425 8775 50  0001 C CNN
-F 4 "101-052" H 0   0   50  0001 C CNN "Devtank"
-	1    1425 8775
+F 0 "R19" H 1500 3300 50  0000 C CNN
+F 1 "16K" H 1450 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1555 3350 50  0001 C CNN
+F 3 "" H 1625 3350 50  0001 C CNN
+F 4 "101-052" H 200 -5425 50  0001 C CNN "Devtank"
+	1    1625 3350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1425 8475 2675 8475
+	1625 3050 2875 3050
 Wire Wire Line
-	1425 8625 1425 8475
-Connection ~ 1425 8475
+	1625 3200 1625 3050
+Connection ~ 1625 3050
 $Comp
 L power:GND #PWR048
 U 1 1 5C770D55
-P 1425 9000
+P 1625 3575
 AR Path="/5BC9D0F6/5C770D55" Ref="#PWR048"  Part="1" 
 AR Path="/5F14ACC5/5C770D55" Ref="#PWR?"  Part="1" 
-F 0 "#PWR048" H 1425 8750 50  0001 C CNN
-F 1 "GND" H 1430 8827 50  0000 C CNN
-F 2 "" H 1425 9000 50  0001 C CNN
-F 3 "" H 1425 9000 50  0001 C CNN
-	1    1425 9000
+F 0 "#PWR048" H 1625 3325 50  0001 C CNN
+F 1 "GND" H 1630 3402 50  0000 C CNN
+F 2 "" H 1625 3575 50  0001 C CNN
+F 3 "" H 1625 3575 50  0001 C CNN
+	1    1625 3575
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1425 8925 1425 9000
+	1625 3500 1625 3575
 Wire Wire Line
-	1425 8050 1425 7925
+	1625 2625 1625 2500
 Wire Wire Line
-	1325 7925 1425 7925
-$Comp
-L Sensi_Board-rescue:C-device C26
-U 1 1 5C7A1E5F
-P 9950 4175
-AR Path="/5BC9D0F6/5C7A1E5F" Ref="C26"  Part="1" 
-AR Path="/5F14ACC5/5C7A1E5F" Ref="C?"  Part="1" 
-F 0 "C26" H 10065 4221 50  0000 L CNN
-F 1 "100nF" H 10065 4130 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9988 4025 50  0001 C CNN
-F 3 "" H 9950 4175 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    9950 4175
-	-1   0    0    1   
-$EndComp
-$Comp
-L Sensi_Board-rescue:OPA2340-linear U7
-U 1 1 5C7A1E65
-P 8400 3850
-AR Path="/5BC9D0F6/5C7A1E65" Ref="U7"  Part="1" 
-AR Path="/5F14ACC5/5C7A1E65" Ref="U?"  Part="1" 
-F 0 "U7" H 8550 3725 50  0000 L CNN
-F 1 "OPA197IDR" H 8550 3650 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8400 3850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa4340.pdf" H 8400 3850 50  0001 C CNN
-F 4 "120-004" H 0   0   50  0001 C CNN "Devtank"
-	1    8400 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensi_Board-rescue:OPA2340-linear U7
-U 2 1 5C7A1E6B
-P 8400 5600
-AR Path="/5BC9D0F6/5C7A1E6B" Ref="U7"  Part="2" 
-AR Path="/5F14ACC5/5C7A1E6B" Ref="U?"  Part="2" 
-F 0 "U7" H 8625 5475 50  0000 L CNN
-F 1 "OPA197IDR" H 8600 5400 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8400 5600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa4340.pdf" H 8400 5600 50  0001 C CNN
-F 4 "120-004" H 0   0   50  0001 C CNN "Devtank"
-	2    8400 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 3950 7900 3950
-Wire Wire Line
-	7900 3950 7900 4450
-Wire Wire Line
-	7900 4450 9075 4450
-Wire Wire Line
-	9075 4450 9075 3850
-Wire Wire Line
-	9075 3850 8700 3850
-$Comp
-L power:GND #PWR073
-U 1 1 5C7A1E76
-P 8300 4225
-AR Path="/5BC9D0F6/5C7A1E76" Ref="#PWR073"  Part="1" 
-AR Path="/5F14ACC5/5C7A1E76" Ref="#PWR?"  Part="1" 
-F 0 "#PWR073" H 8300 3975 50  0001 C CNN
-F 1 "GND" H 8305 4052 50  0000 C CNN
-F 2 "" H 8300 4225 50  0001 C CNN
-F 3 "" H 8300 4225 50  0001 C CNN
-	1    8300 4225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 4225 8300 4150
-Connection ~ 9075 3850
-Wire Wire Line
-	8300 3475 8300 3550
-Wire Wire Line
-	8700 5600 9075 5600
-Wire Wire Line
-	8100 5700 7900 5700
-Wire Wire Line
-	7900 5700 7900 6175
-Wire Wire Line
-	7900 6175 9075 6175
-Wire Wire Line
-	9075 6175 9075 5600
-$Comp
-L Sensi_Board-rescue:R-device R44
-U 1 1 5C7A1E84
-P 9650 3850
-AR Path="/5BC9D0F6/5C7A1E84" Ref="R44"  Part="1" 
-AR Path="/5F14ACC5/5C7A1E84" Ref="R?"  Part="1" 
-F 0 "R44" V 9443 3850 50  0000 C CNN
-F 1 "100R" V 9534 3850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9580 3850 50  0001 C CNN
-F 3 "" H 9650 3850 50  0001 C CNN
-F 4 "101-018" H 0   0   50  0001 C CNN "Devtank"
-	1    9650 3850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9950 4025 9950 3850
-Wire Wire Line
-	9950 3850 9800 3850
-Wire Wire Line
-	9075 3850 9500 3850
-$Comp
-L power:GND #PWR076
-U 1 1 5C7A1E8D
-P 9950 4425
-AR Path="/5BC9D0F6/5C7A1E8D" Ref="#PWR076"  Part="1" 
-AR Path="/5F14ACC5/5C7A1E8D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR076" H 9950 4175 50  0001 C CNN
-F 1 "GND" H 9955 4252 50  0000 C CNN
-F 2 "" H 9950 4425 50  0001 C CNN
-F 3 "" H 9950 4425 50  0001 C CNN
-	1    9950 4425
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9950 4425 9950 4325
-$Comp
-L Sensi_Board-rescue:C-device C27
-U 1 1 5C7A1E94
-P 9950 5925
-AR Path="/5BC9D0F6/5C7A1E94" Ref="C27"  Part="1" 
-AR Path="/5F14ACC5/5C7A1E94" Ref="C?"  Part="1" 
-F 0 "C27" H 10065 5971 50  0000 L CNN
-F 1 "100nF" H 10065 5880 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9988 5775 50  0001 C CNN
-F 3 "" H 9950 5925 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    9950 5925
-	-1   0    0    1   
-$EndComp
-$Comp
-L Sensi_Board-rescue:R-device R45
-U 1 1 5C7A1E9A
-P 9650 5600
-AR Path="/5BC9D0F6/5C7A1E9A" Ref="R45"  Part="1" 
-AR Path="/5F14ACC5/5C7A1E9A" Ref="R?"  Part="1" 
-F 0 "R45" V 9443 5600 50  0000 C CNN
-F 1 "100R" V 9534 5600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9580 5600 50  0001 C CNN
-F 3 "" H 9650 5600 50  0001 C CNN
-F 4 "101-018" H 0   0   50  0001 C CNN "Devtank"
-	1    9650 5600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9950 5775 9950 5600
-Wire Wire Line
-	9950 5600 9800 5600
-$Comp
-L power:GND #PWR077
-U 1 1 5C7A1EA2
-P 9950 6175
-AR Path="/5BC9D0F6/5C7A1EA2" Ref="#PWR077"  Part="1" 
-AR Path="/5F14ACC5/5C7A1EA2" Ref="#PWR?"  Part="1" 
-F 0 "#PWR077" H 9950 5925 50  0001 C CNN
-F 1 "GND" H 9955 6002 50  0000 C CNN
-F 2 "" H 9950 6175 50  0001 C CNN
-F 3 "" H 9950 6175 50  0001 C CNN
-	1    9950 6175
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9950 6175 9950 6075
-Wire Wire Line
-	9500 5600 9075 5600
-Connection ~ 9075 5600
-Wire Wire Line
-	10250 3850 9950 3850
-Connection ~ 9950 3850
-Wire Wire Line
-	10250 5600 9950 5600
-Connection ~ 9950 5600
-$Comp
-L power:+3V3 #PWR072
-U 1 1 5C7A1EAF
-P 8300 3475
-AR Path="/5BC9D0F6/5C7A1EAF" Ref="#PWR072"  Part="1" 
-AR Path="/5F14ACC5/5C7A1EAF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR072" H 8300 3325 50  0001 C CNN
-F 1 "+3V3" H 8315 3648 50  0000 C CNN
-F 2 "" H 8300 3475 50  0001 C CNN
-F 3 "" H 8300 3475 50  0001 C CNN
-	1    8300 3475
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensi_Board-rescue:R-device R36
-U 1 1 5C7A1EB5
-P 6850 3475
-AR Path="/5BC9D0F6/5C7A1EB5" Ref="R36"  Part="1" 
-AR Path="/5F14ACC5/5C7A1EB5" Ref="R?"  Part="1" 
-F 0 "R36" H 6725 3425 50  0000 C CNN
-F 1 "10K" H 6675 3525 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6780 3475 50  0001 C CNN
-F 3 "" H 6850 3475 50  0001 C CNN
-F 4 "101-010" H 0   0   50  0001 C CNN "Devtank"
-	1    6850 3475
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6850 3750 6850 3625
-$Comp
-L Sensi_Board-rescue:R-device R37
-U 1 1 5C7A1EBC
-P 6850 4050
-AR Path="/5BC9D0F6/5C7A1EBC" Ref="R37"  Part="1" 
-AR Path="/5F14ACC5/5C7A1EBC" Ref="R?"  Part="1" 
-F 0 "R37" H 6725 4000 50  0000 C CNN
-F 1 "3K3" H 6675 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6780 4050 50  0001 C CNN
-F 3 "" H 6850 4050 50  0001 C CNN
-F 4 "101-013" H 0   0   50  0001 C CNN "Devtank"
-	1    6850 4050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6850 3750 8100 3750
-Wire Wire Line
-	6850 3900 6850 3750
-Connection ~ 6850 3750
-$Comp
-L power:GND #PWR068
-U 1 1 5C7A1EC5
-P 6850 4275
-AR Path="/5BC9D0F6/5C7A1EC5" Ref="#PWR068"  Part="1" 
-AR Path="/5F14ACC5/5C7A1EC5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR068" H 6850 4025 50  0001 C CNN
-F 1 "GND" H 6855 4102 50  0000 C CNN
-F 2 "" H 6850 4275 50  0001 C CNN
-F 3 "" H 6850 4275 50  0001 C CNN
-	1    6850 4275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6850 4200 6850 4275
-Wire Wire Line
-	6850 3325 6850 3200
-Wire Wire Line
-	6225 3200 6850 3200
-$Comp
-L Sensi_Board-rescue:R-device R38
-U 1 1 5C7A1ECE
-P 6850 5225
-AR Path="/5BC9D0F6/5C7A1ECE" Ref="R38"  Part="1" 
-AR Path="/5F14ACC5/5C7A1ECE" Ref="R?"  Part="1" 
-F 0 "R38" H 6725 5175 50  0000 C CNN
-F 1 "10K" H 6675 5275 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6780 5225 50  0001 C CNN
-F 3 "" H 6850 5225 50  0001 C CNN
-F 4 "101-010" H 0   0   50  0001 C CNN "Devtank"
-	1    6850 5225
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6850 5500 6850 5375
-Wire Wire Line
-	6850 5500 8100 5500
-Wire Wire Line
-	6850 5650 6850 5500
-Connection ~ 6850 5500
-$Comp
-L power:GND #PWR069
-U 1 1 5C7A1EDE
-P 6850 6025
-AR Path="/5BC9D0F6/5C7A1EDE" Ref="#PWR069"  Part="1" 
-AR Path="/5F14ACC5/5C7A1EDE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR069" H 6850 5775 50  0001 C CNN
-F 1 "GND" H 6855 5852 50  0000 C CNN
-F 2 "" H 6850 6025 50  0001 C CNN
-F 3 "" H 6850 6025 50  0001 C CNN
-	1    6850 6025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6850 5950 6850 6025
-Wire Wire Line
-	6850 5075 6850 4950
-Wire Wire Line
-	6225 4950 6850 4950
-$Comp
-L Sensi_Board-rescue:C-device C28
-U 1 1 5C7B0D6B
-P 9975 7800
-AR Path="/5BC9D0F6/5C7B0D6B" Ref="C28"  Part="1" 
-AR Path="/5F14ACC5/5C7B0D6B" Ref="C?"  Part="1" 
-F 0 "C28" H 10090 7846 50  0000 L CNN
-F 1 "100nF" H 10090 7755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10013 7650 50  0001 C CNN
-F 3 "" H 9975 7800 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    9975 7800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Sensi_Board-rescue:OPA2340-linear U8
-U 1 1 5C7B0D71
-P 8425 7475
-AR Path="/5BC9D0F6/5C7B0D71" Ref="U8"  Part="1" 
-AR Path="/5F14ACC5/5C7B0D71" Ref="U?"  Part="1" 
-F 0 "U8" H 8575 7350 50  0000 L CNN
-F 1 "OPA197IDR" H 8575 7275 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8425 7475 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa4340.pdf" H 8425 7475 50  0001 C CNN
-F 4 "120-004" H 0   0   50  0001 C CNN "Devtank"
-	1    8425 7475
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8125 7575 7925 7575
-Wire Wire Line
-	7925 7575 7925 8075
-Wire Wire Line
-	7925 8075 9100 8075
-Wire Wire Line
-	9100 8075 9100 7475
-Wire Wire Line
-	9100 7475 8725 7475
-$Comp
-L power:GND #PWR075
-U 1 1 5C7B0D82
-P 8325 7850
-AR Path="/5BC9D0F6/5C7B0D82" Ref="#PWR075"  Part="1" 
-AR Path="/5F14ACC5/5C7B0D82" Ref="#PWR?"  Part="1" 
-F 0 "#PWR075" H 8325 7600 50  0001 C CNN
-F 1 "GND" H 8330 7677 50  0000 C CNN
-F 2 "" H 8325 7850 50  0001 C CNN
-F 3 "" H 8325 7850 50  0001 C CNN
-	1    8325 7850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8325 7850 8325 7775
-Connection ~ 9100 7475
-Wire Wire Line
-	8325 7100 8325 7175
-$Comp
-L Sensi_Board-rescue:R-device R46
-U 1 1 5C7B0D90
-P 9675 7475
-AR Path="/5BC9D0F6/5C7B0D90" Ref="R46"  Part="1" 
-AR Path="/5F14ACC5/5C7B0D90" Ref="R?"  Part="1" 
-F 0 "R46" V 9468 7475 50  0000 C CNN
-F 1 "100R" V 9559 7475 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9605 7475 50  0001 C CNN
-F 3 "" H 9675 7475 50  0001 C CNN
-F 4 "101-018" H 0   0   50  0001 C CNN "Devtank"
-	1    9675 7475
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9975 7650 9975 7475
-Wire Wire Line
-	9975 7475 9825 7475
-Wire Wire Line
-	9100 7475 9525 7475
-$Comp
-L power:GND #PWR078
-U 1 1 5C7B0D99
-P 9975 8050
-AR Path="/5BC9D0F6/5C7B0D99" Ref="#PWR078"  Part="1" 
-AR Path="/5F14ACC5/5C7B0D99" Ref="#PWR?"  Part="1" 
-F 0 "#PWR078" H 9975 7800 50  0001 C CNN
-F 1 "GND" H 9980 7877 50  0000 C CNN
-F 2 "" H 9975 8050 50  0001 C CNN
-F 3 "" H 9975 8050 50  0001 C CNN
-	1    9975 8050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9975 8050 9975 7950
-Wire Wire Line
-	10275 7475 9975 7475
-Connection ~ 9975 7475
-$Comp
-L power:+3V3 #PWR074
-U 1 1 5C7B0DBB
-P 8325 7100
-AR Path="/5BC9D0F6/5C7B0DBB" Ref="#PWR074"  Part="1" 
-AR Path="/5F14ACC5/5C7B0DBB" Ref="#PWR?"  Part="1" 
-F 0 "#PWR074" H 8325 6950 50  0001 C CNN
-F 1 "+3V3" H 8340 7273 50  0000 C CNN
-F 2 "" H 8325 7100 50  0001 C CNN
-F 3 "" H 8325 7100 50  0001 C CNN
-	1    8325 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensi_Board-rescue:R-device R40
-U 1 1 5C7B0DC1
-P 6875 7100
-AR Path="/5BC9D0F6/5C7B0DC1" Ref="R40"  Part="1" 
-AR Path="/5F14ACC5/5C7B0DC1" Ref="R?"  Part="1" 
-F 0 "R40" H 6750 7050 50  0000 C CNN
-F 1 "10K" H 6700 7150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6805 7100 50  0001 C CNN
-F 3 "" H 6875 7100 50  0001 C CNN
-F 4 "101-010" H 0   0   50  0001 C CNN "Devtank"
-	1    6875 7100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6875 7375 6875 7250
-Wire Wire Line
-	6875 7375 8125 7375
-Wire Wire Line
-	6875 7525 6875 7375
-Connection ~ 6875 7375
-$Comp
-L power:GND #PWR070
-U 1 1 5C7B0DD1
-P 6875 7900
-AR Path="/5BC9D0F6/5C7B0DD1" Ref="#PWR070"  Part="1" 
-AR Path="/5F14ACC5/5C7B0DD1" Ref="#PWR?"  Part="1" 
-F 0 "#PWR070" H 6875 7650 50  0001 C CNN
-F 1 "GND" H 6880 7727 50  0000 C CNN
-F 2 "" H 6875 7900 50  0001 C CNN
-F 3 "" H 6875 7900 50  0001 C CNN
-	1    6875 7900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6875 7825 6875 7900
-Wire Wire Line
-	6875 6950 6875 6825
-Wire Wire Line
-	6250 6825 6875 6825
+	1525 2500 1625 2500
 $Comp
 L Sensi_Board-rescue:C-device C17
 U 1 1 5C809382
@@ -1320,327 +280,514 @@ Wire Wire Line
 	3725 13475 3275 13475
 Connection ~ 3275 13475
 $Comp
-L Sensi_Board-rescue:R-device R39
-U 1 1 5D36C9C8
-P 6850 5800
-AR Path="/5BC9D0F6/5D36C9C8" Ref="R39"  Part="1" 
-AR Path="/5F14ACC5/5D36C9C8" Ref="R?"  Part="1" 
-F 0 "R39" H 6725 5750 50  0000 C CNN
-F 1 "3K3" H 6675 5850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6780 5800 50  0001 C CNN
-F 3 "" H 6850 5800 50  0001 C CNN
-F 4 "101-013" H 0   0   50  0001 C CNN "Devtank"
-	1    6850 5800
-	-1   0    0    1   
+L Devtank:AD8646 U?
+U 2 1 5FB049D9
+P 8175 3300
+F 0 "U?" H 8519 3346 50  0000 L CNN
+F 1 "AD8646" H 8519 3255 50  0000 L CNN
+F 2 "" H 8175 3300 50  0001 C CNN
+F 3 "" H 8175 3300 50  0001 C CNN
+	2    8175 3300
+	1    0    0    -1  
 $EndComp
 $Comp
-L Sensi_Board-rescue:R-device R41
-U 1 1 5D36CEB4
-P 6875 7675
-AR Path="/5BC9D0F6/5D36CEB4" Ref="R41"  Part="1" 
-AR Path="/5F14ACC5/5D36CEB4" Ref="R?"  Part="1" 
-F 0 "R41" H 6750 7625 50  0000 C CNN
-F 1 "3K3" H 6700 7725 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6805 7675 50  0001 C CNN
-F 3 "" H 6875 7675 50  0001 C CNN
-F 4 "101-013" H 0   0   50  0001 C CNN "Devtank"
-	1    6875 7675
-	-1   0    0    1   
+L Devtank:AD8646 U?
+U 1 1 5FB05BBC
+P 3175 3150
+F 0 "U?" H 3519 3196 50  0000 L CNN
+F 1 "AD8646" H 3519 3105 50  0000 L CNN
+F 2 "" H 3175 3150 50  0001 C CNN
+F 3 "" H 3175 3150 50  0001 C CNN
+	1    3175 3150
+	1    0    0    -1  
 $EndComp
 $Comp
-L Sensi_Board-rescue:R-device R43
-U 1 1 5D36D0BD
-P 6875 9425
-AR Path="/5BC9D0F6/5D36D0BD" Ref="R43"  Part="1" 
-AR Path="/5F14ACC5/5D36D0BD" Ref="R?"  Part="1" 
-F 0 "R43" H 6750 9375 50  0000 C CNN
-F 1 "16K" H 6700 9475 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6805 9425 50  0001 C CNN
-F 3 "" H 6875 9425 50  0001 C CNN
-F 4 "101-052" H 0   0   50  0001 C CNN "Devtank"
-	1    6875 9425
-	-1   0    0    1   
+L power:+5V #PWR?
+U 1 1 5FB0C90E
+P 3075 2675
+F 0 "#PWR?" H 3075 2525 50  0001 C CNN
+F 1 "+5V" H 3090 2848 50  0000 C CNN
+F 2 "" H 3075 2675 50  0001 C CNN
+F 3 "" H 3075 2675 50  0001 C CNN
+	1    3075 2675
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6250 8575 6875 8575
-Wire Wire Line
-	6875 8700 6875 8575
-Wire Wire Line
-	6875 9575 6875 9650
 $Comp
-L power:GND #PWR071
-U 1 1 5C7B0DEA
-P 6875 9650
-AR Path="/5BC9D0F6/5C7B0DEA" Ref="#PWR071"  Part="1" 
-AR Path="/5F14ACC5/5C7B0DEA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR071" H 6875 9400 50  0001 C CNN
-F 1 "GND" H 6880 9477 50  0000 C CNN
-F 2 "" H 6875 9650 50  0001 C CNN
-F 3 "" H 6875 9650 50  0001 C CNN
-	1    6875 9650
+L power:GND #PWR?
+U 1 1 5FB0CE37
+P 3075 3575
+F 0 "#PWR?" H 3075 3325 50  0001 C CNN
+F 1 "GND" H 3080 3402 50  0000 C CNN
+F 2 "" H 3075 3575 50  0001 C CNN
+F 3 "" H 3075 3575 50  0001 C CNN
+	1    3075 3575
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6875 9275 6875 9125
+	3075 2850 3075 2675
 Wire Wire Line
-	6875 9125 8125 9125
-Connection ~ 6875 9125
+	3075 3450 3075 3575
+Text HLabel 6525 2650 0    60   Input ~ 0
+5V_SENSE2
+Text HLabel 10025 3300 2    60   Output ~ 0
+5V_ADC_CH2
 Wire Wire Line
-	6875 9125 6875 9000
+	8475 3300 8850 3300
+Wire Wire Line
+	7875 3400 7675 3400
+Wire Wire Line
+	7675 3400 7675 3875
+Wire Wire Line
+	7675 3875 8850 3875
+Wire Wire Line
+	8850 3875 8850 3300
 $Comp
-L Sensi_Board-rescue:R-device R42
-U 1 1 5C7B0DDA
-P 6875 8850
-AR Path="/5BC9D0F6/5C7B0DDA" Ref="R42"  Part="1" 
-AR Path="/5F14ACC5/5C7B0DDA" Ref="R?"  Part="1" 
-F 0 "R42" H 6750 8800 50  0000 C CNN
-F 1 "10K" H 6700 8900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6805 8850 50  0001 C CNN
-F 3 "" H 6875 8850 50  0001 C CNN
-F 4 "101-010" H 0   0   50  0001 C CNN "Devtank"
-	1    6875 8850
+L Sensi_Board-rescue:C-device C?
+U 1 1 5FB1E8ED
+P 9725 3625
+AR Path="/5BC9D0F6/5FB1E8ED" Ref="C?"  Part="1" 
+AR Path="/5F14ACC5/5FB1E8ED" Ref="C?"  Part="1" 
+F 0 "C?" H 9840 3671 50  0000 L CNN
+F 1 "100nF" H 9840 3580 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9763 3475 50  0001 C CNN
+F 3 "" H 9725 3625 50  0001 C CNN
+F 4 "105-002" H 5200 -5275 50  0001 C CNN "Devtank"
+	1    9725 3625
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	9525 9225 9100 9225
-Wire Wire Line
-	9975 9800 9975 9700
 $Comp
-L power:GND #PWR079
-U 1 1 5C7B0DAE
-P 9975 9800
-AR Path="/5BC9D0F6/5C7B0DAE" Ref="#PWR079"  Part="1" 
-AR Path="/5F14ACC5/5C7B0DAE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR079" H 9975 9550 50  0001 C CNN
-F 1 "GND" H 9980 9627 50  0000 C CNN
-F 2 "" H 9975 9800 50  0001 C CNN
-F 3 "" H 9975 9800 50  0001 C CNN
-	1    9975 9800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9975 9225 9825 9225
-Wire Wire Line
-	9975 9400 9975 9225
-$Comp
-L Sensi_Board-rescue:R-device R47
-U 1 1 5C7B0DA6
-P 9675 9225
-AR Path="/5BC9D0F6/5C7B0DA6" Ref="R47"  Part="1" 
-AR Path="/5F14ACC5/5C7B0DA6" Ref="R?"  Part="1" 
-F 0 "R47" V 9468 9225 50  0000 C CNN
-F 1 "100R" V 9559 9225 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9605 9225 50  0001 C CNN
-F 3 "" H 9675 9225 50  0001 C CNN
-F 4 "101-018" H 0   0   50  0001 C CNN "Devtank"
-	1    9675 9225
+L Sensi_Board-rescue:R-device R?
+U 1 1 5FB1E8F4
+P 9425 3300
+AR Path="/5BC9D0F6/5FB1E8F4" Ref="R?"  Part="1" 
+AR Path="/5F14ACC5/5FB1E8F4" Ref="R?"  Part="1" 
+F 0 "R?" V 9218 3300 50  0000 C CNN
+F 1 "100R" V 9309 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9355 3300 50  0001 C CNN
+F 3 "" H 9425 3300 50  0001 C CNN
+F 4 "101-018" H 5200 -5275 50  0001 C CNN "Devtank"
+	1    9425 3300
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	9725 3475 9725 3300
+Wire Wire Line
+	9725 3300 9575 3300
 $Comp
-L Sensi_Board-rescue:C-device C29
-U 1 1 5C7B0DA0
-P 9975 9550
-AR Path="/5BC9D0F6/5C7B0DA0" Ref="C29"  Part="1" 
-AR Path="/5F14ACC5/5C7B0DA0" Ref="C?"  Part="1" 
-F 0 "C29" H 10090 9596 50  0000 L CNN
-F 1 "100nF" H 10090 9505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10013 9400 50  0001 C CNN
-F 3 "" H 9975 9550 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    9975 9550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9100 9800 9100 9225
-Wire Wire Line
-	7925 9800 9100 9800
-Wire Wire Line
-	7925 9325 7925 9800
-Wire Wire Line
-	8125 9325 7925 9325
-Connection ~ 9100 9225
-Wire Wire Line
-	8725 9225 9100 9225
-$Comp
-L Sensi_Board-rescue:OPA2340-linear U8
-U 2 1 5C7B0D77
-P 8425 9225
-AR Path="/5BC9D0F6/5C7B0D77" Ref="U8"  Part="2" 
-AR Path="/5F14ACC5/5C7B0D77" Ref="U?"  Part="2" 
-F 0 "U8" H 8650 9100 50  0000 L CNN
-F 1 "OPA197IDR" H 8625 9025 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8425 9225 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa4340.pdf" H 8425 9225 50  0001 C CNN
-F 4 "120-004" H 0   0   50  0001 C CNN "Devtank"
-	2    8425 9225
+L power:GND #PWR?
+U 1 1 5FB1E8FC
+P 9725 3875
+AR Path="/5BC9D0F6/5FB1E8FC" Ref="#PWR?"  Part="1" 
+AR Path="/5F14ACC5/5FB1E8FC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9725 3625 50  0001 C CNN
+F 1 "GND" H 9730 3702 50  0000 C CNN
+F 2 "" H 9725 3875 50  0001 C CNN
+F 3 "" H 9725 3875 50  0001 C CNN
+	1    9725 3875
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10225 9225 9975 9225
-Connection ~ 9975 9225
+	9725 3875 9725 3775
+Wire Wire Line
+	9275 3300 8850 3300
+Connection ~ 8850 3300
+Wire Wire Line
+	10025 3300 9725 3300
+Connection ~ 9725 3300
 $Comp
-L Sensi_Board-rescue:R-device R25
-U 1 1 5F25C0A4
-P 2000 1775
-AR Path="/5BC9D0F6/5F25C0A4" Ref="R25"  Part="1" 
-AR Path="/5F14ACC5/5F25C0A4" Ref="R?"  Part="1" 
-F 0 "R25" H 1875 1725 50  0000 C CNN
-F 1 "DNF" H 1825 1825 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1930 1775 50  0001 C CNN
-F 3 "" H 2000 1775 50  0001 C CNN
-	1    2000 1775
+L Sensi_Board-rescue:R-device R?
+U 1 1 5FB1E908
+P 6625 2925
+AR Path="/5BC9D0F6/5FB1E908" Ref="R?"  Part="1" 
+AR Path="/5F14ACC5/5FB1E908" Ref="R?"  Part="1" 
+F 0 "R?" H 6500 2875 50  0000 C CNN
+F 1 "10K" H 6450 2975 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6555 2925 50  0001 C CNN
+F 3 "" H 6625 2925 50  0001 C CNN
+F 4 "101-010" H 5200 -5275 50  0001 C CNN "Devtank"
+	1    6625 2925
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	6625 3200 6625 3075
 $Comp
-L power:GND #PWR051
-U 1 1 5F25C0AA
-P 2000 1975
-AR Path="/5BC9D0F6/5F25C0AA" Ref="#PWR051"  Part="1" 
-AR Path="/5F14ACC5/5F25C0AA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR051" H 2000 1725 50  0001 C CNN
-F 1 "GND" H 2005 1802 50  0000 C CNN
-F 2 "" H 2000 1975 50  0001 C CNN
-F 3 "" H 2000 1975 50  0001 C CNN
-	1    2000 1975
+L Sensi_Board-rescue:R-device R?
+U 1 1 5FB1E910
+P 6625 3500
+AR Path="/5BC9D0F6/5FB1E910" Ref="R?"  Part="1" 
+AR Path="/5F14ACC5/5FB1E910" Ref="R?"  Part="1" 
+F 0 "R?" H 6500 3450 50  0000 C CNN
+F 1 "16K" H 6450 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6555 3500 50  0001 C CNN
+F 3 "" H 6625 3500 50  0001 C CNN
+F 4 "101-052" H 5200 -5275 50  0001 C CNN "Devtank"
+	1    6625 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6625 3200 7875 3200
+Wire Wire Line
+	6625 3350 6625 3200
+Connection ~ 6625 3200
+$Comp
+L power:GND #PWR?
+U 1 1 5FB1E919
+P 6625 3725
+AR Path="/5BC9D0F6/5FB1E919" Ref="#PWR?"  Part="1" 
+AR Path="/5F14ACC5/5FB1E919" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6625 3475 50  0001 C CNN
+F 1 "GND" H 6630 3552 50  0000 C CNN
+F 2 "" H 6625 3725 50  0001 C CNN
+F 3 "" H 6625 3725 50  0001 C CNN
+	1    6625 3725
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 1925 2000 1975
+	6625 3650 6625 3725
 Wire Wire Line
-	2000 1625 2000 1525
-Connection ~ 2000 1525
+	6625 2775 6625 2650
 Wire Wire Line
-	2000 1525 2500 1525
+	6525 2650 6625 2650
 $Comp
-L Sensi_Board-rescue:R-device R26
-U 1 1 5F27EA71
-P 2000 2950
-AR Path="/5BC9D0F6/5F27EA71" Ref="R26"  Part="1" 
-AR Path="/5F14ACC5/5F27EA71" Ref="R?"  Part="1" 
-F 0 "R26" H 1875 2900 50  0000 C CNN
-F 1 "DNF" H 1825 3000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1930 2950 50  0001 C CNN
-F 3 "" H 2000 2950 50  0001 C CNN
-	1    2000 2950
-	-1   0    0    1   
+L power:+5V #PWR?
+U 1 1 5FB1E928
+P 8075 2825
+F 0 "#PWR?" H 8075 2675 50  0001 C CNN
+F 1 "+5V" H 8090 2998 50  0000 C CNN
+F 2 "" H 8075 2825 50  0001 C CNN
+F 3 "" H 8075 2825 50  0001 C CNN
+	1    8075 2825
+	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR052
-U 1 1 5F27EA77
-P 2000 3150
-AR Path="/5BC9D0F6/5F27EA77" Ref="#PWR052"  Part="1" 
-AR Path="/5F14ACC5/5F27EA77" Ref="#PWR?"  Part="1" 
-F 0 "#PWR052" H 2000 2900 50  0001 C CNN
-F 1 "GND" H 2005 2977 50  0000 C CNN
-F 2 "" H 2000 3150 50  0001 C CNN
-F 3 "" H 2000 3150 50  0001 C CNN
-	1    2000 3150
+L power:GND #PWR?
+U 1 1 5FB1E92E
+P 8075 3725
+F 0 "#PWR?" H 8075 3475 50  0001 C CNN
+F 1 "GND" H 8080 3552 50  0000 C CNN
+F 2 "" H 8075 3725 50  0001 C CNN
+F 3 "" H 8075 3725 50  0001 C CNN
+	1    8075 3725
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 3100 2000 3150
+	8075 3000 8075 2825
+Wire Wire Line
+	8075 3600 8075 3725
+Text HLabel 1525 4300 0    60   Input ~ 0
+5V_SENSE3
+Text HLabel 5025 4950 2    60   Output ~ 0
+5V_ADC_CH3
+Wire Wire Line
+	3475 4950 3850 4950
+Wire Wire Line
+	2875 5050 2675 5050
+Wire Wire Line
+	2675 5050 2675 5525
+Wire Wire Line
+	2675 5525 3850 5525
+Wire Wire Line
+	3850 5525 3850 4950
 $Comp
-L Sensi_Board-rescue:R-device R27
-U 1 1 5F285D99
-P 2000 4200
-AR Path="/5BC9D0F6/5F285D99" Ref="R27"  Part="1" 
-AR Path="/5F14ACC5/5F285D99" Ref="R?"  Part="1" 
-F 0 "R27" H 1875 4150 50  0000 C CNN
-F 1 "DNF" H 1825 4250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1930 4200 50  0001 C CNN
-F 3 "" H 2000 4200 50  0001 C CNN
-	1    2000 4200
+L Sensi_Board-rescue:C-device C?
+U 1 1 5FB528E5
+P 4725 5275
+AR Path="/5BC9D0F6/5FB528E5" Ref="C?"  Part="1" 
+AR Path="/5F14ACC5/5FB528E5" Ref="C?"  Part="1" 
+F 0 "C?" H 4840 5321 50  0000 L CNN
+F 1 "100nF" H 4840 5230 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4763 5125 50  0001 C CNN
+F 3 "" H 4725 5275 50  0001 C CNN
+F 4 "105-002" H 200 -3625 50  0001 C CNN "Devtank"
+	1    4725 5275
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR053
-U 1 1 5F285D9F
-P 2000 4400
-AR Path="/5BC9D0F6/5F285D9F" Ref="#PWR053"  Part="1" 
-AR Path="/5F14ACC5/5F285D9F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR053" H 2000 4150 50  0001 C CNN
-F 1 "GND" H 2005 4227 50  0000 C CNN
-F 2 "" H 2000 4400 50  0001 C CNN
-F 3 "" H 2000 4400 50  0001 C CNN
-	1    2000 4400
+L Sensi_Board-rescue:R-device R?
+U 1 1 5FB528EC
+P 4425 4950
+AR Path="/5BC9D0F6/5FB528EC" Ref="R?"  Part="1" 
+AR Path="/5F14ACC5/5FB528EC" Ref="R?"  Part="1" 
+F 0 "R?" V 4218 4950 50  0000 C CNN
+F 1 "100R" V 4309 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4355 4950 50  0001 C CNN
+F 3 "" H 4425 4950 50  0001 C CNN
+F 4 "101-018" H 200 -3625 50  0001 C CNN "Devtank"
+	1    4425 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4725 5125 4725 4950
+Wire Wire Line
+	4725 4950 4575 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5FB528F4
+P 4725 5525
+AR Path="/5BC9D0F6/5FB528F4" Ref="#PWR?"  Part="1" 
+AR Path="/5F14ACC5/5FB528F4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4725 5275 50  0001 C CNN
+F 1 "GND" H 4730 5352 50  0000 C CNN
+F 2 "" H 4725 5525 50  0001 C CNN
+F 3 "" H 4725 5525 50  0001 C CNN
+	1    4725 5525
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 4350 2000 4400
+	4725 5525 4725 5425
+Wire Wire Line
+	4275 4950 3850 4950
+Connection ~ 3850 4950
+Wire Wire Line
+	5025 4950 4725 4950
+Connection ~ 4725 4950
 $Comp
-L Sensi_Board-rescue:R-device R29
-U 1 1 5F28D397
-P 2000 6650
-AR Path="/5BC9D0F6/5F28D397" Ref="R29"  Part="1" 
-AR Path="/5F14ACC5/5F28D397" Ref="R?"  Part="1" 
-F 0 "R29" H 1875 6600 50  0000 C CNN
-F 1 "DNF" H 1825 6700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1930 6650 50  0001 C CNN
-F 3 "" H 2000 6650 50  0001 C CNN
-	1    2000 6650
+L Sensi_Board-rescue:R-device R?
+U 1 1 5FB52900
+P 1625 4575
+AR Path="/5BC9D0F6/5FB52900" Ref="R?"  Part="1" 
+AR Path="/5F14ACC5/5FB52900" Ref="R?"  Part="1" 
+F 0 "R?" H 1500 4525 50  0000 C CNN
+F 1 "10K" H 1450 4625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1555 4575 50  0001 C CNN
+F 3 "" H 1625 4575 50  0001 C CNN
+F 4 "101-010" H 200 -3625 50  0001 C CNN "Devtank"
+	1    1625 4575
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1625 4850 1625 4725
+$Comp
+L Sensi_Board-rescue:R-device R?
+U 1 1 5FB52908
+P 1625 5150
+AR Path="/5BC9D0F6/5FB52908" Ref="R?"  Part="1" 
+AR Path="/5F14ACC5/5FB52908" Ref="R?"  Part="1" 
+F 0 "R?" H 1500 5100 50  0000 C CNN
+F 1 "16K" H 1450 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1555 5150 50  0001 C CNN
+F 3 "" H 1625 5150 50  0001 C CNN
+F 4 "101-052" H 200 -3625 50  0001 C CNN "Devtank"
+	1    1625 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1625 4850 2875 4850
+Wire Wire Line
+	1625 5000 1625 4850
+Connection ~ 1625 4850
+$Comp
+L power:GND #PWR?
+U 1 1 5FB52911
+P 1625 5375
+AR Path="/5BC9D0F6/5FB52911" Ref="#PWR?"  Part="1" 
+AR Path="/5F14ACC5/5FB52911" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1625 5125 50  0001 C CNN
+F 1 "GND" H 1630 5202 50  0000 C CNN
+F 2 "" H 1625 5375 50  0001 C CNN
+F 3 "" H 1625 5375 50  0001 C CNN
+	1    1625 5375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 5300 1625 5375
+Wire Wire Line
+	1625 4425 1625 4300
+Wire Wire Line
+	1525 4300 1625 4300
+$Comp
+L Devtank:AD8646 U?
+U 2 1 5FB5291A
+P 8175 5100
+F 0 "U?" H 8519 5146 50  0000 L CNN
+F 1 "AD8646" H 8519 5055 50  0000 L CNN
+F 2 "" H 8175 5100 50  0001 C CNN
+F 3 "" H 8175 5100 50  0001 C CNN
+	2    8175 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Devtank:AD8646 U?
+U 1 1 5FB52920
+P 3175 4950
+F 0 "U?" H 3519 4996 50  0000 L CNN
+F 1 "AD8646" H 3519 4905 50  0000 L CNN
+F 2 "" H 3175 4950 50  0001 C CNN
+F 3 "" H 3175 4950 50  0001 C CNN
+	1    3175 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FB52926
+P 3075 4475
+F 0 "#PWR?" H 3075 4325 50  0001 C CNN
+F 1 "+5V" H 3090 4648 50  0000 C CNN
+F 2 "" H 3075 4475 50  0001 C CNN
+F 3 "" H 3075 4475 50  0001 C CNN
+	1    3075 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FB5292C
+P 3075 5375
+F 0 "#PWR?" H 3075 5125 50  0001 C CNN
+F 1 "GND" H 3080 5202 50  0000 C CNN
+F 2 "" H 3075 5375 50  0001 C CNN
+F 3 "" H 3075 5375 50  0001 C CNN
+	1    3075 5375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 4650 3075 4475
+Wire Wire Line
+	3075 5250 3075 5375
+Text HLabel 6525 4450 0    60   Input ~ 0
+5V_SENSE4
+Text HLabel 10025 5100 2    60   Output ~ 0
+5V_ADC_CH4
+Wire Wire Line
+	8475 5100 8850 5100
+Wire Wire Line
+	7875 5200 7675 5200
+Wire Wire Line
+	7675 5200 7675 5675
+Wire Wire Line
+	7675 5675 8850 5675
+Wire Wire Line
+	8850 5675 8850 5100
+$Comp
+L Sensi_Board-rescue:C-device C?
+U 1 1 5FB5293C
+P 9725 5425
+AR Path="/5BC9D0F6/5FB5293C" Ref="C?"  Part="1" 
+AR Path="/5F14ACC5/5FB5293C" Ref="C?"  Part="1" 
+F 0 "C?" H 9840 5471 50  0000 L CNN
+F 1 "100nF" H 9840 5380 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9763 5275 50  0001 C CNN
+F 3 "" H 9725 5425 50  0001 C CNN
+F 4 "105-002" H 5200 -3475 50  0001 C CNN "Devtank"
+	1    9725 5425
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR055
-U 1 1 5F28D39D
-P 2000 6850
-AR Path="/5BC9D0F6/5F28D39D" Ref="#PWR055"  Part="1" 
-AR Path="/5F14ACC5/5F28D39D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR055" H 2000 6600 50  0001 C CNN
-F 1 "GND" H 2005 6677 50  0000 C CNN
-F 2 "" H 2000 6850 50  0001 C CNN
-F 3 "" H 2000 6850 50  0001 C CNN
-	1    2000 6850
+L Sensi_Board-rescue:R-device R?
+U 1 1 5FB52943
+P 9425 5100
+AR Path="/5BC9D0F6/5FB52943" Ref="R?"  Part="1" 
+AR Path="/5F14ACC5/5FB52943" Ref="R?"  Part="1" 
+F 0 "R?" V 9218 5100 50  0000 C CNN
+F 1 "100R" V 9309 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9355 5100 50  0001 C CNN
+F 3 "" H 9425 5100 50  0001 C CNN
+F 4 "101-018" H 5200 -3475 50  0001 C CNN "Devtank"
+	1    9425 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9725 5275 9725 5100
+Wire Wire Line
+	9725 5100 9575 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5FB5294B
+P 9725 5675
+AR Path="/5BC9D0F6/5FB5294B" Ref="#PWR?"  Part="1" 
+AR Path="/5F14ACC5/5FB5294B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9725 5425 50  0001 C CNN
+F 1 "GND" H 9730 5502 50  0000 C CNN
+F 2 "" H 9725 5675 50  0001 C CNN
+F 3 "" H 9725 5675 50  0001 C CNN
+	1    9725 5675
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 6800 2000 6850
+	9725 5675 9725 5575
+Wire Wire Line
+	9275 5100 8850 5100
+Connection ~ 8850 5100
+Wire Wire Line
+	10025 5100 9725 5100
+Connection ~ 9725 5100
 $Comp
-L Sensi_Board-rescue:R-device R28
-U 1 1 5F294A60
-P 2000 5375
-AR Path="/5BC9D0F6/5F294A60" Ref="R28"  Part="1" 
-AR Path="/5F14ACC5/5F294A60" Ref="R?"  Part="1" 
-F 0 "R28" H 1875 5325 50  0000 C CNN
-F 1 "DNF" H 1825 5425 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1930 5375 50  0001 C CNN
-F 3 "" H 2000 5375 50  0001 C CNN
-	1    2000 5375
+L Sensi_Board-rescue:R-device R?
+U 1 1 5FB52957
+P 6625 4725
+AR Path="/5BC9D0F6/5FB52957" Ref="R?"  Part="1" 
+AR Path="/5F14ACC5/5FB52957" Ref="R?"  Part="1" 
+F 0 "R?" H 6500 4675 50  0000 C CNN
+F 1 "10K" H 6450 4775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6555 4725 50  0001 C CNN
+F 3 "" H 6625 4725 50  0001 C CNN
+F 4 "101-010" H 5200 -3475 50  0001 C CNN "Devtank"
+	1    6625 4725
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	6625 5000 6625 4875
 $Comp
-L power:GND #PWR054
-U 1 1 5F294A66
-P 2000 5575
-AR Path="/5BC9D0F6/5F294A66" Ref="#PWR054"  Part="1" 
-AR Path="/5F14ACC5/5F294A66" Ref="#PWR?"  Part="1" 
-F 0 "#PWR054" H 2000 5325 50  0001 C CNN
-F 1 "GND" H 2005 5402 50  0000 C CNN
-F 2 "" H 2000 5575 50  0001 C CNN
-F 3 "" H 2000 5575 50  0001 C CNN
-	1    2000 5575
+L Sensi_Board-rescue:R-device R?
+U 1 1 5FB5295F
+P 6625 5300
+AR Path="/5BC9D0F6/5FB5295F" Ref="R?"  Part="1" 
+AR Path="/5F14ACC5/5FB5295F" Ref="R?"  Part="1" 
+F 0 "R?" H 6500 5250 50  0000 C CNN
+F 1 "16K" H 6450 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6555 5300 50  0001 C CNN
+F 3 "" H 6625 5300 50  0001 C CNN
+F 4 "101-052" H 5200 -3475 50  0001 C CNN "Devtank"
+	1    6625 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6625 5000 7875 5000
+Wire Wire Line
+	6625 5150 6625 5000
+Connection ~ 6625 5000
+$Comp
+L power:GND #PWR?
+U 1 1 5FB52968
+P 6625 5525
+AR Path="/5BC9D0F6/5FB52968" Ref="#PWR?"  Part="1" 
+AR Path="/5F14ACC5/5FB52968" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6625 5275 50  0001 C CNN
+F 1 "GND" H 6630 5352 50  0000 C CNN
+F 2 "" H 6625 5525 50  0001 C CNN
+F 3 "" H 6625 5525 50  0001 C CNN
+	1    6625 5525
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 5525 2000 5575
+	6625 5450 6625 5525
 Wire Wire Line
-	2000 2800 2000 2700
-Connection ~ 2000 2700
+	6625 4575 6625 4450
 Wire Wire Line
-	2000 2700 1850 2700
+	6525 4450 6625 4450
+$Comp
+L power:+5V #PWR?
+U 1 1 5FB52971
+P 8075 4625
+F 0 "#PWR?" H 8075 4475 50  0001 C CNN
+F 1 "+5V" H 8090 4798 50  0000 C CNN
+F 2 "" H 8075 4625 50  0001 C CNN
+F 3 "" H 8075 4625 50  0001 C CNN
+	1    8075 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FB52977
+P 8075 5525
+F 0 "#PWR?" H 8075 5275 50  0001 C CNN
+F 1 "GND" H 8080 5352 50  0000 C CNN
+F 2 "" H 8075 5525 50  0001 C CNN
+F 3 "" H 8075 5525 50  0001 C CNN
+	1    8075 5525
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2000 4050 2000 3900
-Connection ~ 2000 3900
+	8075 4800 8075 4625
 Wire Wire Line
-	2000 3900 2500 3900
-Wire Wire Line
-	2000 5225 2000 5075
-Connection ~ 2000 5075
-Wire Wire Line
-	2000 5075 1850 5075
-Wire Wire Line
-	2000 6500 2000 6350
-Connection ~ 2000 6350
-Wire Wire Line
-	2000 6350 2500 6350
+	8075 5400 8075 5525
 $EndSCHEMATC
