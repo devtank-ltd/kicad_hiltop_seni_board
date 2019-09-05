@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 7 11
+Sheet 6 11
 Title ""
 Date ""
 Rev ""
@@ -50,7 +50,7 @@ F 4 "113-002" H 0   0   50  0001 C CNN "Devtank"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7500 1725 7500 1825
+	7500 1725 7500 1775
 Wire Wire Line
 	7200 2575 7200 1825
 Wire Wire Line
@@ -695,9 +695,9 @@ Text HLabel 11800 4575 2    60   BiDi ~ 0
 GPIO2
 Text HLabel 11800 4875 2    60   Input ~ 0
 ADC4
-Text HLabel 11800 5075 2    60   BiDi ~ 0
+Text HLabel 4400 5675 0    60   BiDi ~ 0
 GPIO13
-Text HLabel 11800 5175 2    60   BiDi ~ 0
+Text HLabel 4400 6075 0    60   BiDi ~ 0
 GPIO6
 Text HLabel 11800 5375 2    60   BiDi ~ 0
 GPIO10
@@ -705,11 +705,11 @@ Text HLabel 11800 5475 2    60   BiDi ~ 0
 GPIO3
 Text HLabel 11775 5775 2    60   BiDi ~ 0
 GPIO5
-Text HLabel 11775 6075 2    60   BiDi ~ 0
+Text HLabel 11775 5575 2    60   BiDi ~ 0
 GPIO9
-Text HLabel 11775 6175 2    60   BiDi ~ 0
+Text HLabel 11775 5675 2    60   BiDi ~ 0
 GPIO11
-Text HLabel 11775 6275 2    60   BiDi ~ 0
+Text HLabel 11775 5875 2    60   BiDi ~ 0
 GPIO14
 Text HLabel 3925 4575 0    60   BiDi ~ 0
 GPIO7
@@ -773,4 +773,36 @@ Text HLabel 3925 4975 0    60   Input ~ 0
 ADC13
 Wire Wire Line
 	2125 3275 4400 3275
+Text HLabel 11800 5075 2    60   Input ~ 0
+STM_SPI1_SCK
+Text HLabel 11800 5175 2    60   Input ~ 0
+STM_SPI1_MISO
+Text HLabel 11800 5275 2    60   Input ~ 0
+STM_SPI1_MOSI
+Text HLabel 11775 6075 2    60   Input ~ 0
+STM_SCL
+Text HLabel 11775 6175 2    60   Input ~ 0
+STM_SDA
+NoConn ~ 11775 5975
+NoConn ~ 11775 6275
+NoConn ~ 4400 5375
+NoConn ~ 4400 3475
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E858D18
+P 7375 1725
+F 0 "#FLG0102" H 7375 1800 50  0001 C CNN
+F 1 "PWR_FLAG" H 7375 1898 50  0000 C CNN
+F 2 "" H 7375 1725 50  0001 C CNN
+F 3 "" H 7375 1725 50  0001 C CNN
+	1    7375 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7375 1725 7375 1775
+Wire Wire Line
+	7375 1775 7500 1775
+Connection ~ 7500 1775
+Wire Wire Line
+	7500 1775 7500 1825
 $EndSCHEMATC

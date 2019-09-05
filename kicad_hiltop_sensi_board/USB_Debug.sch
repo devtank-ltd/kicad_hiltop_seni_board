@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 11
+Sheet 3 11
 Title "HILTOP Motherboard"
 Date "2019-01-10"
 Rev "Issue 1"
@@ -376,7 +376,7 @@ U 1 1 605DE563
 P 4300 3550
 F 0 "R20" H 4370 3596 50  0000 L CNN
 F 1 "47K" H 4370 3505 50  0000 L CNN
-F 2 "" V 4230 3550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 3550 50  0001 C CNN
 F 3 "" H 4300 3550 50  0001 C CNN
 	1    4300 3550
 	1    0    0    -1  

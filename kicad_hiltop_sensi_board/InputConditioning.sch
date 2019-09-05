@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 11693 16535 portrait
 encoding utf-8
-Sheet 2 11
+Sheet 11 11
 Title ""
 Date ""
 Rev ""
@@ -82,74 +82,6 @@ Wire Wire Line
 	5025 3150 4725 3150
 Connection ~ 4725 3150
 $Comp
-L Sensi_Board-rescue:C-device C14
-U 1 1 5C4FA8D8
-P 1925 13225
-AR Path="/5BC9D0F6/5C4FA8D8" Ref="C14"  Part="1" 
-AR Path="/5F14ACC5/5C4FA8D8" Ref="C?"  Part="1" 
-F 0 "C14" H 2040 13271 50  0000 L CNN
-F 1 "100nF" H 2040 13180 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1963 13075 50  0001 C CNN
-F 3 "" H 1925 13225 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    1925 13225
-	-1   0    0    1   
-$EndComp
-$Comp
-L Sensi_Board-rescue:C-device C15
-U 1 1 5C4FABED
-P 2375 13225
-AR Path="/5BC9D0F6/5C4FABED" Ref="C15"  Part="1" 
-AR Path="/5F14ACC5/5C4FABED" Ref="C?"  Part="1" 
-F 0 "C15" H 2490 13271 50  0000 L CNN
-F 1 "100nF" H 2490 13180 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2413 13075 50  0001 C CNN
-F 3 "" H 2375 13225 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    2375 13225
-	-1   0    0    1   
-$EndComp
-$Comp
-L Sensi_Board-rescue:C-device C16
-U 1 1 5C4FAC61
-P 2825 13225
-AR Path="/5BC9D0F6/5C4FAC61" Ref="C16"  Part="1" 
-AR Path="/5F14ACC5/5C4FAC61" Ref="C?"  Part="1" 
-F 0 "C16" H 2940 13271 50  0000 L CNN
-F 1 "100nF" H 2940 13180 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2863 13075 50  0001 C CNN
-F 3 "" H 2825 13225 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    2825 13225
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3V3 #PWR049
-U 1 1 5C4FD83E
-P 1925 12900
-AR Path="/5BC9D0F6/5C4FD83E" Ref="#PWR049"  Part="1" 
-AR Path="/5F14ACC5/5C4FD83E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR049" H 1925 12750 50  0001 C CNN
-F 1 "+3V3" H 1900 13050 50  0000 C CNN
-F 2 "" H 1925 12900 50  0001 C CNN
-F 3 "" H 1925 12900 50  0001 C CNN
-	1    1925 12900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR050
-U 1 1 5C4FD9A5
-P 1925 13575
-AR Path="/5BC9D0F6/5C4FD9A5" Ref="#PWR050"  Part="1" 
-AR Path="/5F14ACC5/5C4FD9A5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR050" H 1925 13325 50  0001 C CNN
-F 1 "GND" H 1930 13402 50  0000 C CNN
-F 2 "" H 1925 13575 50  0001 C CNN
-F 3 "" H 1925 13575 50  0001 C CNN
-	1    1925 13575
-	1    0    0    -1  
-$EndComp
-$Comp
 L Sensi_Board-rescue:R-device R18
 U 1 1 5C7680D6
 P 1625 2775
@@ -204,82 +136,6 @@ Wire Wire Line
 Wire Wire Line
 	1525 2500 1625 2500
 $Comp
-L Sensi_Board-rescue:C-device C17
-U 1 1 5C809382
-P 3275 13225
-AR Path="/5BC9D0F6/5C809382" Ref="C17"  Part="1" 
-AR Path="/5F14ACC5/5C809382" Ref="C?"  Part="1" 
-F 0 "C17" H 3390 13271 50  0000 L CNN
-F 1 "100nF" H 3390 13180 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3313 13075 50  0001 C CNN
-F 3 "" H 3275 13225 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    3275 13225
-	-1   0    0    1   
-$EndComp
-$Comp
-L Sensi_Board-rescue:C-device C18
-U 1 1 5C80943A
-P 3725 13225
-AR Path="/5BC9D0F6/5C80943A" Ref="C18"  Part="1" 
-AR Path="/5F14ACC5/5C80943A" Ref="C?"  Part="1" 
-F 0 "C18" H 3840 13271 50  0000 L CNN
-F 1 "100nF" H 3840 13180 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3763 13075 50  0001 C CNN
-F 3 "" H 3725 13225 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
-	1    3725 13225
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3725 13075 3725 12975
-Wire Wire Line
-	3725 12975 3275 12975
-Wire Wire Line
-	1925 12975 1925 12900
-Wire Wire Line
-	1925 13075 1925 12975
-Connection ~ 1925 12975
-Wire Wire Line
-	2375 13075 2375 12975
-Connection ~ 2375 12975
-Wire Wire Line
-	2375 12975 1925 12975
-Wire Wire Line
-	2825 13075 2825 12975
-Connection ~ 2825 12975
-Wire Wire Line
-	2825 12975 2375 12975
-Wire Wire Line
-	3275 13075 3275 12975
-Connection ~ 3275 12975
-Wire Wire Line
-	3275 12975 2825 12975
-Wire Wire Line
-	1925 13375 1925 13475
-Wire Wire Line
-	2375 13375 2375 13475
-Connection ~ 1925 13475
-Wire Wire Line
-	1925 13475 1925 13575
-Wire Wire Line
-	2825 13375 2825 13475
-Wire Wire Line
-	1925 13475 2375 13475
-Connection ~ 2375 13475
-Wire Wire Line
-	2375 13475 2825 13475
-Wire Wire Line
-	3275 13375 3275 13475
-Wire Wire Line
-	3275 13475 2825 13475
-Connection ~ 2825 13475
-Wire Wire Line
-	3725 13375 3725 13475
-Wire Wire Line
-	3725 13475 3275 13475
-Connection ~ 3275 13475
-$Comp
 L Devtank:AD8646 U4
 U 2 1 5FB049D9
 P 8175 3300
@@ -324,7 +180,7 @@ F 3 "" H 3075 3575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3075 2850 3075 2675
+	3075 2850 3075 2775
 Wire Wire Line
 	3075 3450 3075 3575
 Text HLabel 6525 2650 0    60   Input ~ 0
@@ -640,8 +496,6 @@ F 3 "" H 3075 5375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3075 4650 3075 4475
-Wire Wire Line
 	3075 5250 3075 5375
 Text HLabel 6525 4450 0    60   Input ~ 0
 5V_SENSE4
@@ -790,4 +644,64 @@ Wire Wire Line
 	8075 4800 8075 4625
 Wire Wire Line
 	8075 5400 8075 5525
+$Comp
+L device:C C14
+U 1 1 5DB1A4DE
+P 3350 2775
+F 0 "C14" V 3098 2775 50  0000 C CNN
+F 1 "100nF" V 3189 2775 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3388 2625 50  0001 C CNN
+F 3 "" H 3350 2775 50  0001 C CNN
+	1    3350 2775
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5DB1AD38
+P 3625 2775
+F 0 "#PWR05" H 3625 2525 50  0001 C CNN
+F 1 "GND" H 3630 2602 50  0000 C CNN
+F 2 "" H 3625 2775 50  0001 C CNN
+F 3 "" H 3625 2775 50  0001 C CNN
+	1    3625 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2775 3075 2775
+Connection ~ 3075 2775
+Wire Wire Line
+	3075 2775 3075 2675
+Wire Wire Line
+	3500 2775 3625 2775
+$Comp
+L device:C C15
+U 1 1 5DB2F1B3
+P 3350 4550
+F 0 "C15" V 3098 4550 50  0000 C CNN
+F 1 "100nF" V 3189 4550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3388 4400 50  0001 C CNN
+F 3 "" H 3350 4550 50  0001 C CNN
+	1    3350 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5DB2F1B9
+P 3625 4550
+F 0 "#PWR06" H 3625 4300 50  0001 C CNN
+F 1 "GND" H 3630 4377 50  0000 C CNN
+F 2 "" H 3625 4550 50  0001 C CNN
+F 3 "" H 3625 4550 50  0001 C CNN
+	1    3625 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4550 3075 4550
+Wire Wire Line
+	3500 4550 3625 4550
+Wire Wire Line
+	3075 4475 3075 4550
+Wire Wire Line
+	3075 4550 3075 4650
+Connection ~ 3075 4550
 $EndSCHEMATC

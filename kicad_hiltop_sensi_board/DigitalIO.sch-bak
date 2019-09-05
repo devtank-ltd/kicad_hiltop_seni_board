@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 6 11
+Sheet 5 11
 Title "Iota Board"
 Date "2018-11-07"
 Rev "Rev A"
