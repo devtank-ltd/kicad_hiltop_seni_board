@@ -1,4 +1,4 @@
-update=Thu 12 Sep 2019 16:24:50 BST
+update=Mon 16 Sep 2019 08:32:49 BST
 version=1
 last_client=kicad
 [cvpcb]
@@ -23,7 +23,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=../common/Devtank_KiCAD_Setup/Devtank_Dwg_Template.kicad_wks
-LastNetListRead=Sensi_Board2.net
+LastNetListRead=Sensi_Board3.net
 CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0

@@ -575,8 +575,6 @@ Wire Wire Line
 Wire Wire Line
 	4400 5575 3925 5575
 Wire Wire Line
-	10400 5975 11775 5975
-Wire Wire Line
 	10400 5875 11775 5875
 Wire Wire Line
 	10400 4975 11800 4975
@@ -607,28 +605,22 @@ Wire Wire Line
 $Comp
 L Sensi_Board-rescue:R-device R121
 U 1 1 5FA9D488
-P 10925 4375
-F 0 "R121" V 10900 4150 50  0000 C CNN
-F 1 "0R" V 10900 4575 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10855 4375 50  0001 C CNN
-F 3 "" H 10925 4375 50  0001 C CNN
-F 4 "101-005" H 0   0   50  0001 C CNN "Devtank"
-	1    10925 4375
+P 11150 5975
+F 0 "R121" V 11125 5750 50  0000 C CNN
+F 1 "0R" V 11125 6175 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11080 5975 50  0001 C CNN
+F 3 "" H 11150 5975 50  0001 C CNN
+F 4 "101-005" H 225 1600 50  0001 C CNN "Devtank"
+	1    11150 5975
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10775 4375 10400 4375
-Wire Wire Line
-	11075 4375 11800 4375
-Wire Wire Line
-	10400 4475 11800 4475
 Text HLabel 11800 3975 2    60   Output ~ 0
 HS_OUT1
 Text HLabel 11800 4075 2    60   Output ~ 0
 HS_OUT2
-Text HLabel 11800 4375 2    60   Output ~ 0
+Text HLabel 11775 5975 2    60   Output ~ 0
 HS_OUT3
-Text HLabel 11800 4475 2    60   Output ~ 0
+Text HLabel 11775 6275 2    60   Output ~ 0
 HS_OUT4
 Text HLabel 11800 3075 2    60   Input ~ 0
 ADC1
@@ -781,8 +773,6 @@ Text HLabel 11775 6075 2    60   Input ~ 0
 STM_SCL
 Text HLabel 11775 6175 2    60   Input ~ 0
 STM_SDA
-NoConn ~ 11775 5975
-NoConn ~ 11775 6275
 NoConn ~ 4400 5375
 NoConn ~ 4400 3475
 $Comp
@@ -809,4 +799,16 @@ NoConn ~ 3425 6550
 NoConn ~ 3025 6550
 Text HLabel 11800 3675 2    60   Input ~ 0
 ADC4
+Wire Wire Line
+	10400 4475 11800 4475
+Wire Wire Line
+	10400 4375 11800 4375
+Text HLabel 11800 4375 2    60   Input ~ 0
+SWD_IO
+Text HLabel 11800 4475 2    60   Input ~ 0
+SWD_SCK
+Wire Wire Line
+	11300 5975 11775 5975
+Wire Wire Line
+	11000 5975 10400 5975
 $EndSCHEMATC
