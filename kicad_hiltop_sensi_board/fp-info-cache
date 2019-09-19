@@ -1,4 +1,4 @@
-16531867911448863
+16533436724326863
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -43231,6 +43231,13 @@ MOV Length 10mm Depth 5mm Vertical
 0
 2
 2
+Devtank_PCB_Lib
+Molex2x06
+
+
+0
+12
+12
 Devtank_PCB_Lib
 Omega_Logo
 

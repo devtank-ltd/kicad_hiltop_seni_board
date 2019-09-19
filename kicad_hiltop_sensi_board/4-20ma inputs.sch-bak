@@ -219,17 +219,6 @@ Wire Wire Line
 Connection ~ 2750 2450
 Wire Wire Line
 	2750 2450 2750 2400
-$Comp
-L Devtank:+3.3V #PWR0113
-U 1 1 5DE24768
-P 4500 1500
-F 0 "#PWR0113" H 4500 1350 50  0001 C CNN
-F 1 "+3.3V" H 4515 1673 50  0000 C CNN
-F 2 "" H 4500 1500 50  0000 C CNN
-F 3 "" H 4500 1500 50  0000 C CNN
-	1    4500 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2750 2050 3550 2050
 Wire Wire Line
@@ -445,17 +434,6 @@ Wire Wire Line
 Connection ~ 2750 4650
 Wire Wire Line
 	2750 4650 2750 4600
-$Comp
-L Devtank:+3.3V #PWR0118
-U 1 1 5D781CAC
-P 4500 3700
-F 0 "#PWR0118" H 4500 3550 50  0001 C CNN
-F 1 "+3.3V" H 4515 3873 50  0000 C CNN
-F 2 "" H 4500 3700 50  0000 C CNN
-F 3 "" H 4500 3700 50  0000 C CNN
-	1    4500 3700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2750 4250 3550 4250
 Wire Wire Line
@@ -671,17 +649,6 @@ Wire Wire Line
 Connection ~ 6850 2450
 Wire Wire Line
 	6850 2450 6850 2400
-$Comp
-L Devtank:+3.3V #PWR0123
-U 1 1 5D789E6F
-P 8600 1500
-F 0 "#PWR0123" H 8600 1350 50  0001 C CNN
-F 1 "+3.3V" H 8615 1673 50  0000 C CNN
-F 2 "" H 8600 1500 50  0000 C CNN
-F 3 "" H 8600 1500 50  0000 C CNN
-	1    8600 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6850 2050 7650 2050
 Wire Wire Line
@@ -897,17 +864,6 @@ Wire Wire Line
 Connection ~ 6850 4650
 Wire Wire Line
 	6850 4650 6850 4600
-$Comp
-L Devtank:+3.3V #PWR0128
-U 1 1 5D79139B
-P 8600 3700
-F 0 "#PWR0128" H 8600 3550 50  0001 C CNN
-F 1 "+3.3V" H 8615 3873 50  0000 C CNN
-F 2 "" H 8600 3700 50  0000 C CNN
-F 3 "" H 8600 3700 50  0000 C CNN
-	1    8600 3700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6850 4250 7650 4250
 Wire Wire Line
@@ -918,4 +874,56 @@ Text HLabel 6350 4650 0    60   Input ~ 0
 F4-
 Text HLabel 9400 4450 2    60   Input ~ 0
 F4op
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E623C28
+P 4500 1500
+AR Path="/5E623C28" Ref="#PWR?"  Part="1" 
+AR Path="/5D6F5943/5E623C28" Ref="#PWR0134"  Part="1" 
+F 0 "#PWR0134" H 4500 1350 50  0001 C CNN
+F 1 "+3V3" H 4515 1673 50  0000 C CNN
+F 2 "" H 4500 1500 50  0001 C CNN
+F 3 "" H 4500 1500 50  0001 C CNN
+	1    4500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E62CCFE
+P 4500 3700
+AR Path="/5E62CCFE" Ref="#PWR?"  Part="1" 
+AR Path="/5D6F5943/5E62CCFE" Ref="#PWR0153"  Part="1" 
+F 0 "#PWR0153" H 4500 3550 50  0001 C CNN
+F 1 "+3V3" H 4515 3873 50  0000 C CNN
+F 2 "" H 4500 3700 50  0001 C CNN
+F 3 "" H 4500 3700 50  0001 C CNN
+	1    4500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E633E37
+P 8600 1500
+AR Path="/5E633E37" Ref="#PWR?"  Part="1" 
+AR Path="/5D6F5943/5E633E37" Ref="#PWR0168"  Part="1" 
+F 0 "#PWR0168" H 8600 1350 50  0001 C CNN
+F 1 "+3V3" H 8615 1673 50  0000 C CNN
+F 2 "" H 8600 1500 50  0001 C CNN
+F 3 "" H 8600 1500 50  0001 C CNN
+	1    8600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E6405CE
+P 8600 3700
+AR Path="/5E6405CE" Ref="#PWR?"  Part="1" 
+AR Path="/5D6F5943/5E6405CE" Ref="#PWR0173"  Part="1" 
+F 0 "#PWR0173" H 8600 3550 50  0001 C CNN
+F 1 "+3V3" H 8615 3873 50  0000 C CNN
+F 2 "" H 8600 3700 50  0001 C CNN
+F 3 "" H 8600 3700 50  0001 C CNN
+	1    8600 3700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
