@@ -555,8 +555,6 @@ Wire Wire Line
 Wire Wire Line
 	4400 5075 3925 5075
 Wire Wire Line
-	4400 5975 3925 5975
-Wire Wire Line
 	10400 4575 11800 4575
 Wire Wire Line
 	10400 5475 11800 5475
@@ -602,35 +600,13 @@ Wire Wire Line
 	10400 3975 11800 3975
 Wire Wire Line
 	10400 4075 11800 4075
-$Comp
-L Sensi_Board-rescue:R-device R121
-U 1 1 5FA9D488
-P 11150 5975
-F 0 "R121" V 11125 5750 50  0000 C CNN
-F 1 "0R" V 11125 6175 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 11080 5975 50  0001 C CNN
-F 3 "" H 11150 5975 50  0001 C CNN
-F 4 "101-005" H 225 1600 50  0001 C CNN "Devtank"
-	1    11150 5975
-	0    1    1    0   
-$EndComp
-Text HLabel 11800 3975 2    60   Output ~ 0
-HS_OUT1
 Text HLabel 11800 4075 2    60   Output ~ 0
-HS_OUT2
-Text HLabel 11775 5975 2    60   Output ~ 0
-HS_OUT3
-Text HLabel 11775 6275 2    60   Output ~ 0
+HS_OUT1
+Text HLabel 11800 4575 2    60   Output ~ 0
 HS_OUT4
-Text HLabel 11800 3075 2    60   Input ~ 0
-ADC1
-Text HLabel 11800 3175 2    60   Input ~ 0
-ADC2
-Text HLabel 11800 3375 2    60   Input ~ 0
-DEBUG_UART_RX
-Text HLabel 11800 3275 2    60   Output ~ 0
+Text HLabel 11775 5775 2    60   Output ~ 0
 DEBUG_UART_TX
-Text HLabel 11800 3475 2    60   Input ~ 0
+Text HLabel 3925 4875 0    60   Input ~ 0
 ADC3
 $Comp
 L Sensi_Board-rescue:R-device R124
@@ -673,55 +649,43 @@ Wire Wire Line
 	13325 3425 13325 3575
 Wire Wire Line
 	13325 3575 13225 3575
-Text HLabel 11800 3775 2    60   Input ~ 0
-ADC5
-Text HLabel 11800 3875 2    60   BiDi ~ 0
+Text HLabel 11800 3975 2    60   BiDi ~ 0
 GPIO4
 Text HLabel 11800 4175 2    60   Output ~ 0
 USB_DATA_N
 Text HLabel 11800 4275 2    60   Output ~ 0
 USB_DATA_P
-Text HLabel 11800 4575 2    60   BiDi ~ 0
+Text HLabel 11800 3875 2    60   BiDi ~ 0
 GPIO2
-Text HLabel 11800 4875 2    60   Input ~ 0
+Text HLabel 11800 3275 2    60   Input ~ 0
 ADC7
 Text HLabel 4400 5675 0    60   BiDi ~ 0
 GPIO13
-Text HLabel 4400 6075 0    60   BiDi ~ 0
-GPIO6
-Text HLabel 11800 5375 2    60   BiDi ~ 0
+Text HLabel 11775 5675 2    60   BiDi ~ 0
 GPIO10
-Text HLabel 11800 5475 2    60   BiDi ~ 0
-GPIO3
-Text HLabel 11775 5775 2    60   BiDi ~ 0
+Text HLabel 11775 6075 2    60   BiDi ~ 0
 GPIO5
 Text HLabel 11775 5575 2    60   BiDi ~ 0
 GPIO9
-Text HLabel 11775 5675 2    60   BiDi ~ 0
+Text HLabel 4400 6075 0    60   BiDi ~ 0
 GPIO11
-Text HLabel 11775 5875 2    60   BiDi ~ 0
+Text HLabel 11800 4775 2    60   BiDi ~ 0
 GPIO14
-Text HLabel 3925 4575 0    60   BiDi ~ 0
+Text HLabel 11775 6275 2    60   BiDi ~ 0
 GPIO7
-Text HLabel 3925 4775 0    60   Input ~ 0
-ADC8
-Text HLabel 3925 4875 0    60   Input ~ 0
-ADC9
-Text HLabel 3925 5075 0    60   Input ~ 0
-ADC11
 Text HLabel 3925 5175 0    60   Input ~ 0
 ADC12
 Text HLabel 3925 5275 0    60   Input ~ 0
 ADC13
-Text HLabel 3925 5475 0    60   BiDi ~ 0
+Text HLabel 11800 4875 2    60   BiDi ~ 0
 GPIO12
-Text HLabel 3925 5575 0    60   Output ~ 0
+Text HLabel 3925 4575 0    60   Output ~ 0
 RL1
-Text HLabel 2200 5775 0    60   BiDi ~ 0
+Text HLabel 2500 5875 0    60   BiDi ~ 0
 DUT1_UART_RX_GPIO15
-Text HLabel 3925 5975 0    60   Input ~ 0
+Text HLabel 3925 5575 0    60   Input ~ 0
 GPIO1
-Text HLabel 11800 4775 2    60   Input ~ 0
+Text HLabel 11800 3175 2    60   Input ~ 0
 ADC6
 Wire Wire Line
 	10400 5075 11800 5075
@@ -751,16 +715,10 @@ Wire Wire Line
 	10400 3075 11800 3075
 Wire Wire Line
 	10400 3175 11800 3175
-Text HLabel 2200 5875 0    60   BiDi ~ 0
+Text HLabel 2500 5975 0    60   BiDi ~ 0
 DUT1_UART_TX_GPIO16
-Wire Wire Line
-	2200 5775 4400 5775
-Wire Wire Line
-	2200 5875 4400 5875
-Text HLabel 11800 4975 2    60   BiDi ~ 0
+Text HLabel 3925 5475 0    60   BiDi ~ 0
 GPIO8
-Text HLabel 3925 4975 0    60   Input ~ 0
-ADC10
 Wire Wire Line
 	2125 3275 4400 3275
 Text HLabel 11800 5075 2    60   Input ~ 0
@@ -769,9 +727,9 @@ Text HLabel 11800 5175 2    60   Input ~ 0
 STM_SPI1_MISO
 Text HLabel 11800 5275 2    60   Input ~ 0
 STM_SPI1_MOSI
-Text HLabel 11775 6075 2    60   Input ~ 0
+Text HLabel 11800 5375 2    60   Input ~ 0
 STM_SCL
-Text HLabel 11775 6175 2    60   Input ~ 0
+Text HLabel 11800 5475 2    60   Input ~ 0
 STM_SDA
 NoConn ~ 4400 5375
 NoConn ~ 4400 3475
@@ -797,8 +755,6 @@ NoConn ~ 3250 4325
 NoConn ~ 2850 4325
 NoConn ~ 3425 6550
 NoConn ~ 3025 6550
-Text HLabel 11800 3675 2    60   Input ~ 0
-ADC4
 Wire Wire Line
 	10400 4475 11800 4475
 Wire Wire Line
@@ -807,8 +763,52 @@ Text HLabel 11800 4375 2    60   Input ~ 0
 SWD_IO
 Text HLabel 11800 4475 2    60   Input ~ 0
 SWD_SCK
+Text HLabel 11800 3475 2    60   Input ~ 0
+ADC9
+Text HLabel 11800 3375 2    60   Input ~ 0
+ADC8
+Text HLabel 3925 4775 0    60   Input ~ 0
+ADC4
+Text HLabel 11800 3075 2    60   Input ~ 0
+ADC5
+Text HLabel 3925 4975 0    60   Input ~ 0
+ADC2
+Text HLabel 3925 5075 0    60   Input ~ 0
+ADC1
+Text HLabel 11800 5975 2    60   Output ~ 0
+HS_OUT2
+Text HLabel 11800 4975 2    60   BiDi ~ 0
+GPIO3
+Text HLabel 11775 6175 2    60   BiDi ~ 0
+GPIO6
 Wire Wire Line
-	11300 5975 11775 5975
+	3800 5775 4400 5775
 Wire Wire Line
-	11000 5975 10400 5975
+	3500 5775 3025 5775
+Text HLabel 11775 5875 2    60   Input ~ 0
+DEBUG_UART_RX
+Text HLabel 3025 5775 0    60   Output ~ 0
+HS_OUT3
+$Comp
+L Sensi_Board-rescue:R-device R121
+U 1 1 5FA9D488
+P 3650 5775
+F 0 "R121" V 3625 5550 50  0000 C CNN
+F 1 "0R" V 3625 5975 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3580 5775 50  0001 C CNN
+F 3 "" H 3650 5775 50  0001 C CNN
+F 4 "101-005" H -7275 1400 50  0001 C CNN "Devtank"
+	1    3650 5775
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2500 5875 4400 5875
+Wire Wire Line
+	4400 5975 2500 5975
+Wire Wire Line
+	10400 5975 11800 5975
+Text HLabel 11800 3675 2    60   Input ~ 0
+ADC10
+Text HLabel 11800 3775 2    60   Input ~ 0
+ADC11
 $EndSCHEMATC
