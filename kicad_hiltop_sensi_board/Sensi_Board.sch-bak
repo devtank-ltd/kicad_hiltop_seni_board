@@ -493,7 +493,7 @@ F 0 "JP1" V 18429 3926 50  0000 L CNN
 F 1 "Jumper_NC_Dual" V 18520 3926 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 18475 3825 50  0001 C CNN
 F 3 "" H 18475 3825 50  0001 C CNN
-F 4 "710-015" H 0   0   50  0001 C CNN "Devtank"
+F 4 "710-014" H 0   0   50  0001 C CNN "Devtank"
 	1    18475 3825
 	0    1    1    0   
 $EndComp
@@ -1048,7 +1048,7 @@ F 0 "R9" H 17725 9075 50  0000 C CNN
 F 1 "DNF" H 17725 9175 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 17755 9150 50  0001 C CNN
 F 3 "" H 17825 9150 50  0001 C CNN
-F 4 "101-007" H -350 1050 50  0001 C CNN "Devtank"
+F 4 "" H -350 1050 50  0001 C CNN "Devtank"
 	1    17825 9150
 	-1   0    0    1   
 $EndComp
@@ -1060,7 +1060,7 @@ F 0 "R8" H 17475 9075 50  0000 C CNN
 F 1 "DNF" H 17475 9175 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 17505 9150 50  0001 C CNN
 F 3 "" H 17575 9150 50  0001 C CNN
-F 4 "101-007" H -350 1050 50  0001 C CNN "Devtank"
+F 4 "" H -350 1050 50  0001 C CNN "Devtank"
 	1    17575 9150
 	-1   0    0    1   
 $EndComp
@@ -1250,8 +1250,6 @@ Wire Wire Line
 	3225 3600 2175 3600
 Wire Wire Line
 	3225 3725 2175 3725
-Wire Wire Line
-	3225 3850 2175 3850
 Text Label 2175 2975 0    60   ~ 0
 ADC1
 Text Label 2175 3100 0    60   ~ 0
@@ -1264,8 +1262,6 @@ Text Label 2175 3600 0    60   ~ 0
 ADC6
 Text Label 2175 3725 0    60   ~ 0
 ADC7
-Text Label 2175 3850 0    60   ~ 0
-ADC8
 Text Label 2175 3975 0    60   ~ 0
 ADC9
 Wire Wire Line
@@ -1954,7 +1950,7 @@ Wire Wire Line
 Connection ~ 21675 5250
 Wire Wire Line
 	21675 5250 21675 5175
-Text Label 950  4475 0    60   ~ 0
+Text Label 950  3850 0    60   ~ 0
 I_MON
 Text Label 20800 11050 2    60   ~ 0
 OUT1_COM
@@ -1989,17 +1985,17 @@ Connection ~ 18875 10050
 $Comp
 L Sensi_Board-rescue:R-device R149
 U 1 1 5CC4B709
-P 1875 4475
-F 0 "R149" V 1825 4225 50  0000 C CNN
-F 1 "0R" V 1825 4700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 4475 50  0001 C CNN
-F 3 "" H 1875 4475 50  0001 C CNN
-F 4 "101-005" H 150 1150 50  0001 C CNN "Devtank"
-	1    1875 4475
+P 1875 3850
+F 0 "R149" V 1825 3600 50  0000 C CNN
+F 1 "0R" V 1825 4075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 3850 50  0001 C CNN
+F 3 "" H 1875 3850 50  0001 C CNN
+F 4 "101-005" H 150 525 50  0001 C CNN "Devtank"
+	1    1875 3850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	950  4475 1725 4475
+	950  3850 1725 3850
 Wire Wire Line
 	2175 3475 3225 3475
 Text Label 2175 3475 0    60   ~ 0
@@ -2174,7 +2170,7 @@ ADC11
 Text Label 2175 4350 0    60   ~ 0
 ADC12
 Wire Wire Line
-	2025 4475 3225 4475
+	2025 3850 3225 3850
 Text Label 13850 4525 0    60   ~ 0
 USB_DATA_N
 Text Label 13850 4625 0    60   ~ 0
@@ -2241,24 +2237,24 @@ Wire Wire Line
 	12525 7475 13025 7475
 Wire Wire Line
 	12525 7775 13025 7775
-Text Label 13025 7775 2    60   ~ 0
-ADC5
-Text Label 13025 7475 2    60   ~ 0
-ADC6
-Text Label 13025 7175 2    60   ~ 0
-ADC7
 Text Label 13025 6875 2    60   ~ 0
-ADC8
+ADC5
+Text Label 11025 14750 2    60   ~ 0
+ADC6
+Text Label 11025 14300 2    60   ~ 0
+ADC7
+Text Label 11050 14450 2    60   ~ 0
+ADC13
 Wire Wire Line
 	20900 5250 20425 5250
 Wire Wire Line
 	20425 5150 20425 5250
 Connection ~ 20425 5250
-Text Label 8350 9450 2    60   ~ 0
+Text Label 13025 7175 2    60   ~ 0
 ADC4
-Text Label 8350 8850 2    60   ~ 0
+Text Label 13025 7475 2    60   ~ 0
 ADC3
-Text Label 8350 8550 2    60   ~ 0
+Text Label 13025 7775 2    60   ~ 0
 ADC2
 Text Label 8350 9150 2    60   ~ 0
 ADC1
@@ -2330,7 +2326,7 @@ Text Label 8675 14600 0    60   ~ 0
 5V_ADC11
 Text Label 8675 14750 0    60   ~ 0
 5V_ADC12
-Text Label 11100 14750 2    60   ~ 0
+Text Label 11050 14600 2    60   ~ 0
 ADC12
 $Comp
 L Sensi_Board-rescue:Conn_03x32_DIN41612-Devtank J3
@@ -2445,6 +2441,7 @@ F 0 "U6" H 8300 12331 50  0000 C CNN
 F 1 "LM75B" H 8300 12240 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8300 11650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm75b.pdf" H 8300 11650 50  0001 C CNN
+F 4 "155-005" H 8300 11650 50  0001 C CNN "Devtank"
 	1    8300 11650
 	-1   0    0    -1  
 $EndComp
@@ -2456,6 +2453,7 @@ F 0 "C23" V 8952 10975 50  0000 C CNN
 F 1 "100nF" V 8861 10975 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 8738 10825 50  0001 C CNN
 F 3 "" H 8700 10975 50  0001 C CNN
+F 4 "105-019" H 8700 10975 50  0001 C CNN "Devtank"
 	1    8700 10975
 	0    -1   -1   0   
 $EndComp
@@ -2467,6 +2465,7 @@ F 0 "R32" H 7445 11321 50  0000 L CNN
 F 1 "0R" H 7445 11230 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7305 11275 50  0001 C CNN
 F 3 "" H 7375 11275 50  0001 C CNN
+F 4 "101-005" H 7375 11275 50  0001 C CNN "Devtank"
 	1    7375 11275
 	1    0    0    -1  
 $EndComp
@@ -2478,6 +2477,7 @@ F 0 "R34" H 7695 11321 50  0000 L CNN
 F 1 "0R" H 7695 11230 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7555 11275 50  0001 C CNN
 F 3 "" H 7625 11275 50  0001 C CNN
+F 4 "101-005" H 7625 11275 50  0001 C CNN "Devtank"
 	1    7625 11275
 	1    0    0    -1  
 $EndComp
@@ -2511,6 +2511,7 @@ F 0 "R30" H 7195 11321 50  0000 L CNN
 F 1 "0R" H 7195 11230 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7055 11275 50  0001 C CNN
 F 3 "" H 7125 11275 50  0001 C CNN
+F 4 "101-005" H 7125 11275 50  0001 C CNN "Devtank"
 	1    7125 11275
 	1    0    0    -1  
 $EndComp
@@ -3033,6 +3034,7 @@ F 0 "R38" V 5343 11300 50  0000 C CNN
 F 1 "10K" V 5434 11300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5480 11300 50  0001 C CNN
 F 3 "" H 5550 11300 50  0001 C CNN
+F 4 "101-010" H 5550 11300 50  0001 C CNN "Devtank"
 	1    5550 11300
 	0    1    1    0   
 $EndComp
@@ -3044,6 +3046,7 @@ F 0 "R37" H 5420 10696 50  0000 L CNN
 F 1 "10K" H 5420 10605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5280 10650 50  0001 C CNN
 F 3 "" H 5350 10650 50  0001 C CNN
+F 4 "101-010" H 5350 10650 50  0001 C CNN "Devtank"
 	1    5350 10650
 	1    0    0    -1  
 $EndComp
@@ -3389,6 +3392,7 @@ F 0 "J10" H 1257 8546 50  0000 R CNN
 F 1 "Conn_ARM_JTAG_SWD_10" H 1257 8455 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 1750 7950 50  0001 L TNN
 F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf" V 1350 7250 50  0001 C CNN
+F 4 "710-020" H 1700 8500 50  0001 C CNN "Devtank"
 	1    1700 8500
 	1    0    0    -1  
 $EndComp
@@ -3400,6 +3404,7 @@ F 0 "C24" H 1065 8496 50  0000 L CNN
 F 1 "100nF" H 1065 8405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 988 8300 50  0001 C CNN
 F 3 "" H 950 8450 50  0001 C CNN
+F 4 "105-019" H 950 8450 50  0001 C CNN "Devtank"
 	1    950  8450
 	1    0    0    -1  
 $EndComp
@@ -3411,6 +3416,7 @@ F 0 "R39" H 3020 8446 50  0000 L CNN
 F 1 "100K" H 3020 8355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2880 8400 50  0001 C CNN
 F 3 "" H 2950 8400 50  0001 C CNN
+F 4 "101-015" H 2950 8400 50  0001 C CNN "Devtank"
 	1    2950 8400
 	0    -1   -1   0   
 $EndComp
@@ -3422,6 +3428,7 @@ F 0 "R40" H 3020 8596 50  0000 L CNN
 F 1 "100K" H 3020 8505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2880 8550 50  0001 C CNN
 F 3 "" H 2950 8550 50  0001 C CNN
+F 4 "101-015" H 2950 8550 50  0001 C CNN "Devtank"
 	1    2950 8550
 	0    -1   -1   0   
 $EndComp
@@ -3700,6 +3707,7 @@ F 0 "J8" H 12800 10492 50  0000 C CNN
 F 1 "Conn_02x06_Counter_Clockwise" H 12800 10401 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex2x06" H 12750 10075 50  0001 C CNN
 F 3 "~" H 12750 10075 50  0001 C CNN
+F 4 "711-004" H 12750 10075 50  0001 C CNN "Devtank"
 	1    12750 10075
 	1    0    0    -1  
 $EndComp
@@ -3711,6 +3719,7 @@ F 0 "J7" H 12775 11792 50  0000 C CNN
 F 1 "Conn_02x06_Counter_Clockwise" H 12775 11701 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex2x06" H 12725 11375 50  0001 C CNN
 F 3 "~" H 12725 11375 50  0001 C CNN
+F 4 "711-004" H 12725 11375 50  0001 C CNN "Devtank"
 	1    12725 11375
 	1    0    0    -1  
 $EndComp
@@ -3722,25 +3731,26 @@ F 0 "J5" H 7200 14842 50  0000 C CNN
 F 1 "Conn_02x06_Counter_Clockwise" H 7200 14751 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex2x06" H 7150 14425 50  0001 C CNN
 F 3 "~" H 7150 14425 50  0001 C CNN
+F 4 "711-004" H 7150 14425 50  0001 C CNN "Devtank"
 	1    7150 14425
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6950 14225 6525 14225
 Text Label 6525 14225 0    60   ~ 0
-ADC9
+ADC7
 Wire Wire Line
 	6950 14425 6525 14425
 Text Label 6525 14425 0    60   ~ 0
-ADC10
+ADC13
 Wire Wire Line
 	6950 14625 6525 14625
 Text Label 6525 14625 0    60   ~ 0
-ADC11
+ADC12
 Wire Wire Line
 	7450 14225 7875 14225
 Text Label 7875 14225 2    60   ~ 0
-ADC12
+ADC6
 NoConn ~ 7450 14525
 NoConn ~ 7450 14425
 $Comp
@@ -3751,6 +3761,7 @@ F 0 "J6" H 10050 7717 50  0000 C CNN
 F 1 "Conn_02x06_Counter_Clockwise" H 10050 7626 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex2x06" H 10000 7300 50  0001 C CNN
 F 3 "~" H 10000 7300 50  0001 C CNN
+F 4 "711-004" H 10000 7300 50  0001 C CNN "Devtank"
 	1    10000 7300
 	1    0    0    -1  
 $EndComp
@@ -3762,6 +3773,7 @@ F 0 "J4" H 4975 9367 50  0000 C CNN
 F 1 "Conn_02x06_Counter_Clockwise" H 4975 9276 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex2x06" H 4925 8950 50  0001 C CNN
 F 3 "~" H 4925 8950 50  0001 C CNN
+F 4 "711-004" H 4925 8950 50  0001 C CNN "Devtank"
 	1    4925 8950
 	1    0    0    -1  
 $EndComp
@@ -3773,6 +3785,7 @@ F 0 "J2" H 4750 11617 50  0000 C CNN
 F 1 "Conn_02x06_Counter_Clockwise" H 4750 11526 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex2x06" H 4700 11200 50  0001 C CNN
 F 3 "~" H 4700 11200 50  0001 C CNN
+F 4 "711-004" H 4700 11200 50  0001 C CNN "Devtank"
 	1    4700 11200
 	1    0    0    -1  
 $EndComp
@@ -3784,6 +3797,7 @@ F 0 "J1" H 2000 11742 50  0000 C CNN
 F 1 "Conn_02x06_Counter_Clockwise" H 2000 11651 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex2x06" H 1950 11325 50  0001 C CNN
 F 3 "~" H 1950 11325 50  0001 C CNN
+F 4 "711-004" H 1950 11325 50  0001 C CNN "Devtank"
 	1    1950 11325
 	1    0    0    -1  
 $EndComp
@@ -3919,11 +3933,11 @@ Wire Wire Line
 	7450 14325 7625 14325
 NoConn ~ 7450 14625
 NoConn ~ 7450 14725
-Text Label 11100 14600 2    60   ~ 0
+Text Label 8350 8550 2    60   ~ 0
 ADC11
-Text Label 11100 14450 2    60   ~ 0
+Text Label 8350 8850 2    60   ~ 0
 ADC10
-Text Label 11100 14300 2    60   ~ 0
+Text Label 8350 9450 2    60   ~ 0
 ADC9
 Wire Wire Line
 	3225 6775 2525 6775
@@ -3931,4 +3945,8 @@ Wire Wire Line
 	3225 6900 2525 6900
 NoConn ~ 2525 6775
 NoConn ~ 2525 6900
+Wire Wire Line
+	3225 4475 2175 4475
+Text Label 2175 4475 0    60   ~ 0
+ADC13
 $EndSCHEMATC

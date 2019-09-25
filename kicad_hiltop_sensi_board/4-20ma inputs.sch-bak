@@ -22,6 +22,7 @@ F 0 "U16" H 3950 2800 60  0000 L CNN
 F 1 "MAX4194" H 3950 2700 60  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4450 2250 60  0001 C CNN
 F 3 "" H 4450 2250 60  0001 C CNN
+F 4 "120-005" H 4450 2250 50  0001 C CNN "Devtank"
 	1    4450 2250
 	1    0    0    -1  
 $EndComp
@@ -33,45 +34,10 @@ F 0 "C40" V 4548 1850 50  0000 C CNN
 F 1 "0.1uF" V 4639 1850 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4838 1700 50  0001 C CNN
 F 3 "" H 4800 1850 50  0001 C CNN
+F 4 "105-019" H 4800 1850 50  0001 C CNN "Devtank"
 	1    4800 1850
 	0    1    1    0   
 $EndComp
-$Comp
-L device:R R54
-U 1 1 5D6E4918
-P 3550 2250
-F 0 "R54" H 3620 2296 50  0000 L CNN
-F 1 "32R" H 3620 2205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3480 2250 50  0001 C CNN
-F 3 "" H 3550 2250 50  0001 C CNN
-	1    3550 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:R R56
-U 1 1 5D6E4ED5
-P 3850 2250
-F 0 "R56" H 3920 2296 50  0000 L CNN
-F 1 "12K5" H 3920 2205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3780 2250 50  0001 C CNN
-F 3 "" H 3850 2250 50  0001 C CNN
-	1    3850 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 2450 4100 2450
-Wire Wire Line
-	4100 2350 3950 2350
-Wire Wire Line
-	3950 2350 3950 2400
-Wire Wire Line
-	3950 2400 3850 2400
-Wire Wire Line
-	4100 2150 3950 2150
-Wire Wire Line
-	3950 2150 3950 2100
-Wire Wire Line
-	3950 2100 3850 2100
 Wire Wire Line
 	4500 1850 4650 1850
 $Comp
@@ -109,14 +75,6 @@ Wire Wire Line
 Connection ~ 4500 2650
 Wire Wire Line
 	4500 2650 4500 2550
-Wire Wire Line
-	3550 2050 3550 2100
-Wire Wire Line
-	3550 2400 3550 2450
-Connection ~ 3550 2050
-Wire Wire Line
-	3550 2050 4100 2050
-Connection ~ 3550 2450
 Wire Wire Line
 	5000 2250 5300 2250
 Wire Wire Line
@@ -219,10 +177,6 @@ Wire Wire Line
 Connection ~ 2750 2450
 Wire Wire Line
 	2750 2450 2750 2400
-Wire Wire Line
-	2750 2050 3550 2050
-Wire Wire Line
-	2750 2450 3550 2450
 Text HLabel 2250 2050 0    60   Input ~ 0
 F1+
 Text HLabel 2250 2450 0    60   Input ~ 0
@@ -237,6 +191,7 @@ F 0 "U19" H 3950 5000 60  0000 L CNN
 F 1 "MAX4194" H 3950 4900 60  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4450 4450 60  0001 C CNN
 F 3 "" H 4450 4450 60  0001 C CNN
+F 4 "120-005" H 4450 4450 50  0001 C CNN "Devtank"
 	1    4450 4450
 	1    0    0    -1  
 $EndComp
@@ -248,45 +203,10 @@ F 0 "C41" V 4548 4050 50  0000 C CNN
 F 1 "0.1uF" V 4639 4050 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4838 3900 50  0001 C CNN
 F 3 "" H 4800 4050 50  0001 C CNN
+F 4 "105-019" H 4800 4050 50  0001 C CNN "Devtank"
 	1    4800 4050
 	0    1    1    0   
 $EndComp
-$Comp
-L device:R R55
-U 1 1 5D781C48
-P 3550 4450
-F 0 "R55" H 3620 4496 50  0000 L CNN
-F 1 "32R" H 3620 4405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3480 4450 50  0001 C CNN
-F 3 "" H 3550 4450 50  0001 C CNN
-	1    3550 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:R R57
-U 1 1 5D781C4E
-P 3850 4450
-F 0 "R57" H 3920 4496 50  0000 L CNN
-F 1 "12K5" H 3920 4405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3780 4450 50  0001 C CNN
-F 3 "" H 3850 4450 50  0001 C CNN
-	1    3850 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 4650 4100 4650
-Wire Wire Line
-	4100 4550 3950 4550
-Wire Wire Line
-	3950 4550 3950 4600
-Wire Wire Line
-	3950 4600 3850 4600
-Wire Wire Line
-	4100 4350 3950 4350
-Wire Wire Line
-	3950 4350 3950 4300
-Wire Wire Line
-	3950 4300 3850 4300
 Wire Wire Line
 	4500 4050 4650 4050
 $Comp
@@ -324,14 +244,6 @@ Wire Wire Line
 Connection ~ 4500 4850
 Wire Wire Line
 	4500 4850 4500 4750
-Wire Wire Line
-	3550 4250 3550 4300
-Wire Wire Line
-	3550 4600 3550 4650
-Connection ~ 3550 4250
-Wire Wire Line
-	3550 4250 4100 4250
-Connection ~ 3550 4650
 Wire Wire Line
 	5000 4450 5300 4450
 Wire Wire Line
@@ -434,10 +346,6 @@ Wire Wire Line
 Connection ~ 2750 4650
 Wire Wire Line
 	2750 4650 2750 4600
-Wire Wire Line
-	2750 4250 3550 4250
-Wire Wire Line
-	2750 4650 3550 4650
 Text HLabel 2250 4250 0    60   Input ~ 0
 F3+
 Text HLabel 2250 4650 0    60   Input ~ 0
@@ -452,6 +360,7 @@ F 0 "U20" H 8050 2800 60  0000 L CNN
 F 1 "MAX4194" H 8050 2700 60  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8550 2250 60  0001 C CNN
 F 3 "" H 8550 2250 60  0001 C CNN
+F 4 "120-005" H 8550 2250 50  0001 C CNN "Devtank"
 	1    8550 2250
 	1    0    0    -1  
 $EndComp
@@ -463,45 +372,10 @@ F 0 "C48" V 8648 1850 50  0000 C CNN
 F 1 "0.1uF" V 8739 1850 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 8938 1700 50  0001 C CNN
 F 3 "" H 8900 1850 50  0001 C CNN
+F 4 "105-019" H 8900 1850 50  0001 C CNN "Devtank"
 	1    8900 1850
 	0    1    1    0   
 $EndComp
-$Comp
-L device:R R62
-U 1 1 5D789E0B
-P 7650 2250
-F 0 "R62" H 7720 2296 50  0000 L CNN
-F 1 "32R" H 7720 2205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7580 2250 50  0001 C CNN
-F 3 "" H 7650 2250 50  0001 C CNN
-	1    7650 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:R R64
-U 1 1 5D789E11
-P 7950 2250
-F 0 "R64" H 8020 2296 50  0000 L CNN
-F 1 "12K5" H 8020 2205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7880 2250 50  0001 C CNN
-F 3 "" H 7950 2250 50  0001 C CNN
-	1    7950 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7650 2450 8200 2450
-Wire Wire Line
-	8200 2350 8050 2350
-Wire Wire Line
-	8050 2350 8050 2400
-Wire Wire Line
-	8050 2400 7950 2400
-Wire Wire Line
-	8200 2150 8050 2150
-Wire Wire Line
-	8050 2150 8050 2100
-Wire Wire Line
-	8050 2100 7950 2100
 Wire Wire Line
 	8600 1850 8750 1850
 $Comp
@@ -539,14 +413,6 @@ Wire Wire Line
 Connection ~ 8600 2650
 Wire Wire Line
 	8600 2650 8600 2550
-Wire Wire Line
-	7650 2050 7650 2100
-Wire Wire Line
-	7650 2400 7650 2450
-Connection ~ 7650 2050
-Wire Wire Line
-	7650 2050 8200 2050
-Connection ~ 7650 2450
 Wire Wire Line
 	9100 2250 9400 2250
 Wire Wire Line
@@ -649,10 +515,6 @@ Wire Wire Line
 Connection ~ 6850 2450
 Wire Wire Line
 	6850 2450 6850 2400
-Wire Wire Line
-	6850 2050 7650 2050
-Wire Wire Line
-	6850 2450 7650 2450
 Text HLabel 6350 2050 0    60   Input ~ 0
 F2+
 Text HLabel 6350 2450 0    60   Input ~ 0
@@ -667,6 +529,7 @@ F 0 "U21" H 8050 5000 60  0000 L CNN
 F 1 "MAX4194" H 8050 4900 60  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8550 4450 60  0001 C CNN
 F 3 "" H 8550 4450 60  0001 C CNN
+F 4 "120-005" H 8550 4450 50  0001 C CNN "Devtank"
 	1    8550 4450
 	1    0    0    -1  
 $EndComp
@@ -678,45 +541,10 @@ F 0 "C49" V 8648 4050 50  0000 C CNN
 F 1 "0.1uF" V 8739 4050 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 8938 3900 50  0001 C CNN
 F 3 "" H 8900 4050 50  0001 C CNN
+F 4 "105-019" H 8900 4050 50  0001 C CNN "Devtank"
 	1    8900 4050
 	0    1    1    0   
 $EndComp
-$Comp
-L device:R R63
-U 1 1 5D791337
-P 7650 4450
-F 0 "R63" H 7720 4496 50  0000 L CNN
-F 1 "32R" H 7720 4405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7580 4450 50  0001 C CNN
-F 3 "" H 7650 4450 50  0001 C CNN
-	1    7650 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:R R65
-U 1 1 5D79133D
-P 7950 4450
-F 0 "R65" H 8020 4496 50  0000 L CNN
-F 1 "12K5" H 8020 4405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7880 4450 50  0001 C CNN
-F 3 "" H 7950 4450 50  0001 C CNN
-	1    7950 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7650 4650 8200 4650
-Wire Wire Line
-	8200 4550 8050 4550
-Wire Wire Line
-	8050 4550 8050 4600
-Wire Wire Line
-	8050 4600 7950 4600
-Wire Wire Line
-	8200 4350 8050 4350
-Wire Wire Line
-	8050 4350 8050 4300
-Wire Wire Line
-	8050 4300 7950 4300
 Wire Wire Line
 	8600 4050 8750 4050
 $Comp
@@ -754,14 +582,6 @@ Wire Wire Line
 Connection ~ 8600 4850
 Wire Wire Line
 	8600 4850 8600 4750
-Wire Wire Line
-	7650 4250 7650 4300
-Wire Wire Line
-	7650 4600 7650 4650
-Connection ~ 7650 4250
-Wire Wire Line
-	7650 4250 8200 4250
-Connection ~ 7650 4650
 Wire Wire Line
 	9100 4450 9400 4450
 Wire Wire Line
@@ -864,10 +684,6 @@ Wire Wire Line
 Connection ~ 6850 4650
 Wire Wire Line
 	6850 4650 6850 4600
-Wire Wire Line
-	6850 4250 7650 4250
-Wire Wire Line
-	6850 4650 7650 4650
 Text HLabel 6350 4250 0    60   Input ~ 0
 F4+
 Text HLabel 6350 4650 0    60   Input ~ 0
@@ -926,4 +742,292 @@ F 3 "" H 8600 3700 50  0001 C CNN
 	1    8600 3700
 	1    0    0    -1  
 $EndComp
+$Comp
+L device:R R54
+U 1 1 5D6E4918
+P 3325 2250
+F 0 "R54" H 3395 2296 50  0000 L CNN
+F 1 "30R" H 3395 2205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3255 2250 50  0001 C CNN
+F 3 "" H 3325 2250 50  0001 C CNN
+F 4 "101-054" H 3325 2250 50  0001 C CNN "Devtank"
+	1    3325 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3325 2400 3325 2450
+Wire Wire Line
+	2750 2450 3325 2450
+Wire Wire Line
+	3325 2450 4100 2450
+Connection ~ 3325 2450
+Wire Wire Line
+	3325 2100 3325 2050
+Wire Wire Line
+	2750 2050 3325 2050
+Wire Wire Line
+	3325 2050 4100 2050
+Connection ~ 3325 2050
+Wire Wire Line
+	3950 2100 3850 2100
+Wire Wire Line
+	3950 2150 3950 2100
+Wire Wire Line
+	4100 2150 3950 2150
+Wire Wire Line
+	3950 2400 3850 2400
+Wire Wire Line
+	3950 2350 3950 2400
+Wire Wire Line
+	4100 2350 3950 2350
+$Comp
+L device:R R?
+U 1 1 5EF50DD9
+P 3850 2250
+AR Path="/5D6F87E7/5EF50DD9" Ref="R?"  Part="1" 
+AR Path="/5D6F5943/5EF50DD9" Ref="R62"  Part="1" 
+F 0 "R62" H 3920 2296 50  0000 L CNN
+F 1 "DNF" H 3920 2205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3780 2250 50  0001 C CNN
+F 3 "" H 3850 2250 50  0001 C CNN
+F 4 "0.1%" H 3850 2250 50  0001 C CNN "Tolerance"
+	1    3850 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5EF50DDF
+P 3675 2250
+AR Path="/5D6F87E7/5EF50DDF" Ref="R?"  Part="1" 
+AR Path="/5D6F5943/5EF50DDF" Ref="R56"  Part="1" 
+F 0 "R56" H 3745 2296 50  0000 L CNN
+F 1 "12.4K" H 3745 2205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3605 2250 50  0001 C CNN
+F 3 "" H 3675 2250 50  0001 C CNN
+F 4 "103-003" H 3675 2250 50  0001 C CNN "Devtank"
+	1    3675 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3675 2100 3850 2100
+Connection ~ 3850 2100
+Wire Wire Line
+	3675 2400 3850 2400
+Connection ~ 3850 2400
+$Comp
+L device:R R65
+U 1 1 5EF71CC8
+P 7425 2250
+F 0 "R65" H 7495 2296 50  0000 L CNN
+F 1 "30R" H 7495 2205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7355 2250 50  0001 C CNN
+F 3 "" H 7425 2250 50  0001 C CNN
+F 4 "101-054" H 7425 2250 50  0001 C CNN "Devtank"
+	1    7425 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7425 2400 7425 2450
+Wire Wire Line
+	6850 2450 7425 2450
+Wire Wire Line
+	7425 2450 8200 2450
+Connection ~ 7425 2450
+Wire Wire Line
+	7425 2100 7425 2050
+Wire Wire Line
+	6850 2050 7425 2050
+Wire Wire Line
+	7425 2050 8200 2050
+Connection ~ 7425 2050
+Wire Wire Line
+	8050 2100 7950 2100
+Wire Wire Line
+	8050 2150 8050 2100
+Wire Wire Line
+	8200 2150 8050 2150
+Wire Wire Line
+	8050 2400 7950 2400
+Wire Wire Line
+	8050 2350 8050 2400
+Wire Wire Line
+	8200 2350 8050 2350
+$Comp
+L device:R R?
+U 1 1 5EF71CDD
+P 7950 2250
+AR Path="/5D6F87E7/5EF71CDD" Ref="R?"  Part="1" 
+AR Path="/5D6F5943/5EF71CDD" Ref="R114"  Part="1" 
+F 0 "R114" H 8020 2296 50  0000 L CNN
+F 1 "DNF" H 8020 2205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7880 2250 50  0001 C CNN
+F 3 "" H 7950 2250 50  0001 C CNN
+F 4 "0.1%" H 7950 2250 50  0001 C CNN "Tolerance"
+	1    7950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5EF71CE3
+P 7775 2250
+AR Path="/5D6F87E7/5EF71CE3" Ref="R?"  Part="1" 
+AR Path="/5D6F5943/5EF71CE3" Ref="R72"  Part="1" 
+F 0 "R72" H 7845 2296 50  0000 L CNN
+F 1 "12.4K" H 7845 2205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7705 2250 50  0001 C CNN
+F 3 "" H 7775 2250 50  0001 C CNN
+F 4 "103-003" H 7775 2250 50  0001 C CNN "Devtank"
+	1    7775 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7775 2100 7950 2100
+Connection ~ 7950 2100
+Wire Wire Line
+	7775 2400 7950 2400
+Connection ~ 7950 2400
+$Comp
+L device:R R55
+U 1 1 5EF7FC72
+P 3325 4450
+F 0 "R55" H 3395 4496 50  0000 L CNN
+F 1 "30R" H 3395 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3255 4450 50  0001 C CNN
+F 3 "" H 3325 4450 50  0001 C CNN
+F 4 "101-054" H 3325 4450 50  0001 C CNN "Devtank"
+	1    3325 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3325 4600 3325 4650
+Wire Wire Line
+	2750 4650 3325 4650
+Wire Wire Line
+	3325 4650 4100 4650
+Connection ~ 3325 4650
+Wire Wire Line
+	3325 4300 3325 4250
+Wire Wire Line
+	2750 4250 3325 4250
+Wire Wire Line
+	3325 4250 4100 4250
+Connection ~ 3325 4250
+Wire Wire Line
+	3950 4300 3850 4300
+Wire Wire Line
+	3950 4350 3950 4300
+Wire Wire Line
+	4100 4350 3950 4350
+Wire Wire Line
+	3950 4600 3850 4600
+Wire Wire Line
+	3950 4550 3950 4600
+Wire Wire Line
+	4100 4550 3950 4550
+$Comp
+L device:R R?
+U 1 1 5EF7FC87
+P 3850 4450
+AR Path="/5D6F87E7/5EF7FC87" Ref="R?"  Part="1" 
+AR Path="/5D6F5943/5EF7FC87" Ref="R63"  Part="1" 
+F 0 "R63" H 3920 4496 50  0000 L CNN
+F 1 "DNF" H 3920 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3780 4450 50  0001 C CNN
+F 3 "" H 3850 4450 50  0001 C CNN
+F 4 "0.1%" H 3850 4450 50  0001 C CNN "Tolerance"
+	1    3850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5EF7FC8D
+P 3675 4450
+AR Path="/5D6F87E7/5EF7FC8D" Ref="R?"  Part="1" 
+AR Path="/5D6F5943/5EF7FC8D" Ref="R57"  Part="1" 
+F 0 "R57" H 3745 4496 50  0000 L CNN
+F 1 "12.4K" H 3745 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3605 4450 50  0001 C CNN
+F 3 "" H 3675 4450 50  0001 C CNN
+F 4 "103-003" H 3675 4450 50  0001 C CNN "Devtank"
+	1    3675 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3675 4300 3850 4300
+Connection ~ 3850 4300
+Wire Wire Line
+	3675 4600 3850 4600
+Connection ~ 3850 4600
+$Comp
+L device:R R64
+U 1 1 5EF8DCD0
+P 7425 4450
+F 0 "R64" H 7495 4496 50  0000 L CNN
+F 1 "30R" H 7495 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7355 4450 50  0001 C CNN
+F 3 "" H 7425 4450 50  0001 C CNN
+F 4 "101-054" H 7425 4450 50  0001 C CNN "Devtank"
+	1    7425 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7425 4600 7425 4650
+Wire Wire Line
+	6850 4650 7425 4650
+Wire Wire Line
+	7425 4650 8200 4650
+Connection ~ 7425 4650
+Wire Wire Line
+	7425 4300 7425 4250
+Wire Wire Line
+	6850 4250 7425 4250
+Wire Wire Line
+	7425 4250 8200 4250
+Connection ~ 7425 4250
+Wire Wire Line
+	8050 4300 7950 4300
+Wire Wire Line
+	8050 4350 8050 4300
+Wire Wire Line
+	8200 4350 8050 4350
+Wire Wire Line
+	8050 4600 7950 4600
+Wire Wire Line
+	8050 4550 8050 4600
+Wire Wire Line
+	8200 4550 8050 4550
+$Comp
+L device:R R?
+U 1 1 5EF8DCE5
+P 7950 4450
+AR Path="/5D6F87E7/5EF8DCE5" Ref="R?"  Part="1" 
+AR Path="/5D6F5943/5EF8DCE5" Ref="R73"  Part="1" 
+F 0 "R73" H 8020 4496 50  0000 L CNN
+F 1 "DNF" H 8020 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7880 4450 50  0001 C CNN
+F 3 "" H 7950 4450 50  0001 C CNN
+F 4 "0.1%" H 7950 4450 50  0001 C CNN "Tolerance"
+	1    7950 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5EF8DCEB
+P 7775 4450
+AR Path="/5D6F87E7/5EF8DCEB" Ref="R?"  Part="1" 
+AR Path="/5D6F5943/5EF8DCEB" Ref="R69"  Part="1" 
+F 0 "R69" H 7845 4496 50  0000 L CNN
+F 1 "12.4K" H 7845 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7705 4450 50  0001 C CNN
+F 3 "" H 7775 4450 50  0001 C CNN
+F 4 "103-003" H 7775 4450 50  0001 C CNN "Devtank"
+	1    7775 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7775 4300 7950 4300
+Connection ~ 7950 4300
+Wire Wire Line
+	7775 4600 7950 4600
+Connection ~ 7950 4600
 $EndSCHEMATC
