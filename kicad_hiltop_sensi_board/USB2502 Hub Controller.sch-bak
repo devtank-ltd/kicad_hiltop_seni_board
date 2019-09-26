@@ -1009,13 +1009,13 @@ Text HLabel 7800 2850 2    60   Input ~ 0
 USBDP0
 Text HLabel 7800 3000 2    60   Input ~ 0
 USBDN0
-Text HLabel 7800 3400 2    60   Input ~ 0
-USBDP1
-Text HLabel 7800 3550 2    60   Input ~ 0
-USBDN1
 Text HLabel 7800 4250 2    60   Input ~ 0
-USBDP2
+USBDP1
 Text HLabel 7800 4350 2    60   Input ~ 0
+USBDN1
+Text HLabel 7800 3400 2    60   Input ~ 0
+USBDP2
+Text HLabel 7800 3550 2    60   Input ~ 0
 USBDN2
 Wire Wire Line
 	4900 2400 4900 2850

@@ -3369,9 +3369,9 @@ Wire Wire Line
 	10300 7500 10650 7500
 Wire Wire Line
 	10300 7600 10650 7600
-Text Label 10650 7500 2    60   ~ 0
+Text Label 9450 7400 0    60   ~ 0
 F4+
-Text Label 10650 7600 2    60   ~ 0
+Text Label 9450 7500 0    60   ~ 0
 F4-
 $Comp
 L power:GND #PWR07
@@ -3801,9 +3801,9 @@ F 4 "711-004" H 1950 11325 50  0001 C CNN "Devtank"
 	1    1950 11325
 	1    0    0    -1  
 $EndComp
-Text Label 9450 7500 0    60   ~ 0
+Text Label 10650 7600 2    60   ~ 0
 F2-
-Text Label 9450 7400 0    60   ~ 0
+Text Label 10650 7500 2    60   ~ 0
 F2+
 Wire Wire Line
 	9800 7500 9450 7500
