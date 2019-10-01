@@ -702,7 +702,7 @@ Wire Wire Line
 	7100 1825 7200 1825
 Connection ~ 7200 1825
 Wire Wire Line
-	7500 2025 7875 2025
+	7500 2025 7750 2025
 Wire Wire Line
 	2125 1275 2125 1375
 Wire Wire Line
@@ -755,26 +755,10 @@ Text HLabel 4400 5675 0    60   BiDi ~ 0
 GPIO3
 Text HLabel 11775 6175 2    60   BiDi ~ 0
 GPIO6
-Wire Wire Line
-	3800 5975 4400 5975
-Wire Wire Line
-	3500 5975 3025 5975
 Text HLabel 11775 5875 2    60   Input ~ 0
 DEBUG_UART_RX
 Text HLabel 3025 5975 0    60   Output ~ 0
 HS_OUT3
-$Comp
-L Sensi_Board-rescue:R-device R121
-U 1 1 5FA9D488
-P 3650 5975
-F 0 "R121" V 3625 5750 50  0000 C CNN
-F 1 "0R" V 3625 6175 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3580 5975 50  0001 C CNN
-F 3 "" H 3650 5975 50  0001 C CNN
-F 4 "101-005" H -7275 1600 50  0001 C CNN "Devtank"
-	1    3650 5975
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	2500 5775 4400 5775
 Wire Wire Line
@@ -793,4 +777,22 @@ Text HLabel 11800 3775 2    60   Input ~ 0
 ADC6
 Text HLabel 11775 4875 2    60   Input ~ 0
 ADC7
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5DAF6A7D
+P 7750 1975
+F 0 "#FLG0102" H 7750 2050 50  0001 C CNN
+F 1 "PWR_FLAG" H 7750 2148 50  0000 C CNN
+F 2 "" H 7750 1975 50  0001 C CNN
+F 3 "" H 7750 1975 50  0001 C CNN
+	1    7750 1975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 1975 7750 2025
+Connection ~ 7750 2025
+Wire Wire Line
+	7750 2025 7875 2025
+Wire Wire Line
+	3025 5975 4400 5975
 $EndSCHEMATC
