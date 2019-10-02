@@ -6,8 +6,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 4 11
 Title "Iota Board"
-Date "2018-11-07"
-Rev "Rev A"
+Date "2019-10-01"
+Rev "Draft"
 Comp "Omega Analytic Systems"
 Comment1 ""
 Comment2 ""
