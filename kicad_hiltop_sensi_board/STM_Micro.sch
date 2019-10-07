@@ -121,7 +121,7 @@ F 0 "C73" H 2240 1671 50  0000 L CNN
 F 1 "100nF" H 2240 1580 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 2163 1475 50  0001 C CNN
 F 3 "" H 2125 1625 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
+F 4 "105-019" H 0   0   50  0001 C CNN "Devtank"
 	1    2125 1625
 	1    0    0    -1  
 $EndComp
@@ -133,7 +133,7 @@ F 0 "C74" H 2690 1671 50  0000 L CNN
 F 1 "100nF" H 2690 1580 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 2613 1475 50  0001 C CNN
 F 3 "" H 2575 1625 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
+F 4 "105-019" H 0   0   50  0001 C CNN "Devtank"
 	1    2575 1625
 	1    0    0    -1  
 $EndComp
@@ -145,7 +145,7 @@ F 0 "C79" H 3140 1671 50  0000 L CNN
 F 1 "100nF" H 3140 1580 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 3063 1475 50  0001 C CNN
 F 3 "" H 3025 1625 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
+F 4 "105-019" H 0   0   50  0001 C CNN "Devtank"
 	1    3025 1625
 	1    0    0    -1  
 $EndComp
@@ -157,7 +157,7 @@ F 0 "C80" H 3590 1671 50  0000 L CNN
 F 1 "100nF" H 3590 1580 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 3513 1475 50  0001 C CNN
 F 3 "" H 3475 1625 50  0001 C CNN
-F 4 "105-002" H 0   0   50  0001 C CNN "Devtank"
+F 4 "105-019" H 0   0   50  0001 C CNN "Devtank"
 	1    3475 1625
 	1    0    0    -1  
 $EndComp
