@@ -555,7 +555,7 @@ Wire Wire Line
 Wire Wire Line
 	10400 4575 11800 4575
 Wire Wire Line
-	10400 5475 11800 5475
+	10400 5475 12740 5475
 Wire Wire Line
 	10400 5575 11775 5575
 Wire Wire Line
@@ -575,7 +575,7 @@ Wire Wire Line
 Wire Wire Line
 	10400 4975 11800 4975
 Wire Wire Line
-	10400 5375 11800 5375
+	10400 5375 12955 5375
 Wire Wire Line
 	10400 6175 11775 6175
 Wire Wire Line
@@ -679,7 +679,7 @@ Text HLabel 11775 5675 2    60   Output ~ 0
 RL1
 Text HLabel 2500 5775 0    60   BiDi ~ 0
 DUT1_UART_RX_GPIO15
-Text HLabel 3925 5575 0    60   Input ~ 0
+Text HLabel 3925 5575 0    60   3State ~ 0
 GPIO1
 Wire Wire Line
 	10400 5075 11800 5075
@@ -721,11 +721,10 @@ Text HLabel 11800 5175 2    60   Input ~ 0
 STM_SPI1_MISO
 Text HLabel 11800 5275 2    60   Input ~ 0
 STM_SPI1_MOSI
-Text HLabel 11800 5375 2    60   Input ~ 0
+Text HLabel 13055 5375 2    60   Input ~ 0
 STM_SCL
-Text HLabel 11800 5475 2    60   Input ~ 0
+Text HLabel 13055 5475 2    60   Input ~ 0
 STM_SDA
-NoConn ~ 4400 5375
 NoConn ~ 4400 3475
 NoConn ~ 3425 6550
 NoConn ~ 3025 6550
@@ -747,7 +746,7 @@ Text HLabel 11800 3275 2    60   Input ~ 0
 ADC2
 Text HLabel 11800 3075 2    60   Input ~ 0
 ADC1
-Text HLabel 11800 5975 2    60   Output ~ 0
+Text HLabel 3910 5375 0    60   Output ~ 0
 HS_OUT2
 Text HLabel 4400 5675 0    60   BiDi ~ 0
 GPIO3
@@ -761,8 +760,6 @@ Wire Wire Line
 	2500 5775 4400 5775
 Wire Wire Line
 	4400 5875 2500 5875
-Wire Wire Line
-	10400 5975 11800 5975
 Text HLabel 3925 4975 0    60   Input ~ 0
 ADC10
 Text HLabel 3925 5075 0    60   Input ~ 0
@@ -819,4 +816,65 @@ Wire Wire Line
 	2800 4325 2850 4325
 Wire Wire Line
 	3250 4325 3275 4325
+Wire Wire Line
+	4400 5375 3910 5375
+NoConn ~ 10400 5975
+$Comp
+L device:R R?
+U 1 1 63797E89
+P 12955 5180
+F 0 "R?" H 13025 5226 50  0000 L CNN
+F 1 "4.7K" H 13025 5135 50  0000 L CNN
+F 2 "" V 12885 5180 50  0001 C CNN
+F 3 "" H 12955 5180 50  0001 C CNN
+	1    12955 5180
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 63798365
+P 12740 5180
+F 0 "R?" H 12810 5226 50  0000 L CNN
+F 1 "4.7K" H 12810 5135 50  0000 L CNN
+F 2 "" V 12670 5180 50  0001 C CNN
+F 3 "" H 12740 5180 50  0001 C CNN
+	1    12740 5180
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 63798567
+P 12740 5000
+F 0 "#PWR?" H 12740 4850 50  0001 C CNN
+F 1 "+3V3" H 12755 5173 50  0000 C CNN
+F 2 "" H 12740 5000 50  0001 C CNN
+F 3 "" H 12740 5000 50  0001 C CNN
+	1    12740 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6379878A
+P 12955 5000
+F 0 "#PWR?" H 12955 4850 50  0001 C CNN
+F 1 "+3V3" H 12970 5173 50  0000 C CNN
+F 2 "" H 12955 5000 50  0001 C CNN
+F 3 "" H 12955 5000 50  0001 C CNN
+	1    12955 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12955 5330 12955 5375
+Connection ~ 12955 5375
+Wire Wire Line
+	12955 5375 13055 5375
+Wire Wire Line
+	12740 5330 12740 5475
+Connection ~ 12740 5475
+Wire Wire Line
+	12740 5475 13055 5475
+Wire Wire Line
+	12740 5030 12740 5000
+Wire Wire Line
+	12955 5030 12955 5000
 $EndSCHEMATC
