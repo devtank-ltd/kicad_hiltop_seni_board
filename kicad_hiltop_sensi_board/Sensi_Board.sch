@@ -3726,7 +3726,7 @@ Wire Wire Line
 Wire Wire Line
 	5000 11400 5125 11400
 Wire Wire Line
-	5125 11400 5125 11650
+	5125 11400 5125 11500
 Text Label 2650 11625 2    60   ~ 0
 HS_OUT2
 Wire Wire Line
@@ -4859,4 +4859,9 @@ Wire Wire Line
 Wire Wire Line
 	4325 11100 4500 11100
 Connection ~ 4325 11300
+Wire Wire Line
+	5000 11500 5125 11500
+Connection ~ 5125 11500
+Wire Wire Line
+	5125 11500 5125 11650
 $EndSCHEMATC
