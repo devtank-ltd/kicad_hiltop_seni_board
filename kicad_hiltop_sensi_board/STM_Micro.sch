@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 11
+Sheet 11 11
 Title ""
 Date "2019-10-01"
 Rev "Draft"
@@ -598,7 +598,7 @@ Wire Wire Line
 	10400 4075 11800 4075
 Text HLabel 11800 4075 2    60   Output ~ 0
 HS_OUT1
-Text HLabel 11800 4575 2    60   Output ~ 0
+Text HLabel 11775 5575 2    60   Output ~ 0
 HS_OUT4
 Text HLabel 11775 5775 2    60   Output ~ 0
 DEBUG_UART_TX
@@ -655,13 +655,13 @@ Text HLabel 11800 3875 2    60   BiDi ~ 0
 RTD1_CS
 Text HLabel 11800 4775 2    60   BiDi ~ 0
 STM_RES1
-Text HLabel 11775 5575 2    60   BiDi ~ 0
+Text HLabel 11800 3175 2    60   BiDi ~ 0
 SB2
 Text HLabel 11775 6075 2    60   BiDi ~ 0
 RTD3_INT
-Text HLabel 3925 4575 0    60   BiDi ~ 0
-SB1
 Text HLabel 4400 6075 0    60   BiDi ~ 0
+SB1
+Text HLabel 11800 4575 2    60   BiDi ~ 0
 GPIO1
 Text HLabel 11800 4975 2    60   BiDi ~ 0
 STM_RES2
@@ -671,7 +671,7 @@ Text HLabel 3925 5175 0    60   Input ~ 0
 ADC12
 Text HLabel 3925 5275 0    60   Input ~ 0
 ADC13
-Text HLabel 11800 3175 2    60   BiDi ~ 0
+Text HLabel 4375 5775 0    60   BiDi ~ 0
 GPIO2
 Text HLabel 11775 5675 2    60   Output ~ 0
 RL1
@@ -746,7 +746,7 @@ Text HLabel 4400 5675 0    60   BiDi ~ 0
 RTD2_INT
 Text HLabel 11775 5875 2    60   Input ~ 0
 DEBUG_UART_RX
-Text HLabel 3025 5975 0    60   Output ~ 0
+Text HLabel 3925 4575 0    60   Output ~ 0
 HS_OUT3
 Text HLabel 3925 4975 0    60   Input ~ 0
 ADC10
@@ -777,7 +777,7 @@ Connection ~ 7750 2025
 Wire Wire Line
 	7750 2025 7875 2025
 Wire Wire Line
-	3025 5975 4400 5975
+	4375 5975 4400 5975
 $Comp
 L power:GND #PWR0162
 U 1 1 5DB0E805
@@ -812,7 +812,7 @@ U 1 1 63797E89
 P 13025 5180
 F 0 "R51" H 13095 5226 50  0000 L CNN
 F 1 "4.7K" H 13095 5135 50  0000 L CNN
-F 2 "" V 12955 5180 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12955 5180 50  0001 C CNN
 F 3 "" H 13025 5180 50  0001 C CNN
 	1    13025 5180
 	1    0    0    -1  
@@ -823,7 +823,7 @@ U 1 1 63798365
 P 12740 5180
 F 0 "R47" H 12790 5220 50  0000 L CNN
 F 1 "4.7K" H 12785 5150 50  0000 L CNN
-F 2 "" V 12670 5180 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12670 5180 50  0001 C CNN
 F 3 "" H 12740 5180 50  0001 C CNN
 	1    12740 5180
 	1    0    0    -1  
@@ -864,9 +864,9 @@ Wire Wire Line
 	12740 5030 12740 5000
 Wire Wire Line
 	13025 5030 13025 5000
-Text HLabel 4375 5775 0    60   BiDi ~ 0
-GPIO3
 Text HLabel 4375 5875 0    60   BiDi ~ 0
+GPIO3
+Text HLabel 4375 5975 0    60   BiDi ~ 0
 GPIO4
 Text HLabel 11775 6175 2    60   BiDi ~ 0
 RTD3_CS

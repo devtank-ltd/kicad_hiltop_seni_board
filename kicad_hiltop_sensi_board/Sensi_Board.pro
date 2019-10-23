@@ -1,4 +1,4 @@
-update=Wed 02 Oct 2019 14:27:08 BST
+update=Fri 18 Oct 2019 14:59:16 BST
 version=1
 last_client=kicad
 [cvpcb]
@@ -23,7 +23,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=../common/Devtank_KiCAD_Setup/Devtank_Dwg_Template.kicad_wks
-LastNetListRead=Sensi_Board3.net
+LastNetListRead=Sensi_Board4.net
 CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
@@ -85,7 +85,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.06
 SolderMaskMinWidth=0.075
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
