@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/adil/Documents/LBBC/KiCAD/kicad_hiltop_sensi_board/kicad_hiltop_sensi_board/Sensi_Board.sch)
-    (date "Tue 22 Oct 2019 11:38:18 BST")
+    (date "Wed 23 Oct 2019 08:35:06 BST")
     (tool "Eeschema 5.1.4-e60b266~84~ubuntu19.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
