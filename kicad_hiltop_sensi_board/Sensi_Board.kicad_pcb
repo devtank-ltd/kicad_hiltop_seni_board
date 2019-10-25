@@ -17382,7 +17382,7 @@
       (net 46 /GPIO5_EXT))
   )
 
-  (gr_text "RTD SW Sett Per RTD" (at 74.75 74.8) (layer F.SilkS)
+  (gr_text "RTD SW Settings" (at 74.75 74.8) (layer F.SilkS)
     (effects (font (size 0.7 0.7) (thickness 0.1)))
   )
   (gr_text "Licensed under\nCERN OHL v1.2" (at 211.5 63.85 90) (layer F.SilkS)

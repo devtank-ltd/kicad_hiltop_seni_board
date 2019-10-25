@@ -1282,6 +1282,6 @@ Wire Notes Line
 	4735 10665 5900 10665
 Wire Notes Line
 	5900 10160 5900 10665
-Text Notes 4835 10155 0    60   ~ 0
-RTD SW Sett Per RTD
+Text Notes 4945 10145 0    60   ~ 0
+RTD SW Settings
 $EndSCHEMATC
