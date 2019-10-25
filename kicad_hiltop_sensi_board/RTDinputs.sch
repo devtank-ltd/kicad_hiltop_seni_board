@@ -1248,32 +1248,40 @@ Connection ~ 7575 9275
 Wire Wire Line
 	7700 9375 7825 9375
 Connection ~ 7700 9375
-Text Notes 4430 10570 0    60   ~ 0
-RTD Config\n2 Wire\n3 Wire\n4 Wire
-Text Notes 5020 10570 0    60   ~ 0
-J1\nLeft Position\nRight Position\nLeft Position
-Text Notes 5755 10560 0    60   ~ 0
-J2\nClose\nClose\nOpen
-Text Notes 6090 10555 0    60   ~ 0
-J3\nClose\nOpen\nOpen
-Wire Notes Line
-	4420 10590 6360 10590
-Wire Notes Line
-	6360 10180 4420 10180
-Wire Notes Line
-	4420 10290 6360 10290
-Wire Notes Line
-	6050 10590 6050 10180
-Wire Notes Line
-	5690 10590 5690 10180
-Wire Notes Line
-	4970 10590 4970 10180
-Text Notes 4860 10690 0    60   ~ 0
+Text Notes 4750 10545 0    60   ~ 0
+2 Wire\n3 Wire\n4 Wire
+Text Notes 5095 10545 0    60   ~ 0
+1\nOFF\nON\nOFF
+Text Notes 4815 10645 0    60   ~ 0
 Default Config 3 Wire\n
+Text Notes 5300 10545 0    60   ~ 0
+2\nON\nOFF\nON
+Text Notes 5510 10545 0    60   ~ 0
+3\nON\nOFF\nOFF
+Text Notes 5715 10545 0    60   ~ 0
+4\nON\nON\nOFF
 Wire Notes Line
-	4420 10700 6360 10700
+	5900 10555 4735 10555
 Wire Notes Line
-	6360 10180 6360 10700
+	4735 10555 4735 10160
 Wire Notes Line
-	4420 10180 4420 10700
+	4735 10160 5900 10160
+Wire Notes Line
+	5065 10555 5065 10160
+Wire Notes Line
+	5280 10555 5280 10160
+Wire Notes Line
+	5485 10555 5485 10160
+Wire Notes Line
+	5700 10555 5700 10160
+Wire Notes Line
+	5900 10255 4735 10255
+Wire Notes Line
+	4735 10560 4735 10665
+Wire Notes Line
+	4735 10665 5900 10665
+Wire Notes Line
+	5900 10160 5900 10665
+Text Notes 4835 10155 0    60   ~ 0
+RTD SW Sett Per RTD
 $EndSCHEMATC

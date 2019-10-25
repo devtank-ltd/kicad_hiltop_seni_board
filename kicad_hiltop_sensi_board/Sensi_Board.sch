@@ -2643,8 +2643,8 @@ F9 "HS_CH4" O R 15000 14275 60
 $EndSheet
 Text Notes 8225 2600 0    60   ~ 0
 4off High side switches (12/24V)\n4off RTD's\n4off thermocouple\n4off 4-20mA\n4off 0-5V analogue \n6off digital inputs\n6off digital outputs\n\n
-Text Notes 2575 12000 2    60   ~ 0
-EXT board Relay and GPIO\n
+Text Notes 2300 12145 2    60   ~ 0
+GPIO + HS Switch\n
 $Comp
 L device:R R38
 U 1 1 5FD9E702
@@ -2675,8 +2675,8 @@ Wire Wire Line
 	5825 11200 5825 11125
 Wire Wire Line
 	5950 11000 5950 10925
-Text Notes 4500 11750 0    60   ~ 0
-Shot Bolt
+Text Notes 4305 12025 0    60   ~ 0
+Relay + HS Switch
 Wire Wire Line
 	14475 9900 14050 9900
 Wire Wire Line
@@ -3765,6 +3765,7 @@ F 0 "C24" V 1198 7845 50  0000 C CNN
 F 1 "100nF" V 1289 7845 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 1488 7695 50  0001 C CNN
 F 3 "" H 1450 7845 50  0001 C CNN
+F 4 "105-019" H 1450 7845 50  0001 C CNN "Devtank"
 	1    1450 7845
 	0    1    1    0   
 $EndComp
@@ -3776,6 +3777,7 @@ F 0 "R39" V 1140 8365 50  0000 C CNN
 F 1 "100K" V 1070 8350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1160 8365 50  0001 C CNN
 F 3 "" H 1230 8365 50  0001 C CNN
+F 4 "101-015" H 1230 8365 50  0001 C CNN "Devtank"
 	1    1230 8365
 	0    -1   -1   0   
 $EndComp
@@ -3787,6 +3789,7 @@ F 0 "R40" V 1625 8155 50  0000 C CNN
 F 1 "100K" V 1545 8135 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1390 8165 50  0001 C CNN
 F 3 "" H 1460 8165 50  0001 C CNN
+F 4 "101-015" H 1460 8165 50  0001 C CNN "Devtank"
 	1    1460 8165
 	0    -1   -1   0   
 $EndComp
@@ -3956,6 +3959,7 @@ F 0 "J6" H 8235 7332 50  0000 C CNN
 F 1 "Conn_02x10_Counter_Clockwise" H 8235 7241 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex_Milligrid_2x10" H 8185 6715 50  0001 C CNN
 F 3 "~" H 8185 6715 50  0001 C CNN
+F 4 "711-005" H 8185 6715 50  0001 C CNN "Devtank"
 	1    8185 6715
 	1    0    0    -1  
 $EndComp
@@ -4015,6 +4019,7 @@ F 0 "JP4" H 8935 6827 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 8935 6736 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 8935 6615 50  0001 C CNN
 F 3 "" H 8935 6615 50  0001 C CNN
+F 4 "714-005" H 8935 6615 50  0001 C CNN "Devtank"
 	1    8935 6615
 	1    0    0    -1  
 $EndComp
@@ -4041,6 +4046,7 @@ F 0 "JP5" H 8935 7327 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 8935 7236 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 8935 7115 50  0001 C CNN
 F 3 "" H 8935 7115 50  0001 C CNN
+F 4 "714-005" H 8935 7115 50  0001 C CNN "Devtank"
 	1    8935 7115
 	1    0    0    -1  
 $EndComp
@@ -4063,7 +4069,7 @@ L device:R R41
 U 1 1 5F1D9891
 P 7225 6190
 F 0 "R41" H 7295 6236 50  0000 L CNN
-F 1 "0R" H 7295 6145 50  0000 L CNN
+F 1 "DNF" H 7295 6145 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 7155 6190 50  0001 C CNN
 F 3 "" H 7225 6190 50  0001 C CNN
 	1    7225 6190
@@ -4077,6 +4083,7 @@ F 0 "R44" H 7505 6236 50  0000 L CNN
 F 1 "0R" H 7505 6145 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 7365 6190 50  0001 C CNN
 F 3 "" H 7435 6190 50  0001 C CNN
+F 4 "101-006" H 7435 6190 50  0001 C CNN "Devtank"
 	1    7435 6190
 	1    0    0    -1  
 $EndComp
@@ -4120,7 +4127,7 @@ L device:R R45
 U 1 1 5F7695D2
 P 9190 6230
 F 0 "R45" H 9260 6276 50  0000 L CNN
-F 1 "0R" H 9260 6185 50  0000 L CNN
+F 1 "DNF" H 9260 6185 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9120 6230 50  0001 C CNN
 F 3 "" H 9190 6230 50  0001 C CNN
 	1    9190 6230
@@ -4134,6 +4141,7 @@ F 0 "R46" H 9470 6276 50  0000 L CNN
 F 1 "0R" H 9470 6185 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9330 6230 50  0001 C CNN
 F 3 "" H 9400 6230 50  0001 C CNN
+F 4 "101-006" H 9400 6230 50  0001 C CNN "Devtank"
 	1    9400 6230
 	1    0    0    -1  
 $EndComp
@@ -4192,6 +4200,7 @@ F 0 "JP3" H 7535 7327 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 7535 7236 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 7535 7115 50  0001 C CNN
 F 3 "" H 7535 7115 50  0001 C CNN
+F 4 "714-005" H 7535 7115 50  0001 C CNN "Devtank"
 	1    7535 7115
 	-1   0    0    -1  
 $EndComp
@@ -4215,6 +4224,7 @@ F 0 "JP2" H 7535 6827 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 7535 6736 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 7535 6615 50  0001 C CNN
 F 3 "" H 7535 6615 50  0001 C CNN
+F 4 "714-005" H 7535 6615 50  0001 C CNN "Devtank"
 	1    7535 6615
 	-1   0    0    -1  
 $EndComp
@@ -4257,6 +4267,7 @@ F 0 "C27" H 18875 13025 50  0000 L CNN
 F 1 "100nF" H 18740 12950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 19023 12955 50  0001 C CNN
 F 3 "" H 18985 13105 50  0001 C CNN
+F 4 "105-019" H 18985 13105 50  0001 C CNN "Devtank"
 	1    18985 13105
 	1    0    0    -1  
 $EndComp
@@ -4268,6 +4279,7 @@ F 0 "C28" H 19120 13010 50  0000 L CNN
 F 1 "100nF" H 18995 12925 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 19273 12950 50  0001 C CNN
 F 3 "" H 19235 13100 50  0001 C CNN
+F 4 "105-019" H 19235 13100 50  0001 C CNN "Devtank"
 	1    19235 13100
 	1    0    0    -1  
 $EndComp
@@ -4279,6 +4291,7 @@ F 0 "C29" H 19395 13005 50  0000 L CNN
 F 1 "100nF" H 19255 12920 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 19538 12950 50  0001 C CNN
 F 3 "" H 19500 13100 50  0001 C CNN
+F 4 "105-019" H 19500 13100 50  0001 C CNN "Devtank"
 	1    19500 13100
 	1    0    0    -1  
 $EndComp
@@ -4290,6 +4303,7 @@ F 0 "C30" H 19670 13015 50  0000 L CNN
 F 1 "100nF" H 19530 12930 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 19823 12950 50  0001 C CNN
 F 3 "" H 19785 13100 50  0001 C CNN
+F 4 "105-019" H 19785 13100 50  0001 C CNN "Devtank"
 	1    19785 13100
 	1    0    0    -1  
 $EndComp
@@ -4301,6 +4315,7 @@ F 0 "C26" H 17195 13070 50  0000 L CNN
 F 1 "100nF" H 17185 12995 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 17578 12905 50  0001 C CNN
 F 3 "" H 17540 13055 50  0001 C CNN
+F 4 "105-019" H 17540 13055 50  0001 C CNN "Devtank"
 	1    17540 13055
 	1    0    0    -1  
 $EndComp
@@ -4632,6 +4647,7 @@ F 0 "J1" H 2000 11742 50  0000 C CNN
 F 1 "Conn_02x06_Top_Bottom" H 2000 11651 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex2x06" H 1950 11325 50  0001 C CNN
 F 3 "~" H 1950 11325 50  0001 C CNN
+F 4 "711-004" H 1950 11325 50  0001 C CNN "Devtank"
 	1    1950 11325
 	1    0    0    -1  
 $EndComp
@@ -4643,6 +4659,7 @@ F 0 "J5" H 7060 14997 50  0000 C CNN
 F 1 "Conn_02x06_Top_Bottom" H 7060 14906 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex2x06" H 7010 14580 50  0001 C CNN
 F 3 "~" H 7010 14580 50  0001 C CNN
+F 4 "711-004" H 7010 14580 50  0001 C CNN "Devtank"
 	1    7010 14580
 	1    0    0    -1  
 $EndComp
@@ -4654,6 +4671,7 @@ F 0 "J4" H 4050 9842 50  0000 C CNN
 F 1 "Conn_02x06_Top_Bottom" H 4050 9751 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex2x06" H 4000 9425 50  0001 C CNN
 F 3 "~" H 4000 9425 50  0001 C CNN
+F 4 "711-004" H 4000 9425 50  0001 C CNN "Devtank"
 	1    4000 9425
 	1    0    0    -1  
 $EndComp
@@ -4665,6 +4683,7 @@ F 0 "J8" H 11425 10367 50  0000 C CNN
 F 1 "Conn_02x06_Top_Bottom" H 11425 10276 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex2x06" H 11375 9950 50  0001 C CNN
 F 3 "~" H 11375 9950 50  0001 C CNN
+F 4 "711-004" H 11375 9950 50  0001 C CNN "Devtank"
 	1    11375 9950
 	1    0    0    -1  
 $EndComp
@@ -4676,6 +4695,7 @@ F 0 "J7" H 11400 11667 50  0000 C CNN
 F 1 "Conn_02x06_Top_Bottom" H 11400 11576 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex2x06" H 11350 11250 50  0001 C CNN
 F 3 "~" H 11350 11250 50  0001 C CNN
+F 4 "711-004" H 11350 11250 50  0001 C CNN "Devtank"
 	1    11350 11250
 	1    0    0    -1  
 $EndComp
@@ -4687,6 +4707,7 @@ F 0 "J9" H 18185 13422 50  0000 C CNN
 F 1 "Conn_02x06_Top_Bottom" H 18185 13331 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex2x06" H 18135 13005 50  0001 C CNN
 F 3 "~" H 18135 13005 50  0001 C CNN
+F 4 "711-004" H 18135 13005 50  0001 C CNN "Devtank"
 	1    18135 13005
 	1    0    0    -1  
 $EndComp
@@ -4698,6 +4719,7 @@ F 0 "J10" H 2240 8682 50  0000 C CNN
 F 1 "Conn_02x05_Counter_Clockwise" H 2240 8591 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 2190 8265 50  0001 C CNN
 F 3 "~" H 2190 8265 50  0001 C CNN
+F 4 "710-020" H 2190 8265 50  0001 C CNN "Devtank"
 	1    2190 8265
 	1    0    0    -1  
 $EndComp
@@ -4789,6 +4811,7 @@ F 0 "J2" H 4750 11717 50  0000 C CNN
 F 1 "Conn_02x06_Top_Bottom" H 4750 11626 50  0000 C CNN
 F 2 "Devtank_PCB_Lib:Molex2x06" H 4700 11300 50  0001 C CNN
 F 3 "~" H 4700 11300 50  0001 C CNN
+F 4 "711-004" H 4700 11300 50  0001 C CNN "Devtank"
 	1    4700 11300
 	1    0    0    -1  
 $EndComp
@@ -4864,4 +4887,16 @@ Wire Wire Line
 Connection ~ 5125 11500
 Wire Wire Line
 	5125 11500 5125 11650
+Text Notes 6935 15450 0    79   ~ 0
+Analogue Inputs\n
+Text Notes 7940 7730 0    79   ~ 0
+4-20mA
+Text Notes 3775 10195 0    79   ~ 0
+Thermocouple
+Text Notes 10980 9435 0    79   ~ 0
+RTD 1 + RTD 2\n
+Text Notes 10920 12130 0    79   ~ 0
+RTD 3 + RTD 4\n\n
+Text Notes 18010 13785 0    79   ~ 0
+Relay + PSU O/P\n
 $EndSCHEMATC
