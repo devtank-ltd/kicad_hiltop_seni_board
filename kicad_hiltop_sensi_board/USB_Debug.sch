@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Sensi_Board-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -28,7 +28,7 @@ U 1 1 5C2328D1
 P 5525 3475
 F 0 "U13" H 5125 4350 50  0000 C CNN
 F 1 "CP2102N-A01-GQFN24" H 6200 2625 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias" H 5975 2675 50  0001 L CNN
+F 2 "Devtank_PCB_Lib:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias_0.3" H 5975 2675 50  0001 L CNN
 F 3 "http://www.silabs.com/support%20documents/technicaldocs/cp2102n-datasheet.pdf" H 5575 2425 50  0001 C CNN
 F 4 "118-007" H 5525 3475 50  0001 C CNN "Devtank"
 	1    5525 3475
