@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Sensi_Board-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -34,7 +34,7 @@ F 0 "Y1" V 4196 8419 50  0000 R CNN
 F 1 "50ppm 24.000MHZ" V 4325 8960 50  0000 R CNN
 F 2 "Crystal:Crystal_SMD_TXC_7A-2Pin_5x3.2mm" H 4150 8550 50  0001 C CNN
 F 3 "" H 4150 8550 50  0001 C CNN
-F 4 "181-010" H 4150 8550 50  0001 C CNN "Devtank"
+F 4 "181-011" H 4150 8550 50  0001 C CNN "Devtank"
 	1    4150 8550
 	0    -1   -1   0   
 $EndComp
@@ -872,7 +872,7 @@ F 2 "Capacitor_SMD:C_0402_1005Metric" H 5288 2050 50  0001 C CNN
 F 3 "" H 5250 2200 50  0001 C CNN
 F 4 "16V" H 5250 2200 50  0001 C CNN "Voltage"
 F 5 "X5R" H 5250 2200 50  0001 C CNN "Dielectric"
-F 6 "105-026" H 5250 2200 50  0001 C CNN "Devtank"
+F 6 "105-025" H 5250 2200 50  0001 C CNN "Devtank"
 	1    5250 2200
 	1    0    0    -1  
 $EndComp

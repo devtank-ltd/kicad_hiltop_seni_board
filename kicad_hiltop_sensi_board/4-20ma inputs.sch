@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Sensi_Board-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -302,7 +302,7 @@ Low pass filter\nF = ( 1 / ( 2 x pi x 10R x 1uF)) = 15.92KHz\n
 Text Notes 880  6500 0    60   ~ 0
 Volt drop across input resistor\nV = 10R x 20mA = 0.2V
 Text Notes 870  6750 0    60   ~ 0
-Gain resistor calculation\nRG = ( 50Kohms / 4 ) = 12.5Kohms 
+Gain resistor calculation\nGain = 5\nRG = ( 50Kohms / (5-1) ) = 12.5Kohms 
 Text Notes 865  7110 0    60   ~ 0
 Sense resistor calculation\n3.2(allow for some loss) / 5 = 0.64V\nRS = ( 0.64 / (20mA)) = 32ohms\n
 Text Notes 860  7460 0    60   ~ 0
@@ -1164,4 +1164,26 @@ Connection ~ 7240 4650
 Wire Wire Line
 	7240 4250 8330 4250
 Connection ~ 7240 4250
+Text Notes 3630 6705 0    60   ~ 0
+Gain resistor calculation\nGain = 5.33\nRG = ( 50Kohms / 5.33-1 ) = 11.5Kohms 
+Text Notes 3630 6455 0    60   ~ 0
+Sense resistor calculation\nRS = 30ohms x 20mA =0.6V\nGain = 3.2V(allow for some loss) / 0.6V = 5.33\n\n
+Text Notes 3640 7065 0    60   ~ 0
+ADC\n4mA x 30R = 0.12V = 0 Bar\n20mA x 30R = 0.6V = 150 Bar
+Wire Notes Line
+	6150 7095 3620 7095
+Wire Notes Line
+	3618 6039 6148 6039
+Wire Notes Line
+	3620 6395 6150 6395
+Wire Notes Line
+	3620 6755 6150 6755
+Wire Notes Line
+	3620 7095 3620 6040
+Wire Notes Line
+	6150 7095 6150 6040
+Wire Notes Line
+	6150 6040 6145 6040
+Text Notes 3600 5955 0    60   ~ 0
+Updated calculation for sense resistor 30R. Replace 12.5K resistor with 11.5K.
 $EndSCHEMATC
