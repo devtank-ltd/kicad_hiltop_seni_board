@@ -1,4 +1,4 @@
-update=Fri 18 Oct 2019 14:59:16 BST
+update=Sun 17 Jan 2021 08:58:49 GMT
 version=1
 last_client=kicad
 [cvpcb]
@@ -13,7 +13,7 @@ LibDir=../common/Devtank_Schema_Lib
 [schematic_editor]
 version=1
 PageLayoutDescrFile=../common/Devtank_KiCAD_Setup/Devtank_Dwg_Template.kicad_wks
-PlotDirectoryName=../../../../ProductionTest/PDFs/
+PlotDirectoryName=../../../../../lbbc materials/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
@@ -85,7 +85,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.06
 SolderMaskMinWidth=0.075
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0

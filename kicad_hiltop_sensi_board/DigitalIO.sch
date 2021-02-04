@@ -1,15 +1,14 @@
 EESchema Schematic File Version 4
-LIBS:Sensi_Board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 10 11
-Title "Iota Board"
-Date "2019-10-01"
-Rev "Draft"
-Comp "Omega Analytic Systems"
-Comment1 ""
+Title "Sensi Board"
+Date "2019-11-01"
+Rev "A"
+Comp "Devtank Ltd"
+Comment1 "Part No: 304-007"
 Comment2 ""
 Comment3 ""
 Comment4 ""

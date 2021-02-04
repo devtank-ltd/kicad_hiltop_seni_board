@@ -1,15 +1,14 @@
 EESchema Schematic File Version 4
-LIBS:Sensi_Board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 11
-Title "HILTOP Motherboard"
-Date "2019-10-01"
-Rev "Draft"
+Title "Sensi Board"
+Date "2019-11-01"
+Rev "A"
 Comp "Devtank Ltd"
-Comment1 ""
+Comment1 "Part No: 304-007"
 Comment2 ""
 Comment3 ""
 Comment4 ""
