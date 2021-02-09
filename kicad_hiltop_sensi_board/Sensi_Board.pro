@@ -1,4 +1,4 @@
-update=Fri 05 Feb 2021 16:59:14 GMT
+update=Tue 09 Feb 2021 14:07:40 GMT
 version=1
 last_client=kicad
 [cvpcb]
@@ -10,16 +10,6 @@ version=1
 version=1
 LibDir=../common/Devtank_Schema_Lib
 [eeschema/libraries]
-[schematic_editor]
-version=1
-PageLayoutDescrFile=../common/Devtank_KiCAD_Setup/Devtank_Dwg_Template.kicad_wks
-PlotDirectoryName=../../../../../lbbc materials/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=60
-ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=../common/Devtank_KiCAD_Setup/Devtank_Dwg_Template.kicad_wks
@@ -286,4 +276,14 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
+[schematic_editor]
+version=1
+PageLayoutDescrFile=../common/Devtank_KiCAD_Setup/Devtank_Dwg_Template.kicad_wks
+PlotDirectoryName=../../../../../lbbc materials/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
 
