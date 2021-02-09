@@ -1,0 +1,25 @@
+Sensi Boards mods
+
+
+PCB
+-Add jumper to JP1 bottom side so +3v3 is connected to +3v3_LOC
+-Short cct D1
+-Change R102 for 20Kohm
+-Add R77 as 10Kohm
+-Add C52 as 100nF
+-For all 4-20mA ccts change both input resistors to 68R
+- Fix voltage connection going to 4-20mA connector J6 (Voltage is on its own pin and all F+ pins are seperate). The tracks need cutting and repairing
+-Replace R79 with inverter chip 2464477 farnell. Supply withe 3v3 and gnd. Connect input to boot line of CP210 chip and output of inverter to boot line of STM.
+-For c60,c61,c66,c67 add 100k resistor 0402 across each of these.
+-Fit SS16 schottky for all HS_OUT to GND. Connect negative side to HS_OUT.
+
+
+############Don't do below IF SETTING UP SENSI/SENSI TRIP #############
+-Change R120 for 100Kohm "NOT NEEDED"
+-For themocouple circuit replace 10Kohm divider with 1Kohm (Needs further testing)
+-On next version change molex connector footprint to match symbol
+
+KiCAD
+-On PCB layout C100 and C95 reference need swapping.
+- Fix voltage connection going to 4-20mA connector J6 (Voltage is on its own pin, look at attached picture)
+#######################################################################
