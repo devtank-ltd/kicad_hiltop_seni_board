@@ -183,7 +183,7 @@ F 2 "LED_SMD:LED_0603_1608Metric" H 3025 2575 50  0001 C CNN
 F 3 "~" H 3025 2575 50  0001 C CNN
 F 4 "110-002" H 0   0   50  0001 C CNN "Devtank"
 	1    3025 2575
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Sensi_Board-rescue:R-device R?

@@ -1,4 +1,4 @@
-update=Tue 09 Feb 2021 14:07:40 GMT
+update=Tue 09 Feb 2021 15:14:38 GMT
 version=1
 last_client=kicad
 [cvpcb]
@@ -279,7 +279,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=../common/Devtank_KiCAD_Setup/Devtank_Dwg_Template.kicad_wks
-PlotDirectoryName=../../../../../lbbc materials/
+PlotDirectoryName=./
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
