@@ -5,8 +5,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 11
 Title "Sensi Board"
-Date "2019-11-01"
-Rev "A"
+Date "2021-02-15"
+Rev "B"
 Comp "Devtank Ltd"
 Comment1 "Part No: 304-007"
 Comment2 ""

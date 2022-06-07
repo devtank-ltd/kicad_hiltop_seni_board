@@ -10,6 +10,14 @@
   )
 
   (page A4)
+  (title_block
+    (title "Sensi Board")
+    (date 2021-02-15)
+    (rev B)
+    (company "Devtank LTD")
+    (comment 1 "Part No: 304-007")
+  )
+
   (layers
     (0 F.Cu signal)
     (1 In1.Cu signal)

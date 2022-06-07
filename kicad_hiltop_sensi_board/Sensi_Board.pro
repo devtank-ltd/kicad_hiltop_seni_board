@@ -1,4 +1,4 @@
-update=Tue 09 Feb 2021 15:14:38 GMT
+update=Mon 13 Sep 2021 17:21:13 BST
 version=1
 last_client=kicad
 [cvpcb]
@@ -10,6 +10,16 @@ version=1
 version=1
 LibDir=../common/Devtank_Schema_Lib
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=../common/Devtank_KiCAD_Setup/Devtank_Dwg_Template.kicad_wks
+PlotDirectoryName=./
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=../common/Devtank_KiCAD_Setup/Devtank_Dwg_Template.kicad_wks
@@ -75,7 +85,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.06
 SolderMaskMinWidth=0.075
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -274,16 +284,6 @@ ViaDrill=0.4
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
-dPairGap=0.25
+dPairGap=0.1
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=../common/Devtank_KiCAD_Setup/Devtank_Dwg_Template.kicad_wks
-PlotDirectoryName=./
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=60
-ERC_TestSimilarLabels=1
 
